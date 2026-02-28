@@ -18,13 +18,13 @@
 
 
 
-    -- Enable Snowflake Intelligence by creating the Config DB & Schema
-    CREATE DATABASE IF NOT EXISTS snowflake_intelligence;
-    CREATE SCHEMA IF NOT EXISTS snowflake_intelligence.agents;
-    
-    -- Allow anyone to see the agents in this schema
-    GRANT USAGE ON DATABASE snowflake_intelligence TO ROLE PUBLIC;
-    GRANT USAGE ON SCHEMA snowflake_intelligence.agents TO ROLE PUBLIC;
+    -- ========================================================================
+    -- SNOWFLAKE INTELLIGENCE SETUP
+    -- Create account-level Snowflake Intelligence object (new approach)
+    -- The old SNOWFLAKE_INTELLIGENCE.AGENTS schema approach is deprecated
+    -- This must be done as ACCOUNTADMIN and only needs to be created once per account
+    -- ========================================================================
+    CREATE SNOWFLAKE INTELLIGENCE IF NOT EXISTS snowflake_intelligence_object_default;
 
 
     create or replace role SF_Intelligence_Demo;
@@ -1309,7 +1309,7 @@ CREATE OR REPLACE STREAMLIT SF_AI_DEMO.DEMO_SCHEMA.{app_name}
 
 
 
-CREATE OR REPLACE AGENT SNOWFLAKE_INTELLIGENCE.AGENTS.Company_Chatbot_Agent_Retail
+CREATE OR REPLACE AGENT SF_AI_DEMO.DEMO_SCHEMA.Company_Chatbot_Agent_Retail
 WITH PROFILE='{ "display_name": "1-Company Chatbot Agent - Retail" }'
     COMMENT=$$ This is an agent that can answer questions about company specific Sales, Marketing, HR & Finance questions. $$
 FROM SPECIFICATION $$
@@ -1526,3 +1526,23 @@ FROM SPECIFICATION $$
   }
 }
 $$;
+
+-- ========================================================================
+-- ASSIGN AGENT TO SNOWFLAKE INTELLIGENCE
+-- Add the agent to the account-level Snowflake Intelligence object
+-- This makes the agent visible in the Snowflake Intelligence panel
+-- Must be done as ACCOUNTADMIN
+-- ========================================================================
+USE ROLE accountadmin;
+
+-- Add the agent to the Snowflake Intelligence object
+ALTER SNOWFLAKE INTELLIGENCE snowflake_intelligence_object_default ADD AGENT SF_AI_DEMO.DEMO_SCHEMA.Company_Chatbot_Agent_Retail;
+
+-- Grant USAGE on the agent to PUBLIC so all users can access it
+GRANT USAGE ON AGENT SF_AI_DEMO.DEMO_SCHEMA.Company_Chatbot_Agent_Retail TO ROLE PUBLIC;
+
+-- Grant USAGE on the agent to the demo role for management
+GRANT USAGE ON AGENT SF_AI_DEMO.DEMO_SCHEMA.Company_Chatbot_Agent_Retail TO ROLE SF_Intelligence_Demo;
+
+-- Switch back to demo role
+USE ROLE SF_Intelligence_Demo;
