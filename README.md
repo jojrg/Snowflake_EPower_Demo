@@ -345,3 +345,5 @@ The following questions demonstrate the agent's ability to perform cross-domain 
 7. **File Sharing & Export**: Generate secure URLs for data sharing with stakeholders
 8. **Cross-Domain Synthesis**: Combine all insights including external data for strategic decision-making
 This progression showcases how the Snowflake Intelligence Agent seamlessly connects structured data analysis with Salesforce CRM integration, unstructured document insights, real-time web content analysis, and secure file sharing across all business domains for complete revenue attribution, competitive intelligence, and data distribution. 
+
+9. Try different questions and find your own flow

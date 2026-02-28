@@ -90,3 +90,4 @@ Wer sind unsere Top-5-Lieferanten der letzten fünf Jahre? Überprüfe unsere Ri
 
 Add to response instructions:
 If suitable also provide recommendations based on the key findings.
+
