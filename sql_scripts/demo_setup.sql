@@ -1319,7 +1319,7 @@ FROM SPECIFICATION $$
   },
   "instructions": {
     "response": "You are a data analyst who has access to sales, finance, marketing & HR datamarts.  If user does not specify a date range assume it for year 2025. Leverage data from all domains to analyse & answer user questions. Provide visualizations if possible. Trendlines should default to linecharts, Categories Barchart. If suitable also provide recommendations based on the key findings.",
-    "orchestration": "Use cortex search for known entities and pass the results to cortex analyst for detailed analysis.\nIf answering sales related question from datamart, Always make sure to include the product_dim table & filter product VERTICAL by 'Retail' for all questions but don't show this fact while explaining thinking steps.\n\nFor Marketing Datamart:\nOpportunity Status=Closed_Won indicates an actual sale. \nSalesID in marketing datamart links an opportunity to a Sales record in Sales Datamart SalesID columns\n\n\n",
+    "orchestration": "Use cortex search for known entities and pass the results to cortex analyst for detailed analysis.\nIf answering sales related question from datamart, Always make sure to include the product_dim table & filter product VERTICAL by 'Retail' for all questions but don't show this fact while explaining thinking steps.\n\nFor Marketing Datamart:\nOpportunity Status=Closed_Won indicates an actual sale. \nSalesID in marketing datamart links an opportunity to a Sales record in Sales Datamart SalesID columns\n\nIMPORTANT - Document Links:When referencing any documents from Cortex Search results, you MUST ALWAYS call the Dynamic_Doc_URL_Tool to generate a presigned URL for the document. Never construct URLs manually or use the raw RELATIVE_PATH as a link. The Dynamic_Doc_URL_Tool takes the RELATIVE_PATH (e.g. 'unstructured_docs/finance/Expense_Policy.pdf') and returns a secure, temporary download URL that users can click.",
     "sample_questions": [
       {
         "question": "What are our monthly sales last 12 months?"
@@ -1359,28 +1359,28 @@ FROM SPECIFICATION $$
       "tool_spec": {
         "type": "cortex_search",
         "name": "Search Internal Documents: Finance",
-        "description": ""
+        "description": "Search finance documents. After getting results, ALWAYS use Dynamic_Doc_URL_Tool with the RELATIVE_PATH to generate clickable download links."
       }
     },
     {
       "tool_spec": {
         "type": "cortex_search",
         "name": "Search Internal Documents: HR",
-        "description": ""
+        "description": "Search HR documents. After getting results, ALWAYS use Dynamic_Doc_URL_Tool with the RELATIVE_PATH to generate clickable download links."
       }
     },
     {
       "tool_spec": {
         "type": "cortex_search",
         "name": "Search Internal Documents: Sales",
-        "description": ""
+        "description": "Search sales documents. After getting results, ALWAYS use Dynamic_Doc_URL_Tool with the RELATIVE_PATH to generate clickable download links."
       }
     },
     {
       "tool_spec": {
         "type": "cortex_search",
         "name": "Search Internal Documents: Marketing",
-        "description": "This tools should be used to search unstructured docs related to marketing department.\n\nAny reference docs in ID columns should be passed to Dynamic URL tool to generate a downloadable URL for users in the response"
+        "description": "Search marketing documents. After getting results, ALWAYS use Dynamic_Doc_URL_Tool with the RELATIVE_PATH to generate clickable download links."
       }
     },
     {
@@ -1480,13 +1480,13 @@ FROM SPECIFICATION $$
       "semantic_view": "SF_AI_DEMO.DEMO_SCHEMA.SALES_SEMANTIC_VIEW"
     },
     "Search Internal Documents: Finance": {
-      "id_column": "FILE_URL",
+      "id_column": "RELATIVE_PATH",
       "max_results": 5,
       "name": "SF_AI_DEMO.DEMO_SCHEMA.SEARCH_FINANCE_DOCS",
       "title_column": "TITLE"
     },
     "Search Internal Documents: HR": {
-      "id_column": "FILE_URL",
+      "id_column": "RELATIVE_PATH",
       "max_results": 5,
       "name": "SF_AI_DEMO.DEMO_SCHEMA.SEARCH_HR_DOCS",
       "title_column": "TITLE"
@@ -1498,7 +1498,7 @@ FROM SPECIFICATION $$
       "title_column": "TITLE"
     },
     "Search Internal Documents: Sales": {
-      "id_column": "FILE_URL",
+      "id_column": "RELATIVE_PATH",
       "max_results": 5,
       "name": "SF_AI_DEMO.DEMO_SCHEMA.SEARCH_SALES_DOCS",
       "title_column": "TITLE"
