@@ -1,0 +1,28 @@
+product_key,product_name,category_key,category_name,vertical
+1,EPOWER Strom Basis,1,Electricity,Energy
+2,EPOWER Strom Plus,1,Electricity,Energy
+3,EPOWER Ökostrom 100%,1,Electricity,Energy
+4,EPOWER Strom Fix 24,1,Electricity,Energy
+5,EPOWER Wärmestrom,1,Electricity,Energy
+6,EPOWER Gas Basis,2,Gas,Energy
+7,EPOWER Gas Plus,2,Gas,Energy
+8,EPOWER Biogas 10%,2,Gas,Energy
+9,EPOWER Gas Fix 24,2,Gas,Energy
+10,EPOWER Solar S 5kWp,3,Solar,Future Energy
+11,EPOWER Solar M 8kWp,3,Solar,Future Energy
+12,EPOWER Solar L 12kWp,3,Solar,Future Energy
+13,EPOWER SolarCloud,3,Solar,Future Energy
+14,EPOWER Speicher 5kWh,3,Solar,Future Energy
+15,EPOWER Speicher 10kWh,3,Solar,Future Energy
+16,EPOWER Wärmepumpe Luft-Wasser,4,Heat Pumps,Future Energy
+17,EPOWER Wärmepumpe Sole-Wasser,4,Heat Pumps,Future Energy
+18,EPOWER Wärmepumpe Split,4,Heat Pumps,Future Energy
+19,EPOWER Wärmepumpe Kompakt,4,Heat Pumps,Future Energy
+20,EPOWER Smart Meter,5,Smart Home,Smart Home
+21,EPOWER Home Energy Manager,5,Smart Home,Smart Home
+22,EPOWER Smart Thermostat,5,Smart Home,Smart Home
+23,EPOWER Energy Monitor,5,Smart Home,Smart Home
+24,EPOWER Wallbox 11kW,6,E-Mobility,E-Mobility
+25,EPOWER Wallbox 22kW,6,E-Mobility,E-Mobility
+26,EPOWER Drive Tarif,6,E-Mobility,E-Mobility
+27,EPOWER Solar Carport,6,E-Mobility,E-Mobility

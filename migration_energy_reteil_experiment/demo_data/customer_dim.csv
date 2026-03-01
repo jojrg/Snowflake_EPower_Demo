@@ -1,0 +1,1001 @@
+customer_key,customer_name,customer_type,housing_type,vertical,address,city,state,zip,region_key
+1,Aleksandr Weihmann,Kleingewerbe,Reihenhaus,Energy,EichenWeg 27,Hamburg,North,20792,400
+2,Eleni Hauffer,Privatkunde,Einfamilienhaus,Energy,GoetheWeg 60,Hannover,North,30617,400
+3,Paul Dobes-Stey,Privatkunde,Gewerbeimmobilie,Energy,RathausWeg 115,Hannover,North,30703,400
+4,Klemens Löchel,Kleingewerbe,Reihenhaus,Energy,RathausAllee 72,Köln,West,50259,402
+5,Alexandre Davids,Privatkunde,Mehrfamilienhaus,Energy,SchillerAllee 89,Nürnberg,South,90718,401
+6,Eric Pärtzelt B.Sc.,Kleingewerbe,Gewerbeimmobilie,Energy,SchillerPlatz 21,Köln,West,50665,402
+7,Orhan Seip MBA.,Privatkunde,Wohnung,Energy,TalWeg 18,Bonn,West,53146,402
+8,Meister KG,Gewerbekunde,Reihenhaus,Energy,SchillerPlatz 72,Nürnberg,South,90564,401
+9,Rosalinde Albers,Privatkunde,Reihenhaus,Energy,BirkenGasse 19,Düsseldorf,West,40723,402
+10,Univ.Prof. Heimo Karge,Kleingewerbe,Reihenhaus,Energy,SchulPlatz 70,Freiburg,South,79755,401
+11,Carolin Hande,Privatkunde,Einfamilienhaus,Energy,EichenStraße 81,Ulm,South,89510,401
+12,Auguste Davids,Privatkunde,Gewerbeimmobilie,Energy,TannenWeg 128,Köln,West,50505,402
+13,Ariane Klemt-Kaul,Privatkunde,Reihenhaus,Energy,BergRing 68,Dresden,East,01864,403
+14,Rosalia Beyer,Privatkunde,Reihenhaus,Energy,MozartRing 127,Magdeburg,East,39193,403
+15,Kathrin Ebert MBA.,Privatkunde,Reihenhaus,Energy,RathausRing 17,Hamburg,North,20494,400
+16,Rohleder GmbH,Gewerbekunde,Gewerbeimmobilie,Energy,BirkenRing 3,Magdeburg,East,39796,403
+17,Leonie Gröttner,Kleingewerbe,Wohnung,Energy,TannenStraße 76,Rostock,North,18545,400
+18,Anatoli Speer,Privatkunde,Wohnung,Energy,WaldWeg 130,Augsburg,South,86208,401
+19,Ing. Arnulf Heintze B.Sc.,Privatkunde,Reihenhaus,Energy,MozartAllee 42,Bonn,West,53652,402
+20,Erika Metz-Schuster,Privatkunde,Einfamilienhaus,Energy,SchillerAllee 79,Hannover,North,30345,400
+21,Cathrin Koch II,Kleingewerbe,Einfamilienhaus,Energy,GoetheGasse 125,Bremen,North,28935,400
+22,Delia Steckel,Kleingewerbe,Reihenhaus,Energy,ParkRing 43,Hannover,North,30371,400
+23,Tintzmann Stoll KGaA,Gewerbekunde,Reihenhaus,Energy,RosenPlatz 96,Dresden,East,01548,403
+24,Leif Schuster,Privatkunde,Einfamilienhaus,Energy,TannenStraße 142,Berlin,East,10335,403
+25,Prof. Ottokar Henschel,Privatkunde,Einfamilienhaus,Energy,EichenStraße 9,München,South,80980,401
+26,Dipl.-Ing. Hans-Herbert Hiller,Privatkunde,Wohnung,Energy,ParkWeg 139,Köln,West,50235,402
+27,Univ.Prof. Gotthilf Wilmsen B.Sc.,Kleingewerbe,Mehrfamilienhaus,Energy,LindenStraße 25,Dresden,East,01774,403
+28,Herr Romuald Jopich MBA.,Privatkunde,Mehrfamilienhaus,Energy,BahnhofGasse 26,Leipzig,East,04162,403
+29,Anne-Katrin Hahn,Privatkunde,Einfamilienhaus,Energy,EichenWeg 49,Chemnitz,East,09649,403
+30,Diana Sölzer,Privatkunde,Wohnung,Energy,SchulWeg 20,Dresden,East,01553,403
+31,Dipl.-Ing. Svea Seifert MBA.,Privatkunde,Gewerbeimmobilie,Energy,HauptStraße 61,Hamburg,North,20270,400
+32,Franjo Etzold-Hentschel,Privatkunde,Mehrfamilienhaus,Energy,BahnhofWeg 98,Potsdam,East,14102,403
+33,Rörricht,Gewerbekunde,Mehrfamilienhaus,Energy,RosenPlatz 143,Leipzig,East,04777,403
+34,Nathalie Sauer,Privatkunde,Reihenhaus,Energy,BahnhofRing 139,Dresden,East,01162,403
+35,Prof. Heiderose Klotz,Privatkunde,Mehrfamilienhaus,Energy,WaldRing 41,Köln,West,50158,402
+36,Dr. Jaroslaw Nohlmans B.Sc.,Privatkunde,Einfamilienhaus,Energy,EichenPlatz 31,Bremen,North,28683,400
+37,Steffen Dörschner,Privatkunde,Gewerbeimmobilie,Energy,GoethePlatz 150,Freiburg,South,79678,401
+38,Lukas Freudenberger-Zorbach,Privatkunde,Wohnung,Energy,EichenAllee 102,Dortmund,West,44234,402
+39,Prof. Anne Krause,Privatkunde,Einfamilienhaus,Energy,HauptPlatz 145,Essen,West,45202,402
+40,Lilli Mosemann-Rädel,Privatkunde,Wohnung,Energy,MozartAllee 18,Hannover,North,30350,400
+41,Yasmin Röhrdanz,Privatkunde,Gewerbeimmobilie,Energy,RosenRing 136,Dortmund,West,44108,402
+42,Milos Ullmann,Privatkunde,Reihenhaus,Energy,BirkenStraße 28,Bonn,West,53860,402
+43,Mirco Reising,Privatkunde,Reihenhaus,Energy,TannenWeg 68,Nürnberg,South,90617,401
+44,Wilmsen Segebahn GmbH,Gewerbekunde,Einfamilienhaus,Energy,GoetheGasse 109,Leipzig,East,04949,403
+45,Gabriel Lübs,Privatkunde,Reihenhaus,Energy,BirkenWeg 114,Köln,West,50664,402
+46,Dipl.-Ing. Abraham Ullmann,Privatkunde,Einfamilienhaus,Energy,MozartRing 10,Magdeburg,East,39954,403
+47,Yvette Otto,Privatkunde,Mehrfamilienhaus,Energy,MozartStraße 79,Duisburg,West,47473,402
+48,Prof. Urban Döring,Privatkunde,Reihenhaus,Energy,SchillerAllee 144,Kiel,North,24995,400
+49,Sibilla Schwital,Kleingewerbe,Reihenhaus,Energy,BeethovenWeg 106,Magdeburg,East,39125,403
+50,Schlosser,Gewerbekunde,Mehrfamilienhaus,Energy,EichenAllee 41,Ulm,South,89906,401
+51,Cornelius Köster B.A.,Kleingewerbe,Mehrfamilienhaus,Energy,EichenWeg 118,Lübeck,North,23458,400
+52,Krzysztof Junitz,Privatkunde,Reihenhaus,Energy,MarktAllee 72,Düsseldorf,West,40985,402
+53,Frau Beate Klotz B.Eng.,Privatkunde,Gewerbeimmobilie,Energy,MarktGasse 138,Kiel,North,24439,400
+54,Herr Ernst-Otto Rosenow B.Sc.,Kleingewerbe,Wohnung,Energy,BeethovenRing 68,Hamburg,North,20139,400
+55,Pascal Neureuther,Privatkunde,Wohnung,Energy,RathausRing 131,Hannover,North,30218,400
+56,Raimund Reichmann,Privatkunde,Einfamilienhaus,Energy,RathausStraße 134,Magdeburg,East,39925,403
+57,Carlo Sorgatz-Mülichen,Privatkunde,Wohnung,Energy,SeeAllee 32,Nürnberg,South,90837,401
+58,Ing. Jose auch Schlauchin,Privatkunde,Mehrfamilienhaus,Energy,TannenPlatz 76,Duisburg,West,47667,402
+59,Dr. Uschi Reuter,Privatkunde,Mehrfamilienhaus,Energy,BeethovenRing 146,Stuttgart,South,70408,401
+60,Olaf Jockel MBA.,Kleingewerbe,Wohnung,Energy,RosenWeg 111,Magdeburg,East,39904,403
+61,Imelda Plath,Privatkunde,Reihenhaus,Energy,WaldPlatz 44,Essen,West,45774,402
+62,Bertha Hentschel B.A.,Privatkunde,Gewerbeimmobilie,Energy,TannenStraße 61,Kiel,North,24788,400
+63,Gunther Bärer,Kleingewerbe,Reihenhaus,Energy,HauptStraße 63,Düsseldorf,West,40586,402
+64,Prof. Emil Albers B.Sc.,Privatkunde,Gewerbeimmobilie,Energy,LindenGasse 99,Lübeck,North,23606,400
+65,Erdal Börner,Privatkunde,Einfamilienhaus,Energy,SchillerPlatz 57,Dresden,East,01280,403
+66,Stefano Kabus,Privatkunde,Einfamilienhaus,Energy,SchulWeg 119,Berlin,East,10783,403
+67,Jiri Hellwig,Privatkunde,Gewerbeimmobilie,Energy,RathausRing 115,Essen,West,45262,402
+68,Marie-Luise Neureuther,Privatkunde,Reihenhaus,Energy,BirkenRing 125,Potsdam,East,14741,403
+69,Juri Eigenwillig MBA.,Privatkunde,Wohnung,Energy,EichenAllee 86,Nürnberg,South,90427,401
+70,Dipl.-Ing. Ronald Ladeck B.A.,Privatkunde,Mehrfamilienhaus,Energy,MozartGasse 55,Bremen,North,28165,400
+71,Benedikt Sorgatz,Privatkunde,Mehrfamilienhaus,Energy,RathausStraße 53,Potsdam,East,14952,403
+72,Klapp Löchel GmbH & Co. KG,Gewerbekunde,Gewerbeimmobilie,Energy,HauptRing 98,Potsdam,East,14588,403
+73,Solveig Vollbrecht B.Sc.,Privatkunde,Mehrfamilienhaus,Energy,RathausRing 140,Kiel,North,24919,400
+74,Ante Kusch,Privatkunde,Mehrfamilienhaus,Energy,ParkStraße 100,Augsburg,South,86444,401
+75,Ria Dörr,Privatkunde,Mehrfamilienhaus,Energy,MozartRing 137,Chemnitz,East,09127,403
+76,Dr. Donald Reising MBA.,Privatkunde,Einfamilienhaus,Energy,GoetheGasse 110,Magdeburg,East,39238,403
+77,Heimo Gnatz-Holsten,Privatkunde,Mehrfamilienhaus,Energy,TannenWeg 117,Dresden,East,01434,403
+78,Elfie Bruder MBA.,Privatkunde,Mehrfamilienhaus,Energy,BirkenStraße 121,Essen,West,45119,402
+79,Andrei Siering,Privatkunde,Einfamilienhaus,Energy,BahnhofStraße 64,Kiel,North,24304,400
+80,Zbigniew Davids,Privatkunde,Reihenhaus,Energy,ParkGasse 30,Hannover,North,30677,400
+81,Dr. Hansjürgen Neureuther MBA.,Privatkunde,Wohnung,Energy,BeethovenRing 30,Augsburg,South,86896,401
+82,Steven Kühnert B.Sc.,Privatkunde,Einfamilienhaus,Energy,RosenRing 97,Nürnberg,South,90506,401
+83,Dipl.-Ing. Abdullah Krebs,Privatkunde,Reihenhaus,Energy,SchillerGasse 78,München,South,80970,401
+84,Ursula Ziegert,Kleingewerbe,Wohnung,Energy,BergPlatz 95,Hannover,North,30170,400
+85,Eva Löchel MBA.,Kleingewerbe,Mehrfamilienhaus,Energy,SchillerPlatz 93,Köln,West,50750,402
+86,Donald Hübel-Harloff,Privatkunde,Reihenhaus,Energy,WaldGasse 70,Chemnitz,East,09730,403
+87,Klaus Wähner,Privatkunde,Gewerbeimmobilie,Energy,BirkenAllee 63,Potsdam,East,14950,403
+88,Peter-Michael Johann,Kleingewerbe,Reihenhaus,Energy,SchulRing 98,Kiel,North,24444,400
+89,Andrei Sauer,Kleingewerbe,Reihenhaus,Energy,ParkWeg 91,Lübeck,North,23916,400
+90,Prof. Trudi Radisch B.A.,Privatkunde,Gewerbeimmobilie,Energy,BirkenRing 3,Dortmund,West,44629,402
+91,Wolf-Dietrich Pechel,Privatkunde,Mehrfamilienhaus,Energy,ParkRing 62,München,South,80807,401
+92,Simon Gotthard,Kleingewerbe,Mehrfamilienhaus,Energy,HauptStraße 76,Chemnitz,East,09326,403
+93,Konstantinos Börner,Privatkunde,Gewerbeimmobilie,Energy,KirchPlatz 142,Chemnitz,East,09643,403
+94,Heinz,Gewerbekunde,Gewerbeimmobilie,Energy,TannenAllee 117,Essen,West,45377,402
+95,Berta Roskoth-Hentschel,Privatkunde,Reihenhaus,Energy,TannenStraße 138,Dortmund,West,44880,402
+96,Lorenzo Butte,Privatkunde,Mehrfamilienhaus,Energy,BirkenGasse 135,Stuttgart,South,70711,401
+97,Univ.Prof. Lidia Rosemann,Kleingewerbe,Wohnung,Energy,EichenAllee 46,Köln,West,50409,402
+98,Valeria Heß,Privatkunde,Wohnung,Energy,BahnhofStraße 142,Rostock,North,18399,400
+99,Mesut Trubin B.Eng.,Kleingewerbe,Mehrfamilienhaus,Energy,SchillerStraße 147,Ulm,South,89391,401
+100,Ing. Hans-Theo Eigenwillig B.Eng.,Privatkunde,Reihenhaus,Energy,BahnhofAllee 123,Potsdam,East,14216,403
+101,Freya Weitzel B.Sc.,Privatkunde,Gewerbeimmobilie,Energy,BahnhofWeg 39,Lübeck,North,23930,400
+102,Mielcarek KG,Gewerbekunde,Einfamilienhaus,Energy,BergPlatz 58,Köln,West,50894,402
+103,Ditschlerin,Gewerbekunde,Wohnung,Energy,TalPlatz 79,Potsdam,East,14682,403
+104,Renner AG & Co. OHG,Gewerbekunde,Einfamilienhaus,Energy,LindenGasse 55,Hannover,North,30370,400
+105,Birthe Keudel,Privatkunde,Gewerbeimmobilie,Energy,GoetheWeg 1,Bremen,North,28518,400
+106,Theodor Henschel,Privatkunde,Wohnung,Energy,BahnhofWeg 74,Chemnitz,East,09823,403
+107,Eugenie Franke,Kleingewerbe,Einfamilienhaus,Energy,EichenAllee 51,Bonn,West,53535,402
+108,Sarina Ring B.Eng.,Privatkunde,Reihenhaus,Energy,BirkenWeg 19,Hannover,North,30161,400
+109,Meinolf Röhrdanz,Privatkunde,Gewerbeimmobilie,Energy,RosenPlatz 32,Nürnberg,South,90579,401
+110,Valentina Spieß,Privatkunde,Wohnung,Energy,WaldRing 127,Bonn,West,53548,402
+111,Walter Eimer,Privatkunde,Mehrfamilienhaus,Energy,TannenRing 65,Hannover,North,30126,400
+112,Drub Döring Stiftung & Co. KGaA,Gewerbekunde,Gewerbeimmobilie,Energy,TalStraße 69,Bremen,North,28690,400
+113,Franz-Peter Holzapfel-Schleich,Privatkunde,Mehrfamilienhaus,Energy,BirkenWeg 150,Bremen,North,28546,400
+114,Ortwin Karz B.A.,Privatkunde,Mehrfamilienhaus,Energy,TannenAllee 27,Berlin,East,10978,403
+115,Jolanda Niemeier,Privatkunde,Mehrfamilienhaus,Energy,RosenGasse 103,Nürnberg,South,90933,401
+116,Thekla Birnbaum,Privatkunde,Wohnung,Energy,TannenStraße 104,Lübeck,North,23985,400
+117,Manfred Löchel,Kleingewerbe,Mehrfamilienhaus,Energy,RathausStraße 49,Rostock,North,18630,400
+118,Angela Adler,Kleingewerbe,Mehrfamilienhaus,Energy,BahnhofWeg 69,Duisburg,West,47662,402
+119,Patricia Ehlert,Privatkunde,Mehrfamilienhaus,Energy,SchillerStraße 62,Nürnberg,South,90826,401
+120,Cathleen Weihmann,Privatkunde,Gewerbeimmobilie,Energy,RathausStraße 58,Nürnberg,South,90961,401
+121,Rohleder Trapp GmbH & Co. KG,Gewerbekunde,Reihenhaus,Energy,ParkGasse 75,Lübeck,North,23621,400
+122,Bertram Bruder,Kleingewerbe,Mehrfamilienhaus,Energy,EichenPlatz 142,Essen,West,45248,402
+123,Fischer,Gewerbekunde,Gewerbeimmobilie,Energy,MozartStraße 71,Dresden,East,01891,403
+124,Beier,Gewerbekunde,Gewerbeimmobilie,Energy,BirkenStraße 73,Leipzig,East,04843,403
+125,Liane Rohleder,Privatkunde,Mehrfamilienhaus,Energy,MozartPlatz 138,Duisburg,West,47595,402
+126,Heinz-Dieter Eckbauer-Berger,Privatkunde,Gewerbeimmobilie,Energy,MarktPlatz 83,Dortmund,West,44990,402
+127,Gretel Benthin,Privatkunde,Mehrfamilienhaus,Energy,EichenPlatz 12,Ulm,South,89425,401
+128,Häring Stoll GbR,Gewerbekunde,Mehrfamilienhaus,Energy,MarktGasse 39,Chemnitz,East,09607,403
+129,Hans D. Zahn,Privatkunde,Gewerbeimmobilie,Energy,TannenStraße 113,Bremen,North,28202,400
+130,Prof. Nermin Förster,Kleingewerbe,Mehrfamilienhaus,Energy,MozartStraße 121,Berlin,East,10900,403
+131,Dr. Zoran Gierschner MBA.,Privatkunde,Mehrfamilienhaus,Energy,GoetheAllee 137,Dortmund,West,44489,402
+132,Dietrich Walter,Kleingewerbe,Mehrfamilienhaus,Energy,BergStraße 18,Bonn,West,53340,402
+133,Radmila Langern,Kleingewerbe,Mehrfamilienhaus,Energy,SchillerGasse 26,Düsseldorf,West,40554,402
+134,Ing. Daniel Zirme B.Sc.,Privatkunde,Einfamilienhaus,Energy,BahnhofAllee 15,Ulm,South,89400,401
+135,Steffi Bender-Möchlichen,Privatkunde,Reihenhaus,Energy,WaldPlatz 145,Dortmund,West,44798,402
+136,Dr. Rüdiger Mies B.Eng.,Privatkunde,Gewerbeimmobilie,Energy,MarktRing 62,Stuttgart,South,70609,401
+137,Roswitha Heidrich,Privatkunde,Wohnung,Energy,SchulAllee 3,Stuttgart,South,70923,401
+138,Herr Maurizio Gröttner MBA.,Privatkunde,Reihenhaus,Energy,GoethePlatz 89,Leipzig,East,04701,403
+139,Holsten Bohnbach e.G.,Gewerbekunde,Wohnung,Energy,SchulAllee 51,Bonn,West,53493,402
+140,Gina Segebahn,Privatkunde,Gewerbeimmobilie,Energy,KirchRing 76,Berlin,East,10816,403
+141,Kuhl,Gewerbekunde,Mehrfamilienhaus,Energy,BirkenStraße 145,Köln,West,50985,402
+142,Vera Baum,Kleingewerbe,Wohnung,Energy,EichenRing 91,Hannover,North,30324,400
+143,Theo Heß,Privatkunde,Reihenhaus,Energy,SchillerGasse 11,Freiburg,South,79416,401
+144,Prof. Wolfgang Hettner,Privatkunde,Reihenhaus,Energy,GoetheAllee 84,Berlin,East,10865,403
+145,Bert Schenk,Privatkunde,Gewerbeimmobilie,Energy,KirchRing 129,Dresden,East,01379,403
+146,Kaul Vollbrecht e.V.,Gewerbekunde,Mehrfamilienhaus,Energy,RosenGasse 87,Nürnberg,South,90923,401
+147,Mälzer auch Schlauchin GmbH & Co. OHG,Gewerbekunde,Reihenhaus,Energy,EichenGasse 102,Lübeck,North,23966,400
+148,Hans-Josef Rust,Kleingewerbe,Einfamilienhaus,Energy,BirkenRing 32,Köln,West,50565,402
+149,Ferdinand Beyer MBA.,Kleingewerbe,Wohnung,Energy,TalPlatz 96,Bonn,West,53210,402
+150,Johan Renner,Privatkunde,Gewerbeimmobilie,Energy,TannenRing 57,Augsburg,South,86763,401
+151,Hans-Christian Losekann B.Sc.,Kleingewerbe,Wohnung,Energy,RathausStraße 36,Rostock,North,18146,400
+152,Kabus,Gewerbekunde,Einfamilienhaus,Energy,SchillerWeg 138,Kiel,North,24238,400
+153,Mariana Ebert,Privatkunde,Gewerbeimmobilie,Energy,RathausRing 40,Potsdam,East,14524,403
+154,Jolanthe Jessel,Privatkunde,Wohnung,Energy,BahnhofGasse 95,Lübeck,North,23322,400
+155,Lange,Gewerbekunde,Wohnung,Energy,SchillerGasse 95,Potsdam,East,14657,403
+156,Helen Textor,Privatkunde,Reihenhaus,Energy,SchillerPlatz 24,Köln,West,50778,402
+157,Kreszentia Eckbauer,Privatkunde,Einfamilienhaus,Energy,BahnhofAllee 63,Ulm,South,89228,401
+158,Hasso Stadelmann MBA.,Kleingewerbe,Gewerbeimmobilie,Energy,LindenRing 56,München,South,80932,401
+159,Prof. Karsten Jacobi Jäckel,Kleingewerbe,Gewerbeimmobilie,Energy,HauptAllee 38,Nürnberg,South,90233,401
+160,Klothilde Ackermann-Jähn,Privatkunde,Einfamilienhaus,Energy,MozartStraße 92,Düsseldorf,West,40908,402
+161,Denise Losekann,Privatkunde,Reihenhaus,Energy,BirkenStraße 33,Freiburg,South,79859,401
+162,Irmingard Margraf,Privatkunde,Einfamilienhaus,Energy,ParkPlatz 93,Magdeburg,East,39625,403
+163,Marietta Hamann MBA.,Privatkunde,Gewerbeimmobilie,Energy,BahnhofGasse 134,Lübeck,North,23408,400
+164,Geisler,Gewerbekunde,Einfamilienhaus,Energy,ParkPlatz 110,Chemnitz,East,09802,403
+165,Frieder Pieper,Kleingewerbe,Mehrfamilienhaus,Energy,GoetheStraße 83,Lübeck,North,23722,400
+166,Antonie Weitzel,Privatkunde,Gewerbeimmobilie,Energy,TalRing 84,München,South,80490,401
+167,Univ.Prof. Gero Hecker B.A.,Privatkunde,Mehrfamilienhaus,Energy,SchillerGasse 30,Essen,West,45973,402
+168,Aleksandr Bien-Henschel,Privatkunde,Reihenhaus,Energy,RathausAllee 117,Augsburg,South,86508,401
+169,Prof. Sigrid Wilmsen B.Sc.,Privatkunde,Mehrfamilienhaus,Energy,TannenGasse 66,Chemnitz,East,09483,403
+170,Liebelt Schuchhardt KG,Gewerbekunde,Einfamilienhaus,Energy,GoetheStraße 24,Ulm,South,89542,401
+171,Oscar Textor MBA.,Kleingewerbe,Reihenhaus,Energy,BergStraße 144,Rostock,North,18675,400
+172,Dipl.-Ing. Elena Finke B.Sc.,Privatkunde,Wohnung,Energy,RathausGasse 14,Bonn,West,53394,402
+173,Reinhard Löffler,Privatkunde,Gewerbeimmobilie,Energy,LindenWeg 124,Dortmund,West,44329,402
+174,Dr. Roman Textor MBA.,Kleingewerbe,Wohnung,Energy,SchillerAllee 147,Kiel,North,24331,400
+175,Roht GbR,Gewerbekunde,Gewerbeimmobilie,Energy,SeeGasse 143,Magdeburg,East,39126,403
+176,Herbert Eimer,Privatkunde,Wohnung,Energy,TannenAllee 2,Köln,West,50285,402
+177,Marie Radisch B.Eng.,Privatkunde,Einfamilienhaus,Energy,MozartGasse 8,Freiburg,South,79193,401
+178,Loretta Tschentscher MBA.,Privatkunde,Wohnung,Energy,BeethovenAllee 80,Augsburg,South,86838,401
+179,Tamara Freudenberger MBA.,Privatkunde,Einfamilienhaus,Energy,MozartWeg 13,Duisburg,West,47790,402
+180,Ellen Weitzel B.A.,Privatkunde,Mehrfamilienhaus,Energy,ParkRing 114,Kiel,North,24524,400
+181,Ottilie Wulff,Kleingewerbe,Einfamilienhaus,Energy,KirchPlatz 29,Düsseldorf,West,40390,402
+182,Univ.Prof. Edith Höfig MBA.,Privatkunde,Einfamilienhaus,Energy,EichenPlatz 15,Magdeburg,East,39107,403
+183,Trüb GmbH,Gewerbekunde,Reihenhaus,Energy,BirkenAllee 84,Nürnberg,South,90222,401
+184,Ing. Gundolf Juncken B.Sc.,Kleingewerbe,Reihenhaus,Energy,MozartPlatz 137,Lübeck,North,23820,400
+185,Constantin Heinrich-Kraus,Privatkunde,Wohnung,Energy,GoethePlatz 11,Freiburg,South,79546,401
+186,Fliegner,Gewerbekunde,Wohnung,Energy,TalPlatz 147,Lübeck,North,23514,400
+187,Anton Liebelt MBA.,Privatkunde,Einfamilienhaus,Energy,TannenWeg 118,Leipzig,East,04951,403
+188,Kerstin Mohaupt,Privatkunde,Einfamilienhaus,Energy,EichenPlatz 103,Köln,West,50636,402
+189,Frau Danuta Linke,Kleingewerbe,Wohnung,Energy,EichenAllee 44,Lübeck,North,23178,400
+190,Theda Winkler-Sauer,Privatkunde,Wohnung,Energy,KirchGasse 38,Hannover,North,30341,400
+191,Stanislaw Wieloch,Privatkunde,Reihenhaus,Energy,SeeWeg 20,Bremen,North,28281,400
+192,Ivonne Albers-Kitzmann,Kleingewerbe,Gewerbeimmobilie,Energy,SchulGasse 145,Potsdam,East,14758,403
+193,Nora Krebs,Privatkunde,Mehrfamilienhaus,Energy,GoethePlatz 114,Bonn,West,53746,402
+194,Prof. Nelli Wähner,Privatkunde,Wohnung,Energy,WaldStraße 80,Dortmund,West,44572,402
+195,Dipl.-Ing. Emanuel Heydrich MBA.,Privatkunde,Wohnung,Energy,GoetheGasse 24,Berlin,East,10729,403
+196,Frau Hatice Kallert MBA.,Privatkunde,Einfamilienhaus,Energy,SchulRing 49,Potsdam,East,14429,403
+197,Dipl.-Ing. Vassilios Eckbauer,Privatkunde,Einfamilienhaus,Energy,SchulStraße 88,Magdeburg,East,39831,403
+198,Traugott Kreusel,Privatkunde,Einfamilienhaus,Energy,EichenGasse 113,Hannover,North,30549,400
+199,Attila Seifert,Privatkunde,Wohnung,Energy,MarktPlatz 87,Nürnberg,South,90795,401
+200,Dr. Sonja Misicher,Privatkunde,Einfamilienhaus,Energy,TannenStraße 143,Rostock,North,18794,400
+201,Herr Folkert Kramer,Privatkunde,Gewerbeimmobilie,Energy,MozartAllee 21,Leipzig,East,04696,403
+202,Desiree Metz,Privatkunde,Mehrfamilienhaus,Energy,MozartRing 22,Nürnberg,South,90417,401
+203,Gerlinde Wesack,Kleingewerbe,Reihenhaus,Energy,WaldStraße 109,Chemnitz,East,09620,403
+204,Erika Weller-Linke,Privatkunde,Reihenhaus,Energy,LindenAllee 125,Köln,West,50296,402
+205,Saskia Butte,Privatkunde,Wohnung,Energy,SchillerRing 139,Stuttgart,South,70955,401
+206,Frau Nermin Reuter B.Sc.,Privatkunde,Gewerbeimmobilie,Energy,MozartRing 97,Rostock,North,18257,400
+207,Dorle Seip,Kleingewerbe,Gewerbeimmobilie,Energy,BeethovenGasse 113,Stuttgart,South,70144,401
+208,Reinhart Siering,Privatkunde,Reihenhaus,Energy,SchulRing 73,Leipzig,East,04870,403
+209,Pietro Becker,Privatkunde,Wohnung,Energy,ParkWeg 95,Dresden,East,01794,403
+210,Dr. Siegfried Bärer B.A.,Kleingewerbe,Mehrfamilienhaus,Energy,WaldRing 108,Potsdam,East,14265,403
+211,Dr. Hugo Staude B.Sc.,Privatkunde,Wohnung,Energy,BahnhofGasse 124,Freiburg,South,79995,401
+212,Harloff,Gewerbekunde,Gewerbeimmobilie,Energy,SchillerAllee 22,Duisburg,West,47881,402
+213,Mechthild Hertrampf B.Eng.,Privatkunde,Gewerbeimmobilie,Energy,MozartPlatz 24,Nürnberg,South,90327,401
+214,auch Schlauchin KG,Gewerbekunde,Mehrfamilienhaus,Energy,BahnhofPlatz 129,Leipzig,East,04482,403
+215,Trupp,Gewerbekunde,Wohnung,Energy,EichenStraße 82,Augsburg,South,86201,401
+216,Reiner Fröhlich,Privatkunde,Wohnung,Energy,ParkGasse 36,Düsseldorf,West,40877,402
+217,Babett Sager,Privatkunde,Einfamilienhaus,Energy,HauptAllee 56,Potsdam,East,14955,403
+218,Jockel KG,Gewerbekunde,Gewerbeimmobilie,Energy,WaldPlatz 29,Freiburg,South,79894,401
+219,Heidelore Trubin-Gumprich,Privatkunde,Einfamilienhaus,Energy,EichenPlatz 118,Düsseldorf,West,40164,402
+220,Knut Stumpf,Privatkunde,Einfamilienhaus,Energy,WaldRing 62,Lübeck,North,23835,400
+221,Herr Nicolai Wirth B.Eng.,Privatkunde,Gewerbeimmobilie,Energy,KirchWeg 147,Nürnberg,South,90526,401
+222,Rocco Rosemann,Privatkunde,Gewerbeimmobilie,Energy,KirchStraße 135,Ulm,South,89657,401
+223,Hakan Reichmann,Kleingewerbe,Einfamilienhaus,Energy,MarktAllee 65,Lübeck,North,23865,400
+224,Univ.Prof. Gundel Bohnbach,Kleingewerbe,Wohnung,Energy,EichenGasse 27,Kiel,North,24890,400
+225,Agatha Linke,Privatkunde,Gewerbeimmobilie,Energy,TannenGasse 45,Düsseldorf,West,40950,402
+226,Frau Ildiko Klotz MBA.,Privatkunde,Reihenhaus,Energy,MozartStraße 118,Chemnitz,East,09137,403
+227,Heinz-Joachim Gierschner-Wagner,Privatkunde,Reihenhaus,Energy,BahnhofAllee 80,Düsseldorf,West,40627,402
+228,Louise Renner,Privatkunde,Einfamilienhaus,Energy,LindenAllee 92,Magdeburg,East,39982,403
+229,Dipl.-Ing. Ilonka Wagenknecht B.Eng.,Privatkunde,Einfamilienhaus,Energy,KirchPlatz 103,Rostock,North,18861,400
+230,Silja Henschel,Privatkunde,Reihenhaus,Energy,ParkGasse 128,Potsdam,East,14476,403
+231,Fredo Mende,Kleingewerbe,Einfamilienhaus,Energy,RathausRing 47,Köln,West,50658,402
+232,Dipl.-Ing. Kasimir Schmidt MBA.,Privatkunde,Wohnung,Energy,RosenAllee 115,Dortmund,West,44717,402
+233,Alma Oderwald,Privatkunde,Wohnung,Energy,SchulStraße 91,Dresden,East,01729,403
+234,Clarissa Neuschäfer,Privatkunde,Einfamilienhaus,Energy,GoetheGasse 104,Leipzig,East,04472,403
+235,Hans Dieter Heser B.Eng.,Privatkunde,Gewerbeimmobilie,Energy,SchulStraße 33,München,South,80168,401
+236,Susanne Schenk,Privatkunde,Mehrfamilienhaus,Energy,TalStraße 40,Ulm,South,89795,401
+237,Kriemhild Atzler,Privatkunde,Einfamilienhaus,Energy,TalWeg 136,Leipzig,East,04475,403
+238,Augustin Hendriks MBA.,Privatkunde,Reihenhaus,Energy,SchillerStraße 48,Leipzig,East,04611,403
+239,Prof. Nurten Hendriks MBA.,Privatkunde,Wohnung,Energy,SchulWeg 74,Magdeburg,East,39810,403
+240,Dipl.-Ing. Reingard Bachmann B.Sc.,Privatkunde,Einfamilienhaus,Energy,SchulWeg 114,Dresden,East,01189,403
+241,Dorina Lachmann,Privatkunde,Einfamilienhaus,Energy,BergRing 75,Bonn,West,53407,402
+242,Ing. Mehdi Salz B.Eng.,Kleingewerbe,Reihenhaus,Energy,KirchRing 58,Ulm,South,89224,401
+243,Prof. Katerina Kaul MBA.,Privatkunde,Mehrfamilienhaus,Energy,HauptAllee 142,Stuttgart,South,70686,401
+244,Giovanna Tintzmann,Kleingewerbe,Gewerbeimmobilie,Energy,MozartRing 23,Essen,West,45167,402
+245,Hiller Jäkel GbR,Gewerbekunde,Mehrfamilienhaus,Energy,WaldPlatz 105,Essen,West,45943,402
+246,Dussen van Stiftung & Co. KGaA,Gewerbekunde,Einfamilienhaus,Energy,SchulPlatz 133,Bremen,North,28452,400
+247,Gino Dussen van B.A.,Privatkunde,Reihenhaus,Energy,MozartPlatz 129,Freiburg,South,79989,401
+248,Ekrem Warmer MBA.,Privatkunde,Wohnung,Energy,BeethovenWeg 83,Hamburg,North,20826,400
+249,Ullrich Schacht e.G.,Gewerbekunde,Gewerbeimmobilie,Energy,RosenStraße 65,Nürnberg,South,90301,401
+250,Astrid Gude,Privatkunde,Gewerbeimmobilie,Energy,BergStraße 129,Düsseldorf,West,40756,402
+251,Heidrich Klingelhöfer AG & Co. KGaA,Gewerbekunde,Reihenhaus,Energy,BeethovenGasse 87,Freiburg,South,79962,401
+252,Agnes Trommler,Privatkunde,Gewerbeimmobilie,Energy,BirkenGasse 54,Hamburg,North,20885,400
+253,Fred Bien-Bloch,Privatkunde,Mehrfamilienhaus,Energy,BergAllee 78,Magdeburg,East,39594,403
+254,Mathilde Eberth,Privatkunde,Mehrfamilienhaus,Energy,GoetheGasse 16,Ulm,South,89261,401
+255,Frau Steffi Aumann B.Eng.,Privatkunde,Reihenhaus,Energy,TannenRing 37,Potsdam,East,14420,403
+256,Naser Mans GmbH,Gewerbekunde,Wohnung,Energy,MarktWeg 95,Bonn,West,53627,402
+257,Herr Felix Müller,Privatkunde,Einfamilienhaus,Energy,BirkenPlatz 64,Kiel,North,24244,400
+258,Salvatore Bolzmann,Privatkunde,Mehrfamilienhaus,Energy,SeePlatz 64,Hamburg,North,20986,400
+259,Noack Briemer KG,Gewerbekunde,Wohnung,Energy,LindenWeg 128,Nürnberg,South,90627,401
+260,Cord Fischer,Kleingewerbe,Mehrfamilienhaus,Energy,HauptStraße 101,Potsdam,East,14617,403
+261,Anni Hering,Privatkunde,Wohnung,Energy,BahnhofStraße 73,Dresden,East,01606,403
+262,Karl-Heinz Wieloch,Privatkunde,Einfamilienhaus,Energy,RathausWeg 68,Leipzig,East,04844,403
+263,Prof. Lilli Zobel,Privatkunde,Mehrfamilienhaus,Energy,BahnhofRing 144,Essen,West,45299,402
+264,Prof. Hans-Hermann Mende MBA.,Privatkunde,Mehrfamilienhaus,Energy,WaldPlatz 141,Duisburg,West,47386,402
+265,Schacht Lorch GmbH,Gewerbekunde,Mehrfamilienhaus,Energy,KirchAllee 143,Bremen,North,28474,400
+266,Leo Warmer,Privatkunde,Mehrfamilienhaus,Energy,WaldStraße 12,Stuttgart,South,70139,401
+267,Willfried Wiek,Privatkunde,Mehrfamilienhaus,Energy,WaldPlatz 39,Ulm,South,89720,401
+268,Schomber AG & Co. OHG,Gewerbekunde,Wohnung,Energy,BeethovenPlatz 77,Nürnberg,South,90707,401
+269,Maria Butte,Kleingewerbe,Gewerbeimmobilie,Energy,ParkGasse 145,Duisburg,West,47406,402
+270,Dr. Dierk Rohleder,Privatkunde,Einfamilienhaus,Energy,RathausRing 79,Berlin,East,10915,403
+271,Dagobert Adler,Privatkunde,Gewerbeimmobilie,Energy,TalWeg 14,Hannover,North,30697,400
+272,Dipl.-Ing. Marlies Scheibe,Privatkunde,Gewerbeimmobilie,Energy,MarktWeg 63,Dresden,East,01132,403
+273,Ing. Alwina Heinrich B.Eng.,Privatkunde,Wohnung,Energy,RathausWeg 106,Bremen,North,28807,400
+274,Meike Metz,Privatkunde,Gewerbeimmobilie,Energy,ParkGasse 16,Augsburg,South,86822,401
+275,Mohammad Heintze,Privatkunde,Wohnung,Energy,ParkRing 97,Freiburg,South,79421,401
+276,Zirme Zorbach KGaA,Gewerbekunde,Wohnung,Energy,BergAllee 68,Augsburg,South,86724,401
+277,Speer,Gewerbekunde,Wohnung,Energy,BergAllee 58,Dresden,East,01404,403
+278,Heini Drewes B.A.,Privatkunde,Mehrfamilienhaus,Energy,TannenPlatz 90,Bonn,West,53673,402
+279,Ulf Hethur-Faust,Privatkunde,Gewerbeimmobilie,Energy,MarktPlatz 89,Dortmund,West,44891,402
+280,Ansgar Gehringer,Privatkunde,Einfamilienhaus,Energy,KirchPlatz 66,Nürnberg,South,90865,401
+281,Lilija Weiß,Privatkunde,Gewerbeimmobilie,Energy,BirkenRing 70,Dresden,East,01240,403
+282,Imke Ebert,Kleingewerbe,Reihenhaus,Energy,EichenStraße 136,Hannover,North,30331,400
+283,Marlies Jähn MBA.,Privatkunde,Wohnung,Energy,ParkStraße 36,München,South,80105,401
+284,Jo Reuter,Privatkunde,Mehrfamilienhaus,Energy,ParkGasse 52,Augsburg,South,86874,401
+285,Dipl.-Ing. Annemarie Scheuermann B.Sc.,Privatkunde,Einfamilienhaus,Energy,GoetheGasse 147,Dortmund,West,44337,402
+286,Univ.Prof. Friedlinde Schleich,Privatkunde,Reihenhaus,Energy,BahnhofPlatz 127,Bremen,North,28290,400
+287,Alina Conradi,Privatkunde,Gewerbeimmobilie,Energy,SeeStraße 86,Köln,West,50391,402
+288,Univ.Prof. Sergio Ruppert B.Sc.,Privatkunde,Mehrfamilienhaus,Energy,MozartRing 120,Chemnitz,East,09379,403
+289,Leokadia Benthin,Privatkunde,Mehrfamilienhaus,Energy,BirkenGasse 48,München,South,80114,401
+290,Dipl.-Ing. Joerg Siering,Privatkunde,Reihenhaus,Energy,BeethovenRing 104,Dortmund,West,44946,402
+291,Traute Holsten B.A.,Privatkunde,Mehrfamilienhaus,Energy,SchillerWeg 36,Magdeburg,East,39588,403
+292,Univ.Prof. Rosemarie Noack,Privatkunde,Mehrfamilienhaus,Energy,EichenPlatz 69,Düsseldorf,West,40437,402
+293,Horst-Peter Keudel,Kleingewerbe,Einfamilienhaus,Energy,BirkenGasse 93,Duisburg,West,47809,402
+294,Ing. Friedhilde Steckel,Privatkunde,Mehrfamilienhaus,Energy,RosenWeg 104,München,South,80802,401
+295,Stavros Fritsch,Privatkunde,Wohnung,Energy,KirchRing 57,Bonn,West,53324,402
+296,Henri Täsche,Privatkunde,Gewerbeimmobilie,Energy,KirchPlatz 141,Augsburg,South,86582,401
+297,Ing. Maria-Theresia Kühnert B.Sc.,Privatkunde,Gewerbeimmobilie,Energy,GoetheRing 115,Stuttgart,South,70640,401
+298,Cichorius Jopich GbR,Gewerbekunde,Einfamilienhaus,Energy,BahnhofRing 130,Köln,West,50307,402
+299,Benita Wirth,Privatkunde,Gewerbeimmobilie,Energy,SchulStraße 53,Stuttgart,South,70834,401
+300,Songül Pieper-Ackermann,Kleingewerbe,Mehrfamilienhaus,Energy,BahnhofPlatz 34,Berlin,East,10625,403
+301,Henrike Bloch B.A.,Privatkunde,Gewerbeimmobilie,Energy,SchulGasse 79,Potsdam,East,14840,403
+302,Luise Wernecke,Privatkunde,Einfamilienhaus,Energy,LindenRing 19,Lübeck,North,23146,400
+303,Univ.Prof. Inga Wesack B.Sc.,Kleingewerbe,Gewerbeimmobilie,Energy,BahnhofStraße 121,Leipzig,East,04132,403
+304,Frank-Michael Rogner B.A.,Privatkunde,Reihenhaus,Energy,RathausAllee 98,Essen,West,45559,402
+305,Imelda Thanel,Privatkunde,Gewerbeimmobilie,Energy,MozartGasse 90,Potsdam,East,14221,403
+306,Frau Alma Schuchhardt B.A.,Privatkunde,Reihenhaus,Energy,EichenStraße 6,Freiburg,South,79405,401
+307,Ing. Karl-August Austermühle,Kleingewerbe,Mehrfamilienhaus,Energy,BergPlatz 59,Chemnitz,East,09353,403
+308,Frau Dorota Drewes,Privatkunde,Reihenhaus,Energy,SchillerStraße 108,Leipzig,East,04729,403
+309,Viola Drubin B.A.,Privatkunde,Einfamilienhaus,Energy,SeeStraße 115,Bremen,North,28712,400
+310,Univ.Prof. Eveline Pechel B.Eng.,Kleingewerbe,Mehrfamilienhaus,Energy,SchulWeg 139,Bremen,North,28322,400
+311,Dipl.-Ing. Isabella Henk,Privatkunde,Wohnung,Energy,EichenGasse 148,Bremen,North,28426,400
+312,Kordula Fiebig MBA.,Privatkunde,Reihenhaus,Energy,WaldWeg 106,Düsseldorf,West,40407,402
+313,Veli Scheuermann B.A.,Privatkunde,Gewerbeimmobilie,Energy,BeethovenGasse 110,Köln,West,50669,402
+314,Hofmann e.G.,Gewerbekunde,Mehrfamilienhaus,Energy,WaldAllee 107,Berlin,East,10518,403
+315,Ing. Valeri Zirme,Privatkunde,Gewerbeimmobilie,Energy,ParkWeg 58,Nürnberg,South,90407,401
+316,Hethur,Gewerbekunde,Gewerbeimmobilie,Energy,RathausPlatz 143,Augsburg,South,86642,401
+317,Friedemann van der Dussen,Privatkunde,Reihenhaus,Energy,TannenGasse 21,Augsburg,South,86560,401
+318,Senta Schaaf,Privatkunde,Reihenhaus,Energy,BahnhofAllee 97,Köln,West,50789,402
+319,Dr. Ingetraud Renner MBA.,Privatkunde,Gewerbeimmobilie,Energy,BergWeg 123,Hamburg,North,20313,400
+320,Kade Rohleder e.G.,Gewerbekunde,Einfamilienhaus,Energy,LindenWeg 31,Dortmund,West,44864,402
+321,Irena Jungfer-Graf,Privatkunde,Reihenhaus,Energy,MarktWeg 142,Dresden,East,01429,403
+322,Prof. Hans-Joachim Heintze MBA.,Privatkunde,Wohnung,Energy,RosenAllee 93,Essen,West,45625,402
+323,Giovanni Weinhage,Privatkunde,Mehrfamilienhaus,Energy,TannenWeg 95,Potsdam,East,14420,403
+324,Univ.Prof. Traude Kranz MBA.,Privatkunde,Reihenhaus,Energy,MozartStraße 67,Berlin,East,10666,403
+325,Ivo Beier-Eberth,Privatkunde,Wohnung,Energy,EichenPlatz 146,Leipzig,East,04953,403
+326,Stefani Ditschlerin,Privatkunde,Wohnung,Energy,BirkenPlatz 126,Augsburg,South,86571,401
+327,Astrid Putz MBA.,Kleingewerbe,Reihenhaus,Energy,MozartGasse 140,Ulm,South,89600,401
+328,Ullmann AG & Co. KG,Gewerbekunde,Einfamilienhaus,Energy,WaldStraße 20,Freiburg,South,79937,401
+329,Univ.Prof. Yasemin Förster,Privatkunde,Reihenhaus,Energy,GoetheGasse 39,Hamburg,North,20109,400
+330,Horst-Günter Zänker,Privatkunde,Einfamilienhaus,Energy,SeeGasse 124,Freiburg,South,79775,401
+331,Gerta Scholz,Privatkunde,Gewerbeimmobilie,Energy,RathausStraße 5,Berlin,East,10642,403
+332,Kruschwitz,Gewerbekunde,Einfamilienhaus,Energy,WaldGasse 111,Duisburg,West,47925,402
+333,Butte,Gewerbekunde,Gewerbeimmobilie,Energy,MozartWeg 50,München,South,80734,401
+334,Silja Steuer,Privatkunde,Mehrfamilienhaus,Energy,GoetheAllee 104,Dortmund,West,44570,402
+335,Wally Junck-Schomber,Privatkunde,Einfamilienhaus,Energy,BahnhofStraße 104,Ulm,South,89488,401
+336,Prof. Amalie Schönland B.Sc.,Privatkunde,Einfamilienhaus,Energy,BeethovenStraße 128,Magdeburg,East,39965,403
+337,Univ.Prof. Miroslav Hövel B.A.,Kleingewerbe,Gewerbeimmobilie,Energy,SchillerRing 11,Chemnitz,East,09335,403
+338,Heinz-Günther Dippel,Kleingewerbe,Mehrfamilienhaus,Energy,BirkenStraße 20,Ulm,South,89800,401
+339,Helfried Geisel,Privatkunde,Einfamilienhaus,Energy,BeethovenAllee 5,Duisburg,West,47312,402
+340,Thea Baum,Kleingewerbe,Einfamilienhaus,Energy,RosenWeg 145,Ulm,South,89346,401
+341,Gotthilf Blümel,Kleingewerbe,Wohnung,Energy,MarktGasse 36,Chemnitz,East,09909,403
+342,Gloria Köster,Kleingewerbe,Wohnung,Energy,BahnhofStraße 112,Hannover,North,30337,400
+343,Dr. Eleni Radisch,Privatkunde,Gewerbeimmobilie,Energy,SeePlatz 84,Kiel,North,24130,400
+344,Prof. Marit Zorbach,Privatkunde,Wohnung,Energy,BergPlatz 111,Essen,West,45290,402
+345,Dr. Diethard Budig,Kleingewerbe,Wohnung,Energy,EichenGasse 19,Berlin,East,10184,403
+346,Ludmilla Stoll-Hendriks,Privatkunde,Reihenhaus,Energy,MarktAllee 93,Düsseldorf,West,40209,402
+347,Säuberlich Fechner GbR,Gewerbekunde,Mehrfamilienhaus,Energy,KirchAllee 27,Hamburg,North,20235,400
+348,Malgorzata Hermighausen MBA.,Privatkunde,Gewerbeimmobilie,Energy,BergRing 105,Bremen,North,28205,400
+349,Marica Anders,Privatkunde,Einfamilienhaus,Energy,SeeRing 84,Hamburg,North,20984,400
+350,Tatjana Hövel B.A.,Privatkunde,Mehrfamilienhaus,Energy,GoetheGasse 144,Berlin,East,10348,403
+351,Heinz-Wilhelm Kaul,Privatkunde,Reihenhaus,Energy,BirkenAllee 69,Ulm,South,89604,401
+352,Mandy Löffler,Privatkunde,Wohnung,Energy,RathausAllee 124,München,South,80901,401
+353,Irene Jacobi Jäckel,Privatkunde,Reihenhaus,Energy,ParkRing 51,Kiel,North,24568,400
+354,Hans-Jochen Nette B.Sc.,Privatkunde,Mehrfamilienhaus,Energy,TannenRing 98,Bremen,North,28923,400
+355,Dipl.-Ing. Kay-Uwe Klemt B.Eng.,Privatkunde,Gewerbeimmobilie,Energy,MozartAllee 83,Essen,West,45717,402
+356,Alice Sorgatz,Privatkunde,Mehrfamilienhaus,Energy,TannenAllee 126,Augsburg,South,86689,401
+357,Emmy Anders-Rosemann,Privatkunde,Mehrfamilienhaus,Energy,KirchStraße 145,Nürnberg,South,90304,401
+358,Ullrich auch Schlauchin,Kleingewerbe,Einfamilienhaus,Energy,SchulGasse 54,Ulm,South,89548,401
+359,Ing. Peggy Hein B.Eng.,Privatkunde,Mehrfamilienhaus,Energy,ParkWeg 78,Bonn,West,53347,402
+360,Univ.Prof. Donald Scholl B.Eng.,Privatkunde,Mehrfamilienhaus,Energy,MarktStraße 115,Bonn,West,53712,402
+361,Lutz Dietz-Schottin,Privatkunde,Gewerbeimmobilie,Energy,RathausRing 10,Magdeburg,East,39909,403
+362,Gernot Zirme,Kleingewerbe,Gewerbeimmobilie,Energy,SeeGasse 22,Bonn,West,53211,402
+363,Alwine Sager B.Eng.,Privatkunde,Reihenhaus,Energy,SeeStraße 145,Ulm,South,89760,401
+364,Eigenwillig,Gewerbekunde,Mehrfamilienhaus,Energy,SchillerStraße 26,Leipzig,East,04364,403
+365,Uli Hübel,Kleingewerbe,Gewerbeimmobilie,Energy,TalGasse 148,Freiburg,South,79326,401
+366,Nelli Liebelt,Privatkunde,Gewerbeimmobilie,Energy,WaldWeg 89,Leipzig,East,04125,403
+367,Dr. Celal Zimmer,Privatkunde,Einfamilienhaus,Energy,SchillerGasse 37,Berlin,East,10456,403
+368,Katerina Otto,Privatkunde,Reihenhaus,Energy,WaldPlatz 90,Dortmund,West,44587,402
+369,Sandy Gehringer,Kleingewerbe,Mehrfamilienhaus,Energy,TannenStraße 77,Lübeck,North,23145,400
+370,Traude Nerger,Kleingewerbe,Einfamilienhaus,Energy,BeethovenGasse 63,Hamburg,North,20628,400
+371,Nathalie Kambs,Privatkunde,Gewerbeimmobilie,Energy,RathausPlatz 60,Freiburg,South,79916,401
+372,Horst-Dieter Bruder,Privatkunde,Mehrfamilienhaus,Energy,MarktStraße 51,Chemnitz,East,09560,403
+373,Pietro Hecker-Stey,Privatkunde,Reihenhaus,Energy,LindenAllee 17,Potsdam,East,14691,403
+374,Wilma Roht-Kobelt,Privatkunde,Wohnung,Energy,LindenPlatz 30,Hannover,North,30368,400
+375,Zobel GmbH,Gewerbekunde,Wohnung,Energy,SeePlatz 101,Magdeburg,East,39701,403
+376,Franco Reising,Privatkunde,Mehrfamilienhaus,Energy,SeeWeg 77,Kiel,North,24729,400
+377,Henry Koch,Privatkunde,Einfamilienhaus,Energy,EichenAllee 30,Rostock,North,18287,400
+378,Lidija Kranz,Privatkunde,Mehrfamilienhaus,Energy,RathausRing 36,Bonn,West,53688,402
+379,Babett Steuer,Privatkunde,Gewerbeimmobilie,Energy,BeethovenRing 43,Potsdam,East,14601,403
+380,Dipl.-Ing. Aleksandr Scholl B.Eng.,Privatkunde,Mehrfamilienhaus,Energy,SeeStraße 92,Düsseldorf,West,40109,402
+381,Univ.Prof. Anto Schuster MBA.,Privatkunde,Mehrfamilienhaus,Energy,BergRing 127,Dresden,East,01518,403
+382,Margaret Lange,Kleingewerbe,Mehrfamilienhaus,Energy,ParkWeg 22,Potsdam,East,14678,403
+383,Christoph Bien,Privatkunde,Wohnung,Energy,EichenRing 74,Bremen,North,28272,400
+384,Gerfried Nohlmans,Kleingewerbe,Mehrfamilienhaus,Energy,BergRing 29,Magdeburg,East,39686,403
+385,Benedikt Heinz,Kleingewerbe,Wohnung,Energy,BergStraße 113,Kiel,North,24659,400
+386,Hans-Karl Metz-Koch II,Privatkunde,Reihenhaus,Energy,RosenStraße 116,Augsburg,South,86369,401
+387,Prof. Natalie Vogt,Privatkunde,Einfamilienhaus,Energy,EichenWeg 90,Köln,West,50981,402
+388,Thorben Liebelt-Sölzer,Privatkunde,Reihenhaus,Energy,LindenStraße 146,Dresden,East,01459,403
+389,Serge Niemeier,Privatkunde,Wohnung,Energy,RosenAllee 147,Duisburg,West,47373,402
+390,Ladeck,Gewerbekunde,Mehrfamilienhaus,Energy,BahnhofAllee 33,Bremen,North,28818,400
+391,Alwina Stumpf,Privatkunde,Wohnung,Energy,EichenGasse 101,Stuttgart,South,70601,401
+392,Dolores Martin,Privatkunde,Mehrfamilienhaus,Energy,MarktPlatz 20,Freiburg,South,79748,401
+393,Walburga Heinz B.Eng.,Privatkunde,Wohnung,Energy,KirchPlatz 125,Lübeck,North,23435,400
+394,Mohamed Koch,Privatkunde,Mehrfamilienhaus,Energy,KirchStraße 137,Rostock,North,18507,400
+395,Anna-Marie Kruschwitz,Kleingewerbe,Mehrfamilienhaus,Energy,BirkenAllee 73,Augsburg,South,86445,401
+396,Cordula Eberhardt,Kleingewerbe,Wohnung,Energy,BahnhofStraße 26,Freiburg,South,79741,401
+397,Antoinette Spieß B.A.,Privatkunde,Reihenhaus,Energy,SchulPlatz 1,Berlin,East,10538,403
+398,Schwital,Gewerbekunde,Wohnung,Energy,BeethovenAllee 24,Ulm,South,89770,401
+399,Andrei Zimmer,Privatkunde,Reihenhaus,Energy,BahnhofPlatz 79,Dortmund,West,44843,402
+400,Elena Eberth,Privatkunde,Einfamilienhaus,Energy,HauptWeg 123,Augsburg,South,86179,401
+401,Apostolos Wieloch B.A.,Privatkunde,Mehrfamilienhaus,Energy,HauptStraße 88,Freiburg,South,79936,401
+402,Rudolf Heintze B.Eng.,Privatkunde,Mehrfamilienhaus,Energy,GoetheWeg 99,Lübeck,North,23191,400
+403,Richard Schenk-Adler,Privatkunde,Wohnung,Energy,MozartPlatz 35,Hamburg,North,20756,400
+404,Sina Fiebig,Privatkunde,Einfamilienhaus,Energy,SeeGasse 43,München,South,80550,401
+405,Jurij Hermann-Gertz,Privatkunde,Reihenhaus,Energy,RathausRing 114,Bonn,West,53980,402
+406,Max Bauer,Kleingewerbe,Reihenhaus,Energy,SchillerRing 99,München,South,80459,401
+407,Ahmet Klemt-Zobel,Kleingewerbe,Reihenhaus,Energy,BirkenGasse 22,Leipzig,East,04354,403
+408,Prof. Gotthard Bachmann B.A.,Privatkunde,Wohnung,Energy,LindenRing 131,Bonn,West,53293,402
+409,Anja Eberth,Privatkunde,Reihenhaus,Energy,ParkPlatz 29,Leipzig,East,04346,403
+410,Prof. Beatrix Weinhage,Privatkunde,Gewerbeimmobilie,Energy,HauptAllee 82,Chemnitz,East,09235,403
+411,Ibrahim Meister,Privatkunde,Gewerbeimmobilie,Energy,BeethovenPlatz 19,Magdeburg,East,39117,403
+412,Juliana Scheel,Privatkunde,Einfamilienhaus,Energy,BahnhofPlatz 130,Hamburg,North,20393,400
+413,Henner Paffrath,Kleingewerbe,Einfamilienhaus,Energy,BergRing 40,Potsdam,East,14384,403
+414,Prof. Anastasios Vogt B.Eng.,Privatkunde,Reihenhaus,Energy,MozartRing 84,Kiel,North,24500,400
+415,Marcella Becker B.Sc.,Privatkunde,Reihenhaus,Energy,BahnhofWeg 23,Kiel,North,24544,400
+416,Dipl.-Ing. Hilma Striebitz B.Sc.,Privatkunde,Einfamilienhaus,Energy,RosenGasse 45,Lübeck,North,23222,400
+417,Univ.Prof. Therese Martin B.Sc.,Privatkunde,Einfamilienhaus,Energy,BeethovenPlatz 89,Rostock,North,18635,400
+418,Gordon Schlosser,Privatkunde,Wohnung,Energy,SchillerStraße 86,Düsseldorf,West,40926,402
+419,Antonio Eberth-Höfig,Privatkunde,Wohnung,Energy,TalGasse 20,Leipzig,East,04608,403
+420,Hanna Schenk,Privatkunde,Mehrfamilienhaus,Energy,TalWeg 95,Magdeburg,East,39261,403
+421,Insa Pärtzelt,Kleingewerbe,Einfamilienhaus,Energy,EichenGasse 131,Köln,West,50102,402
+422,Frau Reinhild Tintzmann,Privatkunde,Mehrfamilienhaus,Energy,KirchPlatz 39,Hamburg,North,20283,400
+423,Slawomir Sölzer,Kleingewerbe,Mehrfamilienhaus,Energy,EichenAllee 64,Hannover,North,30526,400
+424,Heinz-Dieter Mentzel B.A.,Kleingewerbe,Gewerbeimmobilie,Energy,KirchStraße 129,Dortmund,West,44789,402
+425,Ing. Sabrina Metz,Privatkunde,Gewerbeimmobilie,Energy,BahnhofPlatz 18,Bremen,North,28998,400
+426,Herma Vollbrecht-Dehmel,Kleingewerbe,Wohnung,Energy,TannenStraße 142,Leipzig,East,04567,403
+427,Hiltraud Johann,Privatkunde,Gewerbeimmobilie,Energy,RosenGasse 63,Kiel,North,24575,400
+428,Hermighausen,Gewerbekunde,Reihenhaus,Energy,BergWeg 39,Duisburg,West,47106,402
+429,Walli Fliegner,Privatkunde,Wohnung,Energy,HauptAllee 1,Berlin,East,10877,403
+430,Frau Antoinette Caspar B.Sc.,Kleingewerbe,Einfamilienhaus,Energy,LindenRing 61,Chemnitz,East,09529,403
+431,Dietz Weinhage Stiftung & Co. KGaA,Gewerbekunde,Reihenhaus,Energy,BirkenStraße 12,Berlin,East,10337,403
+432,Rosel Ehlert,Kleingewerbe,Mehrfamilienhaus,Energy,GoetheRing 25,Chemnitz,East,09617,403
+433,Klaus-Michael Rörricht,Kleingewerbe,Einfamilienhaus,Energy,TalRing 16,Ulm,South,89545,401
+434,Marie-Theres Eberhardt,Privatkunde,Wohnung,Energy,MarktGasse 84,Stuttgart,South,70425,401
+435,Ing. Stella Stadelmann,Privatkunde,Reihenhaus,Energy,MozartRing 28,Leipzig,East,04259,403
+436,Univ.Prof. Anita Hövel,Privatkunde,Wohnung,Energy,RathausStraße 138,Bremen,North,28466,400
+437,Giovanna Döhn,Privatkunde,Wohnung,Energy,SchillerStraße 41,Augsburg,South,86926,401
+438,Curt Sontag MBA.,Privatkunde,Einfamilienhaus,Energy,LindenAllee 38,Bonn,West,53193,402
+439,Herr Hanni Röhricht B.Eng.,Privatkunde,Einfamilienhaus,Energy,RosenAllee 45,Nürnberg,South,90131,401
+440,Ralf Holsten,Privatkunde,Gewerbeimmobilie,Energy,EichenStraße 119,Potsdam,East,14204,403
+441,Dipl.-Ing. Sigismund Rörricht B.Sc.,Privatkunde,Reihenhaus,Energy,MozartWeg 103,München,South,80481,401
+442,Alma Girschner,Privatkunde,Einfamilienhaus,Energy,HauptStraße 51,Hannover,North,30761,400
+443,Meike Wiek,Privatkunde,Wohnung,Energy,SchillerStraße 119,Dresden,East,01151,403
+444,Türkan Kambs,Privatkunde,Mehrfamilienhaus,Energy,ParkStraße 98,Freiburg,South,79799,401
+445,Adolfine Girschner,Privatkunde,Reihenhaus,Energy,BirkenAllee 115,Dresden,East,01252,403
+446,Karl-Wilhelm Sontag-Kühnert,Privatkunde,Reihenhaus,Energy,RosenPlatz 106,Hannover,North,30663,400
+447,Christos Weihmann,Privatkunde,Mehrfamilienhaus,Energy,MozartPlatz 52,Berlin,East,10758,403
+448,Becker,Gewerbekunde,Gewerbeimmobilie,Energy,HauptPlatz 92,Ulm,South,89591,401
+449,Weinhold GmbH & Co. OHG,Gewerbekunde,Gewerbeimmobilie,Energy,TannenPlatz 70,Leipzig,East,04284,403
+450,Hans-Heinrich Lindner MBA.,Privatkunde,Einfamilienhaus,Energy,BirkenStraße 121,Kiel,North,24642,400
+451,Franke Koch II GmbH,Gewerbekunde,Reihenhaus,Energy,SchillerWeg 62,Duisburg,West,47372,402
+452,Petra Rosenow,Privatkunde,Mehrfamilienhaus,Energy,KirchWeg 46,Bremen,North,28342,400
+453,Thomas Birnbaum,Privatkunde,Gewerbeimmobilie,Energy,HauptGasse 91,Bonn,West,53681,402
+454,Franke e.G.,Gewerbekunde,Mehrfamilienhaus,Energy,BergAllee 45,Freiburg,South,79602,401
+455,Michel Butte,Privatkunde,Gewerbeimmobilie,Energy,EichenStraße 135,Hamburg,North,20589,400
+456,Margraf Speer GmbH & Co. KG,Gewerbekunde,Reihenhaus,Energy,MozartAllee 46,Kiel,North,24921,400
+457,Prof. Inga Liebelt B.Eng.,Privatkunde,Gewerbeimmobilie,Energy,MozartStraße 135,Köln,West,50981,402
+458,Piotr Peukert B.Sc.,Privatkunde,Mehrfamilienhaus,Energy,TalStraße 87,Köln,West,50409,402
+459,Losekann Dörschner GmbH,Gewerbekunde,Mehrfamilienhaus,Energy,ParkGasse 82,Düsseldorf,West,40278,402
+460,Prof. Marie Jäntsch B.Sc.,Privatkunde,Reihenhaus,Energy,MarktAllee 76,Düsseldorf,West,40230,402
+461,Dipl.-Ing. Krzysztof Blümel B.Sc.,Privatkunde,Gewerbeimmobilie,Energy,MarktRing 9,Ulm,South,89286,401
+462,Gerard Hahn B.A.,Privatkunde,Gewerbeimmobilie,Energy,SchillerPlatz 37,Duisburg,West,47439,402
+463,Evangelia Junken,Privatkunde,Wohnung,Energy,BeethovenGasse 23,Bremen,North,28941,400
+464,Adalbert Oestrovsky,Privatkunde,Reihenhaus,Energy,EichenGasse 18,Essen,West,45458,402
+465,Dr. Birgitt Kramer,Kleingewerbe,Einfamilienhaus,Energy,MarktPlatz 108,Köln,West,50270,402
+466,Prof. Karl-Hermann Staude B.Eng.,Kleingewerbe,Wohnung,Energy,BergPlatz 26,Potsdam,East,14948,403
+467,Hans-Ulrich Weihmann,Privatkunde,Reihenhaus,Energy,BeethovenPlatz 19,Magdeburg,East,39918,403
+468,Heinz-Josef Bähr,Privatkunde,Wohnung,Energy,SchillerStraße 88,Kiel,North,24274,400
+469,Türkan Buchholz B.Eng.,Kleingewerbe,Gewerbeimmobilie,Energy,GoetheAllee 124,Dresden,East,01821,403
+470,Lorch,Gewerbekunde,Reihenhaus,Energy,SeePlatz 41,Lübeck,North,23154,400
+471,Meryem Schwital-Lindau,Privatkunde,Reihenhaus,Energy,RathausGasse 142,Kiel,North,24839,400
+472,Belinda Lachmann,Privatkunde,Reihenhaus,Energy,SchillerStraße 101,Bonn,West,53685,402
+473,Xaver Junk,Privatkunde,Einfamilienhaus,Energy,RathausStraße 76,Dresden,East,01943,403
+474,Prof. Hermann-Josef Stumpf,Privatkunde,Reihenhaus,Energy,BeethovenGasse 75,Dresden,East,01183,403
+475,Annita Mälzer,Privatkunde,Mehrfamilienhaus,Energy,ParkPlatz 68,Berlin,East,10193,403
+476,Eugen Mälzer,Privatkunde,Mehrfamilienhaus,Energy,KirchWeg 115,Dresden,East,01145,403
+477,Karolin Budig-Kroker,Privatkunde,Reihenhaus,Energy,BirkenRing 16,Essen,West,45254,402
+478,Natascha Kambs,Privatkunde,Gewerbeimmobilie,Energy,RathausRing 59,Hamburg,North,20666,400
+479,Ing. Reinhard Geisler B.Sc.,Kleingewerbe,Mehrfamilienhaus,Energy,BergGasse 122,Lübeck,North,23686,400
+480,Josip Pergande,Privatkunde,Mehrfamilienhaus,Energy,BahnhofRing 147,Augsburg,South,86629,401
+481,Wulf GmbH,Gewerbekunde,Mehrfamilienhaus,Energy,BeethovenWeg 55,München,South,80927,401
+482,Mona Seidel,Privatkunde,Einfamilienhaus,Energy,RathausWeg 38,Stuttgart,South,70954,401
+483,Heinz AG,Gewerbekunde,Einfamilienhaus,Energy,GoethePlatz 143,Dortmund,West,44506,402
+484,Fernando Gumprich-Gerlach,Privatkunde,Einfamilienhaus,Energy,SeeRing 134,Dortmund,West,44900,402
+485,Raimund Werner-Sölzer,Privatkunde,Reihenhaus,Energy,TalRing 150,Berlin,East,10876,403
+486,Diether Wirth,Privatkunde,Einfamilienhaus,Energy,RosenRing 89,Hamburg,North,20998,400
+487,Dipl.-Ing. Norma Rose MBA.,Privatkunde,Mehrfamilienhaus,Energy,TalRing 122,Leipzig,East,04138,403
+488,Solveig Schottin,Privatkunde,Gewerbeimmobilie,Energy,SeeGasse 103,Nürnberg,South,90139,401
+489,Carla Mans,Privatkunde,Einfamilienhaus,Energy,ParkAllee 96,Leipzig,East,04120,403
+490,Horst-Günter Margraf,Privatkunde,Mehrfamilienhaus,Energy,SchillerWeg 35,Dortmund,West,44407,402
+491,Renata Höfig,Privatkunde,Mehrfamilienhaus,Energy,SeeGasse 23,Leipzig,East,04292,403
+492,Blümel,Gewerbekunde,Mehrfamilienhaus,Energy,ParkRing 96,Dresden,East,01940,403
+493,Jolanthe Briemer,Kleingewerbe,Einfamilienhaus,Energy,RosenGasse 130,Hannover,North,30513,400
+494,Irmengard Mentzel,Kleingewerbe,Einfamilienhaus,Energy,BeethovenWeg 52,Freiburg,South,79957,401
+495,Andy Koch,Privatkunde,Einfamilienhaus,Energy,KirchGasse 51,Bremen,North,28380,400
+496,Annelies Seidel,Privatkunde,Einfamilienhaus,Energy,HauptWeg 96,Essen,West,45600,402
+497,Schmiedecke KG,Gewerbekunde,Mehrfamilienhaus,Energy,TalRing 90,Dresden,East,01452,403
+498,Irmgard Salz-Röhrdanz,Kleingewerbe,Einfamilienhaus,Energy,RosenStraße 99,Nürnberg,South,90150,401
+499,Helmuth Rudolph,Kleingewerbe,Reihenhaus,Energy,EichenGasse 58,Freiburg,South,79793,401
+500,Gordon Schleich MBA.,Privatkunde,Gewerbeimmobilie,Energy,HauptGasse 3,Nürnberg,South,90585,401
+501,Woldemar Bolander-Mende,Privatkunde,Einfamilienhaus,Energy,EichenAllee 79,Ulm,South,89829,401
+502,Ruben Karz,Kleingewerbe,Wohnung,Energy,SchulAllee 56,Essen,West,45577,402
+503,Jann Seidel,Privatkunde,Gewerbeimmobilie,Energy,MarktRing 27,Bonn,West,53107,402
+504,Herr Falk Trommler,Privatkunde,Gewerbeimmobilie,Energy,RosenAllee 28,Duisburg,West,47593,402
+505,Mangold Pruschke GmbH & Co. OHG,Gewerbekunde,Wohnung,Energy,BirkenAllee 77,Kiel,North,24292,400
+506,Ing. Hans-Gerhard Holzapfel,Kleingewerbe,Einfamilienhaus,Energy,SeePlatz 82,Freiburg,South,79797,401
+507,Helmtrud Wohlgemut-Kambs,Privatkunde,Mehrfamilienhaus,Energy,RosenAllee 108,Ulm,South,89514,401
+508,Rico Schüler,Privatkunde,Gewerbeimmobilie,Energy,LindenAllee 57,Chemnitz,East,09802,403
+509,Anne-Katrin Jüttner,Privatkunde,Wohnung,Energy,BeethovenGasse 143,Chemnitz,East,09285,403
+510,Karl-Heinz Stiebitz,Privatkunde,Wohnung,Energy,BergWeg 86,Köln,West,50770,402
+511,Eugenia Herrmann-Ullrich,Privatkunde,Wohnung,Energy,RathausAllee 96,Bremen,North,28366,400
+512,Guiseppe Butte-Säuberlich,Kleingewerbe,Mehrfamilienhaus,Energy,BahnhofGasse 150,Essen,West,45694,402
+513,Vadim Killer-Jessel,Kleingewerbe,Gewerbeimmobilie,Energy,SchillerGasse 98,Lübeck,North,23642,400
+514,Birgitt Scheibe-Trommler,Privatkunde,Reihenhaus,Energy,MozartWeg 88,Essen,West,45519,402
+515,Gero Römer,Privatkunde,Reihenhaus,Energy,GoethePlatz 86,Dresden,East,01746,403
+516,Marcella Zorbach-Jüttner,Privatkunde,Einfamilienhaus,Energy,SchulAllee 54,Nürnberg,South,90879,401
+517,Metin Tintzmann-Warmer,Kleingewerbe,Mehrfamilienhaus,Energy,GoetheWeg 112,Freiburg,South,79748,401
+518,Mark Steckel,Privatkunde,Mehrfamilienhaus,Energy,MarktStraße 10,Potsdam,East,14646,403
+519,Prof. Greta Bähr,Privatkunde,Einfamilienhaus,Energy,TannenRing 49,Ulm,South,89118,401
+520,Francesca Girschner,Kleingewerbe,Reihenhaus,Energy,KirchAllee 34,Rostock,North,18205,400
+521,Götz Wilms MBA.,Privatkunde,Reihenhaus,Energy,GoetheStraße 77,Magdeburg,East,39397,403
+522,Enrico Etzler B.A.,Privatkunde,Gewerbeimmobilie,Energy,TannenPlatz 35,Chemnitz,East,09450,403
+523,Gebhard Zirme,Kleingewerbe,Reihenhaus,Energy,MarktStraße 59,Leipzig,East,04329,403
+524,Janusz Winkler,Kleingewerbe,Gewerbeimmobilie,Energy,WaldWeg 32,Stuttgart,South,70475,401
+525,Maxim Kallert,Kleingewerbe,Wohnung,Energy,BergRing 13,Lübeck,North,23708,400
+526,Kornelius Kohl-Fliegner,Privatkunde,Einfamilienhaus,Energy,BahnhofGasse 30,Rostock,North,18526,400
+527,Dr. Senol Süßebier,Privatkunde,Wohnung,Energy,ParkGasse 40,Potsdam,East,14310,403
+528,Univ.Prof. Heinz-Otto Beyer,Privatkunde,Einfamilienhaus,Energy,WaldAllee 36,Kiel,North,24528,400
+529,Ing. Marija Tschentscher,Kleingewerbe,Einfamilienhaus,Energy,RosenStraße 28,Hannover,North,30609,400
+530,Dipl.-Ing. Leon Hölzenbecher MBA.,Privatkunde,Wohnung,Energy,WaldWeg 92,Freiburg,South,79820,401
+531,Prof. Ernst-August Jessel MBA.,Privatkunde,Gewerbeimmobilie,Energy,ParkWeg 124,Leipzig,East,04438,403
+532,Hans-Eberhard Stiebitz MBA.,Privatkunde,Einfamilienhaus,Energy,SchillerRing 127,München,South,80252,401
+533,Paola Holzapfel MBA.,Privatkunde,Einfamilienhaus,Energy,BirkenGasse 60,Hannover,North,30567,400
+534,Dr. Rosita Gute,Privatkunde,Einfamilienhaus,Energy,BeethovenStraße 75,Dortmund,West,44468,402
+535,Sükrü Hermann-Birnbaum,Kleingewerbe,Einfamilienhaus,Energy,BahnhofStraße 36,Essen,West,45779,402
+536,Ing. Kreszentia Dobes B.Sc.,Privatkunde,Mehrfamilienhaus,Energy,SeeAllee 24,Nürnberg,South,90481,401
+537,Annett Wiek,Privatkunde,Mehrfamilienhaus,Energy,SchulAllee 99,Düsseldorf,West,40806,402
+538,Ing. Helmuth Peukert,Privatkunde,Reihenhaus,Energy,SchillerWeg 16,Potsdam,East,14964,403
+539,Selim Mälzer-Conradi,Privatkunde,Gewerbeimmobilie,Energy,ParkRing 113,München,South,80285,401
+540,Dipl.-Ing. Thoralf Keudel B.Sc.,Privatkunde,Reihenhaus,Energy,ParkPlatz 29,Leipzig,East,04521,403
+541,Frau Heidelinde Paffrath,Privatkunde,Wohnung,Energy,HauptGasse 135,Berlin,East,10885,403
+542,Edeltraut Krause,Kleingewerbe,Gewerbeimmobilie,Energy,WaldGasse 25,Ulm,South,89543,401
+543,Hans-Günther Hauffer,Privatkunde,Mehrfamilienhaus,Energy,MozartRing 14,Augsburg,South,86111,401
+544,Gisbert Dippel,Kleingewerbe,Mehrfamilienhaus,Energy,BeethovenStraße 126,Freiburg,South,79428,401
+545,Seip,Gewerbekunde,Einfamilienhaus,Energy,WaldWeg 141,Nürnberg,South,90758,401
+546,Regine Fiebig,Kleingewerbe,Einfamilienhaus,Energy,SchulPlatz 147,Potsdam,East,14558,403
+547,Ali Hörle-Mude,Privatkunde,Einfamilienhaus,Energy,ParkGasse 5,Lübeck,North,23205,400
+548,Raik Trapp-Möchlichen,Privatkunde,Gewerbeimmobilie,Energy,HauptStraße 78,Potsdam,East,14620,403
+549,Louise Adolph B.Sc.,Privatkunde,Wohnung,Energy,KirchStraße 58,Ulm,South,89964,401
+550,Fernando Hande,Privatkunde,Gewerbeimmobilie,Energy,SeePlatz 94,Leipzig,East,04833,403
+551,Kamil Vogt-Schlosser,Privatkunde,Reihenhaus,Energy,HauptAllee 91,Berlin,East,10949,403
+552,Frau Peggy Hövel,Privatkunde,Einfamilienhaus,Energy,BahnhofWeg 127,Duisburg,West,47243,402
+553,Ing. Burghard Biggen B.A.,Privatkunde,Reihenhaus,Energy,LindenStraße 101,Berlin,East,10320,403
+554,Univ.Prof. Reinhild Scholtz,Kleingewerbe,Einfamilienhaus,Energy,RathausStraße 32,Dresden,East,01890,403
+555,Annamaria Dörschner MBA.,Privatkunde,Gewerbeimmobilie,Energy,MozartPlatz 2,Potsdam,East,14643,403
+556,Reising,Gewerbekunde,Gewerbeimmobilie,Energy,ParkRing 46,Hannover,North,30808,400
+557,Maik Pieper,Kleingewerbe,Einfamilienhaus,Energy,MarktGasse 83,Ulm,South,89616,401
+558,Hendriks,Gewerbekunde,Reihenhaus,Energy,BirkenPlatz 88,Potsdam,East,14401,403
+559,Fritz Lorch-Ackermann,Privatkunde,Gewerbeimmobilie,Energy,WaldAllee 141,Dresden,East,01981,403
+560,Ehrentraud Rudolph,Kleingewerbe,Gewerbeimmobilie,Energy,LindenWeg 54,Bonn,West,53739,402
+561,Dr. Marianna Staude,Privatkunde,Reihenhaus,Energy,BeethovenRing 139,Bonn,West,53810,402
+562,Jonas Klingelhöfer,Privatkunde,Wohnung,Energy,BergPlatz 150,Bonn,West,53684,402
+563,Winfried Putz,Kleingewerbe,Gewerbeimmobilie,Energy,RosenPlatz 4,Chemnitz,East,09635,403
+564,Hans-Martin Möchlichen,Privatkunde,Einfamilienhaus,Energy,BahnhofWeg 69,Hamburg,North,20868,400
+565,Manuel Kraushaar,Privatkunde,Reihenhaus,Energy,BahnhofGasse 76,Nürnberg,South,90308,401
+566,Elisabet Weinhold,Kleingewerbe,Einfamilienhaus,Energy,SeeGasse 144,Kiel,North,24985,400
+567,Hans Josef Zirme,Privatkunde,Mehrfamilienhaus,Energy,EichenRing 74,Ulm,South,89809,401
+568,Hagen Hendriks,Privatkunde,Wohnung,Energy,BergStraße 4,Lübeck,North,23861,400
+569,Recep Salz,Privatkunde,Mehrfamilienhaus,Energy,EichenGasse 95,Düsseldorf,West,40873,402
+570,Wernecke,Gewerbekunde,Wohnung,Energy,SchulWeg 20,Ulm,South,89291,401
+571,Blanka Beyer,Privatkunde,Mehrfamilienhaus,Energy,BahnhofPlatz 72,Ulm,South,89669,401
+572,Klara Kambs,Privatkunde,Wohnung,Energy,HauptAllee 120,Düsseldorf,West,40826,402
+573,Univ.Prof. Hinrich Textor,Privatkunde,Wohnung,Energy,SeeStraße 78,München,South,80602,401
+574,Univ.Prof. Clarissa Ernst B.Sc.,Kleingewerbe,Wohnung,Energy,WaldWeg 48,Köln,West,50633,402
+575,Amanda Hornig B.A.,Privatkunde,Gewerbeimmobilie,Energy,BergPlatz 24,Hannover,North,30457,400
+576,Riza Gute,Privatkunde,Wohnung,Energy,KirchAllee 56,Stuttgart,South,70870,401
+577,Gino Jessel,Kleingewerbe,Einfamilienhaus,Energy,SchillerGasse 89,Magdeburg,East,39556,403
+578,Rosi Ring-Mühle,Privatkunde,Gewerbeimmobilie,Energy,EichenStraße 83,Ulm,South,89490,401
+579,Amanda Weller,Privatkunde,Wohnung,Energy,HauptRing 96,Lübeck,North,23626,400
+580,Friedhold Klemm B.Sc.,Privatkunde,Reihenhaus,Energy,TannenRing 22,Potsdam,East,14198,403
+581,Emma Ebert,Privatkunde,Einfamilienhaus,Energy,LindenGasse 55,Freiburg,South,79985,401
+582,Ilse Kuhl,Privatkunde,Mehrfamilienhaus,Energy,GoetheGasse 40,Berlin,East,10124,403
+583,Sylwia Krause B.Eng.,Privatkunde,Einfamilienhaus,Energy,GoetheStraße 46,Chemnitz,East,09913,403
+584,Dipl.-Ing. Mustafa Oestrovsky,Privatkunde,Reihenhaus,Energy,BirkenPlatz 100,Duisburg,West,47561,402
+585,Undine Pohl,Privatkunde,Mehrfamilienhaus,Energy,SchillerRing 2,Potsdam,East,14756,403
+586,Ricarda Carsten,Privatkunde,Einfamilienhaus,Energy,KirchRing 28,Rostock,North,18396,400
+587,Frau Hulda Schleich,Privatkunde,Mehrfamilienhaus,Energy,MarktPlatz 8,Duisburg,West,47585,402
+588,Prof. Gabriel Jungfer,Privatkunde,Mehrfamilienhaus,Energy,BergAllee 37,Freiburg,South,79405,401
+589,Arnulf Junken,Privatkunde,Gewerbeimmobilie,Energy,MozartStraße 11,Köln,West,50105,402
+590,Florence Matthäi,Privatkunde,Einfamilienhaus,Energy,RosenWeg 89,Magdeburg,East,39316,403
+591,Dr. Marliese Martin,Kleingewerbe,Reihenhaus,Energy,BeethovenWeg 57,Chemnitz,East,09731,403
+592,Ingetraud Berger,Privatkunde,Gewerbeimmobilie,Energy,BahnhofRing 119,Düsseldorf,West,40760,402
+593,Lotti Lübs,Privatkunde,Wohnung,Energy,SchillerWeg 149,Kiel,North,24598,400
+594,Mandy Zorbach,Privatkunde,Reihenhaus,Energy,SchillerAllee 18,Dortmund,West,44298,402
+595,Arne Steckel,Privatkunde,Gewerbeimmobilie,Energy,RosenGasse 150,Essen,West,45256,402
+596,Lachmann,Gewerbekunde,Reihenhaus,Energy,HauptAllee 64,Dortmund,West,44904,402
+597,Juliana Weiß,Kleingewerbe,Mehrfamilienhaus,Energy,BirkenAllee 35,Ulm,South,89795,401
+598,Herr Claas Schlosser,Privatkunde,Wohnung,Energy,RosenPlatz 142,Essen,West,45211,402
+599,Amalia Eberth B.Sc.,Privatkunde,Wohnung,Energy,MozartRing 51,Ulm,South,89369,401
+600,Univ.Prof. Hans-Dietrich Klotz MBA.,Privatkunde,Einfamilienhaus,Energy,WaldGasse 8,Rostock,North,18932,400
+601,Lars Fliegner,Privatkunde,Einfamilienhaus,Energy,BergAllee 140,Magdeburg,East,39652,403
+602,Virginia Koch II B.Eng.,Kleingewerbe,Wohnung,Energy,MarktWeg 75,Chemnitz,East,09237,403
+603,Olivia Buchholz B.A.,Privatkunde,Mehrfamilienhaus,Energy,KirchRing 3,Magdeburg,East,39778,403
+604,Heidemarie Johann,Privatkunde,Gewerbeimmobilie,Energy,MozartPlatz 41,Freiburg,South,79283,401
+605,Elfie Drewes,Kleingewerbe,Wohnung,Energy,BahnhofWeg 125,Ulm,South,89337,401
+606,Patrik Gotthard,Privatkunde,Einfamilienhaus,Energy,LindenRing 93,Kiel,North,24497,400
+607,Prof. Hanny Rörricht B.Sc.,Kleingewerbe,Einfamilienhaus,Energy,TannenStraße 134,Potsdam,East,14748,403
+608,Pauline Heß,Privatkunde,Gewerbeimmobilie,Energy,TalWeg 97,Bonn,West,53769,402
+609,Dietlind Schmidtke B.Eng.,Privatkunde,Einfamilienhaus,Energy,WaldAllee 97,Leipzig,East,04328,403
+610,Dr. Betti Ernst B.Sc.,Kleingewerbe,Wohnung,Energy,ParkPlatz 2,Leipzig,East,04613,403
+611,Christiane Trüb MBA.,Privatkunde,Einfamilienhaus,Energy,WaldGasse 72,Augsburg,South,86316,401
+612,Roy Stoll,Privatkunde,Gewerbeimmobilie,Energy,SchillerGasse 59,Stuttgart,South,70524,401
+613,Marie Kensy,Privatkunde,Mehrfamilienhaus,Energy,ParkWeg 42,Bonn,West,53762,402
+614,Karl Heinz Riehl,Privatkunde,Reihenhaus,Energy,TalRing 42,Berlin,East,10237,403
+615,Sylke Jacob,Privatkunde,Reihenhaus,Energy,BirkenWeg 133,Hannover,North,30515,400
+616,Univ.Prof. Norbert Thies,Kleingewerbe,Wohnung,Energy,GoetheWeg 115,Rostock,North,18721,400
+617,Ing. Jaroslav Hauffer,Privatkunde,Mehrfamilienhaus,Energy,SeeWeg 150,Potsdam,East,14940,403
+618,Eckhardt Zorbach,Privatkunde,Wohnung,Energy,BeethovenGasse 88,Freiburg,South,79564,401
+619,Ernest Zobel-Nohlmans,Privatkunde,Reihenhaus,Energy,SchillerStraße 52,Bremen,North,28635,400
+620,Hans-Adolf Röhrdanz,Privatkunde,Reihenhaus,Energy,ParkRing 10,Dresden,East,01998,403
+621,Irmtraut Rohleder,Privatkunde,Reihenhaus,Energy,SeeRing 1,Hamburg,North,20893,400
+622,Leonard Christoph-Bolzmann,Privatkunde,Einfamilienhaus,Energy,WaldPlatz 59,Magdeburg,East,39921,403
+623,Heidemarie Trupp,Privatkunde,Gewerbeimmobilie,Energy,SchillerPlatz 35,Potsdam,East,14360,403
+624,Naser,Gewerbekunde,Einfamilienhaus,Energy,RosenRing 140,Dresden,East,01518,403
+625,Dipl.-Ing. Ruth Ruppert,Privatkunde,Einfamilienhaus,Energy,TalRing 31,Düsseldorf,West,40632,402
+626,Calogero Junck,Privatkunde,Wohnung,Energy,RathausAllee 28,Lübeck,North,23258,400
+627,Helmuth Mohaupt,Privatkunde,Wohnung,Energy,BergPlatz 145,Chemnitz,East,09474,403
+628,Birgit Zahn,Privatkunde,Reihenhaus,Energy,RathausRing 143,Bonn,West,53594,402
+629,Dr. Heinz-Günter Paffrath,Privatkunde,Mehrfamilienhaus,Energy,BirkenAllee 148,Nürnberg,South,90452,401
+630,Senol Ebert,Privatkunde,Einfamilienhaus,Energy,EichenPlatz 42,Chemnitz,East,09202,403
+631,Gerfried Gehringer-Fritsch,Privatkunde,Wohnung,Energy,BergRing 14,Freiburg,South,79264,401
+632,Valeria Tröst,Privatkunde,Einfamilienhaus,Energy,MozartPlatz 112,Chemnitz,East,09190,403
+633,Ing. Willfried Pohl B.Eng.,Privatkunde,Einfamilienhaus,Energy,SeeStraße 99,Kiel,North,24510,400
+634,Hermann AG & Co. OHG,Gewerbekunde,Einfamilienhaus,Energy,BeethovenGasse 127,Bonn,West,53549,402
+635,Bianca Schomber,Kleingewerbe,Gewerbeimmobilie,Energy,RosenWeg 9,Bremen,North,28902,400
+636,Lotti Reinhardt,Privatkunde,Einfamilienhaus,Energy,KirchWeg 1,Freiburg,South,79261,401
+637,Jan-Peter Segebahn,Kleingewerbe,Wohnung,Energy,MarktPlatz 52,Kiel,North,24630,400
+638,Prof. Werner Salz,Kleingewerbe,Einfamilienhaus,Energy,BergAllee 144,Rostock,North,18696,400
+639,Geißler OHG mbH,Gewerbekunde,Wohnung,Energy,EichenRing 50,Dortmund,West,44565,402
+640,Sibille Rose,Privatkunde,Reihenhaus,Energy,RathausRing 28,Magdeburg,East,39672,403
+641,Sandor Baum,Privatkunde,Einfamilienhaus,Energy,WaldAllee 138,Hannover,North,30932,400
+642,Anatoli Segebahn,Privatkunde,Mehrfamilienhaus,Energy,TalPlatz 63,Bonn,West,53875,402
+643,Margarete Häring,Privatkunde,Gewerbeimmobilie,Energy,HauptPlatz 30,Essen,West,45364,402
+644,Prof. Mandy Becker,Privatkunde,Reihenhaus,Energy,EichenAllee 106,Lübeck,North,23461,400
+645,Univ.Prof. Kirstin Hoffmann B.Eng.,Kleingewerbe,Reihenhaus,Energy,RosenStraße 103,Rostock,North,18789,400
+646,Dr. Rosa Stolze MBA.,Privatkunde,Reihenhaus,Energy,ParkAllee 91,Köln,West,50323,402
+647,Metz Briemer Stiftung & Co. KG,Gewerbekunde,Reihenhaus,Energy,ParkGasse 52,Düsseldorf,West,40340,402
+648,Damian Mans,Privatkunde,Reihenhaus,Energy,EichenRing 92,Nürnberg,South,90259,401
+649,Nette Mitschke AG & Co. OHG,Gewerbekunde,Mehrfamilienhaus,Energy,SeeStraße 139,Hamburg,North,20143,400
+650,Lissy Fechner,Privatkunde,Mehrfamilienhaus,Energy,TalAllee 126,Leipzig,East,04287,403
+651,Sofia Trupp,Privatkunde,Gewerbeimmobilie,Energy,MozartStraße 135,Essen,West,45918,402
+652,Wagner Kaul GmbH,Gewerbekunde,Einfamilienhaus,Energy,WaldAllee 101,Potsdam,East,14981,403
+653,Wesack GmbH,Gewerbekunde,Gewerbeimmobilie,Energy,SchulAllee 3,Augsburg,South,86112,401
+654,Gisbert Hendriks,Privatkunde,Wohnung,Energy,KirchRing 67,Augsburg,South,86291,401
+655,Betti Hethur MBA.,Privatkunde,Gewerbeimmobilie,Energy,TannenAllee 48,Düsseldorf,West,40610,402
+656,Dr. Benedikt Binner B.Eng.,Privatkunde,Wohnung,Energy,KirchPlatz 72,Dresden,East,01561,403
+657,Solveig Schmiedt-Lindner,Privatkunde,Gewerbeimmobilie,Energy,EichenStraße 70,Freiburg,South,79923,401
+658,Dr. Rudolph Junken B.Eng.,Privatkunde,Mehrfamilienhaus,Energy,LindenWeg 39,Freiburg,South,79584,401
+659,Ralf-Dieter Freudenberger MBA.,Privatkunde,Reihenhaus,Energy,WaldRing 81,Bremen,North,28904,400
+660,Jessica Jäntsch MBA.,Privatkunde,Gewerbeimmobilie,Energy,BahnhofPlatz 26,Leipzig,East,04807,403
+661,Baptist Kreusel,Privatkunde,Wohnung,Energy,ParkGasse 25,München,South,80560,401
+662,Wilhelmine Hendriks B.A.,Privatkunde,Gewerbeimmobilie,Energy,BergAllee 89,Dortmund,West,44120,402
+663,Angelique Binner,Privatkunde,Gewerbeimmobilie,Energy,LindenRing 148,Berlin,East,10765,403
+664,Jeannine Schenk,Privatkunde,Gewerbeimmobilie,Energy,ParkGasse 115,Nürnberg,South,90180,401
+665,Ing. Kathrin Anders B.Sc.,Privatkunde,Reihenhaus,Energy,BeethovenGasse 87,Magdeburg,East,39531,403
+666,Dr. Susi Hettner,Privatkunde,Wohnung,Energy,EichenAllee 82,Berlin,East,10768,403
+667,Ortrud Kusch,Privatkunde,Mehrfamilienhaus,Energy,BirkenPlatz 93,Bonn,West,53865,402
+668,Angelica Kühnert,Privatkunde,Einfamilienhaus,Energy,MozartGasse 61,Potsdam,East,14777,403
+669,Kasimir Rörricht,Kleingewerbe,Einfamilienhaus,Energy,LindenWeg 102,Bonn,West,53205,402
+670,Klotz KG,Gewerbekunde,Mehrfamilienhaus,Energy,BergStraße 7,Hamburg,North,20889,400
+671,Annelene Krause,Kleingewerbe,Einfamilienhaus,Energy,SchillerAllee 40,Magdeburg,East,39186,403
+672,Ortrud Rogner B.Eng.,Privatkunde,Wohnung,Energy,SchulGasse 33,Leipzig,East,04234,403
+673,Carlo Dietz,Privatkunde,Wohnung,Energy,TannenPlatz 120,München,South,80991,401
+674,Gunhild Kambs-Roht,Privatkunde,Gewerbeimmobilie,Energy,BeethovenRing 117,Duisburg,West,47746,402
+675,Notburga Fechner,Privatkunde,Gewerbeimmobilie,Energy,RosenAllee 124,Magdeburg,East,39652,403
+676,Kurt Pechel MBA.,Privatkunde,Wohnung,Energy,RathausAllee 40,München,South,80410,401
+677,Anatoli Bender,Privatkunde,Reihenhaus,Energy,KirchAllee 121,Hamburg,North,20647,400
+678,Trüb GmbH,Gewerbekunde,Mehrfamilienhaus,Energy,RosenStraße 111,Rostock,North,18917,400
+679,Prof. Irene Fischer B.A.,Privatkunde,Einfamilienhaus,Energy,BergAllee 49,Duisburg,West,47521,402
+680,Ute Schmidtke,Privatkunde,Mehrfamilienhaus,Energy,MarktWeg 68,Potsdam,East,14181,403
+681,Cathrin Kreusel,Privatkunde,Gewerbeimmobilie,Energy,BirkenAllee 137,Chemnitz,East,09928,403
+682,Liliana Kallert,Privatkunde,Einfamilienhaus,Energy,BeethovenWeg 75,Essen,West,45213,402
+683,Univ.Prof. Kunigunda Jacob MBA.,Privatkunde,Gewerbeimmobilie,Energy,ParkWeg 83,Magdeburg,East,39119,403
+684,Koch GmbH,Gewerbekunde,Einfamilienhaus,Energy,BeethovenStraße 73,München,South,80375,401
+685,Hartmuth Säuberlich,Privatkunde,Einfamilienhaus,Energy,EichenStraße 39,Ulm,South,89115,401
+686,Renata van der Dussen,Privatkunde,Wohnung,Energy,ParkAllee 119,Dresden,East,01813,403
+687,Kornelius Mühle,Privatkunde,Reihenhaus,Energy,BahnhofAllee 101,Kiel,North,24173,400
+688,Wilma Sölzer,Privatkunde,Wohnung,Energy,MarktStraße 32,Dresden,East,01886,403
+689,Univ.Prof. Andrej Säuberlich MBA.,Kleingewerbe,Mehrfamilienhaus,Energy,EichenGasse 9,Augsburg,South,86303,401
+690,Prof. Magnus Ullmann,Kleingewerbe,Gewerbeimmobilie,Energy,LindenPlatz 100,Chemnitz,East,09797,403
+691,Caren Stiffel-Henk,Privatkunde,Einfamilienhaus,Energy,BergRing 32,Dortmund,West,44359,402
+692,Kazim Thies,Privatkunde,Wohnung,Energy,BahnhofGasse 56,Chemnitz,East,09215,403
+693,Dragan Bähr,Privatkunde,Einfamilienhaus,Energy,BeethovenAllee 150,Ulm,South,89222,401
+694,Frederike Lindner B.A.,Privatkunde,Einfamilienhaus,Energy,TalGasse 122,Dresden,East,01804,403
+695,Univ.Prof. Danica Langern,Kleingewerbe,Reihenhaus,Energy,BeethovenPlatz 24,Nürnberg,South,90802,401
+696,Univ.Prof. Mona Bolander B.A.,Privatkunde,Wohnung,Energy,MozartGasse 138,Bonn,West,53910,402
+697,Karl-Jürgen Junk MBA.,Privatkunde,Wohnung,Energy,BergGasse 89,Bremen,North,28924,400
+698,Frederike Gerlach-Mies,Privatkunde,Mehrfamilienhaus,Energy,KirchGasse 35,Chemnitz,East,09356,403
+699,Klara Klapp,Kleingewerbe,Gewerbeimmobilie,Energy,RosenRing 126,Lübeck,North,23294,400
+700,Ljudmila Nette,Privatkunde,Mehrfamilienhaus,Energy,BirkenRing 142,Freiburg,South,79264,401
+701,Woldemar Hentschel B.Eng.,Privatkunde,Wohnung,Energy,BirkenRing 94,Hannover,North,30564,400
+702,Dorota Huhn,Privatkunde,Reihenhaus,Energy,HauptRing 94,Rostock,North,18894,400
+703,Melissa Hänel,Kleingewerbe,Gewerbeimmobilie,Energy,MarktWeg 135,Nürnberg,South,90799,401
+704,Ing. Jadwiga Keudel B.Eng.,Privatkunde,Wohnung,Energy,TannenPlatz 83,Magdeburg,East,39213,403
+705,Betina Ruppersberger,Privatkunde,Einfamilienhaus,Energy,MozartWeg 9,Hannover,North,30306,400
+706,Tabea Kroker-Kaul,Privatkunde,Einfamilienhaus,Energy,TalGasse 100,Lübeck,North,23773,400
+707,Frithjof Berger-Hövel,Privatkunde,Gewerbeimmobilie,Energy,BirkenStraße 94,Magdeburg,East,39326,403
+708,Budig,Gewerbekunde,Reihenhaus,Energy,ParkStraße 120,Hamburg,North,20920,400
+709,Undine Margraf,Privatkunde,Mehrfamilienhaus,Energy,KirchGasse 15,Kiel,North,24943,400
+710,Nelli Naser,Privatkunde,Einfamilienhaus,Energy,RosenStraße 56,Duisburg,West,47631,402
+711,Eckhart Renner B.Eng.,Kleingewerbe,Gewerbeimmobilie,Energy,MarktWeg 50,Hamburg,North,20638,400
+712,Brigitte Dörr,Privatkunde,Reihenhaus,Energy,BergGasse 143,Freiburg,South,79525,401
+713,Dr. Andrei Staude B.A.,Privatkunde,Mehrfamilienhaus,Energy,RathausStraße 43,Rostock,North,18911,400
+714,Herr Berend Lehmann B.Eng.,Privatkunde,Wohnung,Energy,BeethovenRing 114,Freiburg,South,79460,401
+715,Mude,Gewerbekunde,Wohnung,Energy,KirchPlatz 111,Duisburg,West,47945,402
+716,Miodrag Winkler,Privatkunde,Gewerbeimmobilie,Energy,LindenPlatz 141,Duisburg,West,47862,402
+717,Adolph KG,Gewerbekunde,Mehrfamilienhaus,Energy,MarktStraße 9,Dortmund,West,44391,402
+718,Dipl.-Ing. Mathias Mülichen,Privatkunde,Wohnung,Energy,HauptAllee 57,Hannover,North,30319,400
+719,Univ.Prof. Dagmar Wernecke B.Eng.,Kleingewerbe,Wohnung,Energy,BergRing 143,Köln,West,50684,402
+720,Eva Seidel,Privatkunde,Wohnung,Energy,MozartWeg 68,München,South,80475,401
+721,Udo Wilmsen,Privatkunde,Wohnung,Energy,GoetheRing 103,Stuttgart,South,70682,401
+722,Massimo Ruppersberger,Privatkunde,Wohnung,Energy,ParkWeg 125,Ulm,South,89945,401
+723,Prof. Paul-Heinz Ullrich B.Sc.,Privatkunde,Einfamilienhaus,Energy,TalPlatz 21,Hannover,North,30898,400
+724,Dipl.-Ing. Thilo Gierschner,Privatkunde,Mehrfamilienhaus,Energy,RathausStraße 59,Kiel,North,24865,400
+725,Sergio Kruschwitz,Kleingewerbe,Mehrfamilienhaus,Energy,BahnhofAllee 135,Rostock,North,18142,400
+726,Dr. Valeska Weiß B.Eng.,Privatkunde,Wohnung,Energy,WaldGasse 57,Duisburg,West,47256,402
+727,Adelbert Huhn,Kleingewerbe,Mehrfamilienhaus,Energy,SchulRing 148,Rostock,North,18616,400
+728,Vitali Käster,Privatkunde,Mehrfamilienhaus,Energy,MozartWeg 87,Bremen,North,28184,400
+729,Ira Segebahn,Kleingewerbe,Gewerbeimmobilie,Energy,MarktAllee 22,Magdeburg,East,39508,403
+730,Dr. Sigrun Pärtzelt MBA.,Privatkunde,Reihenhaus,Energy,ParkRing 51,Chemnitz,East,09599,403
+731,Corinne Dowerg,Privatkunde,Gewerbeimmobilie,Energy,SeeGasse 135,Chemnitz,East,09352,403
+732,Cathrin Wagenknecht,Privatkunde,Mehrfamilienhaus,Energy,TannenGasse 148,München,South,80191,401
+733,Marga Hertrampf B.A.,Privatkunde,Wohnung,Energy,KirchWeg 83,Rostock,North,18452,400
+734,Paul Kallert,Privatkunde,Wohnung,Energy,SeePlatz 38,Kiel,North,24551,400
+735,Laila Steuer,Privatkunde,Wohnung,Energy,MozartGasse 22,Bremen,North,28215,400
+736,Gertz KG,Gewerbekunde,Reihenhaus,Energy,RosenStraße 88,Bremen,North,28810,400
+737,Sabine Loos-Pieper,Privatkunde,Einfamilienhaus,Energy,TannenWeg 138,Kiel,North,24316,400
+738,Annie Kühnert,Privatkunde,Wohnung,Energy,BergPlatz 37,Freiburg,South,79811,401
+739,Dittmar Etzold,Privatkunde,Gewerbeimmobilie,Energy,BahnhofAllee 44,Lübeck,North,23161,400
+740,Ing. Valerie Hering B.Sc.,Kleingewerbe,Gewerbeimmobilie,Energy,BirkenStraße 120,Düsseldorf,West,40770,402
+741,Hannchen Heinz,Privatkunde,Wohnung,Energy,KirchStraße 5,Hamburg,North,20399,400
+742,Weller Hethur GmbH,Gewerbekunde,Gewerbeimmobilie,Energy,SchillerAllee 125,Dresden,East,01987,403
+743,Liane Ullrich,Privatkunde,Mehrfamilienhaus,Energy,BergGasse 6,Bremen,North,28140,400
+744,Francesco Söding,Privatkunde,Mehrfamilienhaus,Energy,MarktGasse 41,Freiburg,South,79118,401
+745,Martha Heinz,Privatkunde,Wohnung,Energy,EichenRing 71,Bonn,West,53931,402
+746,Meinolf Drubin,Privatkunde,Mehrfamilienhaus,Energy,HauptRing 72,Rostock,North,18330,400
+747,Florentine Freudenberger MBA.,Kleingewerbe,Reihenhaus,Energy,GoetheGasse 98,Nürnberg,South,90633,401
+748,Marliese Drubin,Privatkunde,Reihenhaus,Energy,RathausAllee 85,Augsburg,South,86559,401
+749,Gudrun Schmiedecke,Privatkunde,Gewerbeimmobilie,Energy,BergGasse 52,Stuttgart,South,70983,401
+750,Dr. Woldemar Eimer MBA.,Privatkunde,Gewerbeimmobilie,Energy,MozartPlatz 38,Nürnberg,South,90771,401
+751,Henry Weinhold-auch Schlauchin,Privatkunde,Gewerbeimmobilie,Energy,SchillerWeg 82,Nürnberg,South,90959,401
+752,Herma Tintzmann,Privatkunde,Wohnung,Energy,RathausPlatz 78,Ulm,South,89553,401
+753,Prof. Rita Stadelmann B.A.,Kleingewerbe,Einfamilienhaus,Energy,MozartWeg 7,Düsseldorf,West,40880,402
+754,Univ.Prof. Pietro Schenk B.Sc.,Privatkunde,Reihenhaus,Energy,SeeWeg 60,Duisburg,West,47803,402
+755,Katalin Tlustek B.Eng.,Privatkunde,Mehrfamilienhaus,Energy,MozartRing 121,Kiel,North,24829,400
+756,Valentin Rose,Kleingewerbe,Mehrfamilienhaus,Energy,ParkWeg 42,Düsseldorf,West,40297,402
+757,Anthony Rogge,Privatkunde,Einfamilienhaus,Energy,BirkenPlatz 57,München,South,80860,401
+758,Kazim Reising B.A.,Privatkunde,Mehrfamilienhaus,Energy,SeePlatz 84,Stuttgart,South,70987,401
+759,Ing. Slobodan Pölitz,Privatkunde,Einfamilienhaus,Energy,SeeGasse 98,Dresden,East,01837,403
+760,Berit Stiffel B.A.,Privatkunde,Gewerbeimmobilie,Energy,SeeRing 135,Essen,West,45756,402
+761,Frau Tanja Pergande MBA.,Privatkunde,Mehrfamilienhaus,Energy,BahnhofWeg 133,Hannover,North,30650,400
+762,Henrik Eigenwillig,Privatkunde,Mehrfamilienhaus,Energy,WaldGasse 13,Chemnitz,East,09294,403
+763,Dipl.-Ing. Kunigunde Bohlander,Privatkunde,Wohnung,Energy,RosenPlatz 43,Essen,West,45532,402
+764,Misicher,Gewerbekunde,Gewerbeimmobilie,Energy,MozartPlatz 116,Duisburg,West,47192,402
+765,Mirja Barkholz,Kleingewerbe,Gewerbeimmobilie,Energy,MozartPlatz 106,Bremen,North,28431,400
+766,Elisabeth Adler-Weinhage,Privatkunde,Gewerbeimmobilie,Energy,LindenPlatz 24,Berlin,East,10356,403
+767,Klaas Briemer B.Sc.,Privatkunde,Reihenhaus,Energy,SchillerStraße 30,Bonn,West,53823,402
+768,Ing. Mechthilde Bolnbach,Privatkunde,Gewerbeimmobilie,Energy,MarktGasse 131,Chemnitz,East,09726,403
+769,Volkhard Bohnbach,Privatkunde,Einfamilienhaus,Energy,BeethovenAllee 145,Augsburg,South,86992,401
+770,Frau Eva-Maria Lange B.A.,Kleingewerbe,Reihenhaus,Energy,BahnhofPlatz 79,Stuttgart,South,70416,401
+771,Ramazan Segebahn-Vollbrecht,Privatkunde,Einfamilienhaus,Energy,MozartWeg 1,Leipzig,East,04737,403
+772,Ing. Sylke Kranz,Privatkunde,Mehrfamilienhaus,Energy,BergStraße 127,Köln,West,50343,402
+773,Stefani Kostolzin MBA.,Privatkunde,Mehrfamilienhaus,Energy,RathausPlatz 21,Freiburg,South,79715,401
+774,Mirko Speer,Kleingewerbe,Wohnung,Energy,SeeGasse 143,Bremen,North,28939,400
+775,Mato Keudel-Drubin,Privatkunde,Einfamilienhaus,Energy,KirchStraße 38,München,South,80974,401
+776,Prof. Hans-Peter Rädel,Privatkunde,Gewerbeimmobilie,Energy,RosenAllee 23,Rostock,North,18150,400
+777,Vogt GbR,Gewerbekunde,Reihenhaus,Energy,RosenRing 147,Lübeck,North,23906,400
+778,Pirmin Barkholz,Kleingewerbe,Wohnung,Energy,BahnhofStraße 77,Augsburg,South,86430,401
+779,Irmhild Steinberg,Kleingewerbe,Mehrfamilienhaus,Energy,BergStraße 75,Essen,West,45582,402
+780,Prof. Halina Hein,Privatkunde,Wohnung,Energy,TannenRing 106,München,South,80637,401
+781,Dipl.-Ing. Hajo Förster B.Eng.,Privatkunde,Einfamilienhaus,Energy,SchillerRing 136,Ulm,South,89189,401
+782,Waldemar van der Dussen B.Sc.,Privatkunde,Wohnung,Energy,RathausRing 82,Chemnitz,East,09365,403
+783,Rouven Speer,Privatkunde,Mehrfamilienhaus,Energy,WaldGasse 128,Düsseldorf,West,40604,402
+784,Prof. Ottilie Bachmann,Privatkunde,Wohnung,Energy,LindenStraße 31,Freiburg,South,79124,401
+785,Dr. Antonios Ditschlerin B.Sc.,Kleingewerbe,Reihenhaus,Energy,SeePlatz 106,Chemnitz,East,09146,403
+786,Lilo Steinberg B.Sc.,Privatkunde,Reihenhaus,Energy,HauptGasse 52,Dortmund,West,44806,402
+787,Univ.Prof. Anatol Kühnert MBA.,Kleingewerbe,Wohnung,Energy,RosenRing 141,Dortmund,West,44431,402
+788,Prof. Elias Wende B.Sc.,Privatkunde,Wohnung,Energy,MarktGasse 146,Hamburg,North,20730,400
+789,Janko Hoffmann-Heintze,Privatkunde,Wohnung,Energy,ParkPlatz 10,Bremen,North,28761,400
+790,Leonie Scheuermann,Privatkunde,Mehrfamilienhaus,Energy,BergAllee 119,Augsburg,South,86902,401
+791,Edeltrud Jacobi Jäckel,Privatkunde,Gewerbeimmobilie,Energy,RosenRing 81,Chemnitz,East,09668,403
+792,Max Pölitz-Hartung,Privatkunde,Wohnung,Energy,KirchStraße 39,Bremen,North,28387,400
+793,Jacob Höfig AG,Gewerbekunde,Gewerbeimmobilie,Energy,BeethovenRing 100,Kiel,North,24291,400
+794,Univ.Prof. Milan Loos,Kleingewerbe,Wohnung,Energy,BahnhofAllee 106,Kiel,North,24188,400
+795,Frau Yvette Kaul MBA.,Privatkunde,Wohnung,Energy,LindenRing 78,Dresden,East,01279,403
+796,Marzena Lindau,Kleingewerbe,Reihenhaus,Energy,GoethePlatz 130,Kiel,North,24125,400
+797,Dr. Fatma Kohl,Privatkunde,Wohnung,Energy,ParkGasse 135,Magdeburg,East,39417,403
+798,Prof. Hugo Hendriks,Kleingewerbe,Einfamilienhaus,Energy,WaldGasse 34,Düsseldorf,West,40310,402
+799,Ing. Stavros Trommler B.A.,Privatkunde,Gewerbeimmobilie,Energy,SchillerStraße 80,Lübeck,North,23145,400
+800,Traudel Bohlander MBA.,Privatkunde,Einfamilienhaus,Energy,SchillerRing 80,Kiel,North,24123,400
+801,Prof. Katarzyna Eimer,Kleingewerbe,Wohnung,Energy,LindenWeg 74,Bonn,West,53383,402
+802,Ekaterina Hermighausen-Haase,Privatkunde,Wohnung,Energy,MozartWeg 71,Essen,West,45217,402
+803,Maren Budig,Privatkunde,Einfamilienhaus,Energy,LindenRing 90,Hannover,North,30662,400
+804,Siegried Koch II B.Sc.,Privatkunde,Wohnung,Energy,TalWeg 44,Dortmund,West,44172,402
+805,Andrej Heuser MBA.,Kleingewerbe,Gewerbeimmobilie,Energy,SchulStraße 34,Duisburg,West,47129,402
+806,Süleyman Briemer,Privatkunde,Mehrfamilienhaus,Energy,BahnhofStraße 110,Chemnitz,East,09501,403
+807,Roman Wesack B.A.,Privatkunde,Gewerbeimmobilie,Energy,SchulRing 92,Ulm,South,89419,401
+808,Dr. Stefani Kade B.Eng.,Kleingewerbe,Gewerbeimmobilie,Energy,GoethePlatz 146,Düsseldorf,West,40234,402
+809,Ehrenfried Grein Groth,Privatkunde,Mehrfamilienhaus,Energy,RosenGasse 120,Rostock,North,18581,400
+810,Peter Wende,Privatkunde,Gewerbeimmobilie,Energy,BirkenAllee 101,Stuttgart,South,70287,401
+811,Dr. Mary Schleich B.A.,Privatkunde,Einfamilienhaus,Energy,GoethePlatz 29,Dortmund,West,44459,402
+812,Traudl Henck-Rohleder,Kleingewerbe,Wohnung,Energy,KirchRing 148,Potsdam,East,14230,403
+813,Peggy Holzapfel,Kleingewerbe,Einfamilienhaus,Energy,TannenRing 19,Lübeck,North,23911,400
+814,Irmtraud Reinhardt-Seip,Privatkunde,Gewerbeimmobilie,Energy,RathausWeg 63,Duisburg,West,47661,402
+815,Franca Heß,Privatkunde,Wohnung,Energy,LindenGasse 111,Augsburg,South,86903,401
+816,Juliana Oestrovsky,Kleingewerbe,Gewerbeimmobilie,Energy,EichenWeg 20,Magdeburg,East,39857,403
+817,Arzu Ullmann MBA.,Privatkunde,Mehrfamilienhaus,Energy,TannenRing 25,Berlin,East,10941,403
+818,Traudel Haase,Privatkunde,Mehrfamilienhaus,Energy,GoetheRing 28,Dresden,East,01801,403
+819,Frauke Lehmann,Privatkunde,Einfamilienhaus,Energy,GoetheWeg 36,Leipzig,East,04694,403
+820,Karl-Otto Hartung,Privatkunde,Mehrfamilienhaus,Energy,BergAllee 100,Bremen,North,28730,400
+821,Alan Heß-Röhrdanz,Privatkunde,Wohnung,Energy,RosenRing 78,Dresden,East,01545,403
+822,Ing. Carmen Gunpf,Privatkunde,Gewerbeimmobilie,Energy,WaldPlatz 33,Köln,West,50972,402
+823,Dunja Kramer,Privatkunde,Gewerbeimmobilie,Energy,BahnhofStraße 144,Köln,West,50940,402
+824,Dipl.-Ing. Karl Heinz Sölzer B.Eng.,Kleingewerbe,Einfamilienhaus,Energy,EichenPlatz 101,Köln,West,50740,402
+825,Olivia Niemeier,Privatkunde,Mehrfamilienhaus,Energy,RathausRing 55,Bonn,West,53778,402
+826,Dipl.-Ing. Christa Wagner B.Eng.,Privatkunde,Gewerbeimmobilie,Energy,MarktAllee 107,Augsburg,South,86257,401
+827,Dr. Osman Ritter,Privatkunde,Einfamilienhaus,Energy,GoetheGasse 5,Bonn,West,53247,402
+828,Dr. Traute Riehl B.Sc.,Privatkunde,Reihenhaus,Energy,GoetheWeg 107,Chemnitz,East,09980,403
+829,Siegfried Bruder,Privatkunde,Mehrfamilienhaus,Energy,SeeWeg 117,Chemnitz,East,09621,403
+830,Ralf-Peter Albers,Kleingewerbe,Mehrfamilienhaus,Energy,KirchWeg 48,Magdeburg,East,39534,403
+831,Dr. Sibille Schuchhardt,Privatkunde,Reihenhaus,Energy,WaldAllee 106,Hannover,North,30659,400
+832,Börner Stiftung & Co. KG,Gewerbekunde,Gewerbeimmobilie,Energy,ParkGasse 95,Köln,West,50215,402
+833,Adelbert Harloff-Pärtzelt,Privatkunde,Gewerbeimmobilie,Energy,BirkenPlatz 133,Chemnitz,East,09180,403
+834,Gunhild Bonbach MBA.,Privatkunde,Einfamilienhaus,Energy,BergRing 80,Bremen,North,28727,400
+835,Frau Adolfine Reichmann MBA.,Privatkunde,Einfamilienhaus,Energy,ParkPlatz 132,Kiel,North,24580,400
+836,Alban Radisch,Privatkunde,Wohnung,Energy,RosenWeg 10,Essen,West,45811,402
+837,Kathleen Hörle,Kleingewerbe,Wohnung,Energy,BahnhofGasse 122,Bonn,West,53692,402
+838,Jan-Peter Thanel,Privatkunde,Wohnung,Energy,SeeStraße 74,Freiburg,South,79596,401
+839,Dr. Ayten Dietz,Privatkunde,Wohnung,Energy,BirkenWeg 72,Bremen,North,28381,400
+840,Ernst-Otto Gröttner-Scholl,Kleingewerbe,Gewerbeimmobilie,Energy,BeethovenRing 39,Köln,West,50774,402
+841,Rosi Klapp,Kleingewerbe,Wohnung,Energy,EichenPlatz 47,Leipzig,East,04918,403
+842,Kruschwitz Budig GmbH,Gewerbekunde,Reihenhaus,Energy,SeeWeg 127,Kiel,North,24870,400
+843,Irma Rosemann-Henk,Privatkunde,Mehrfamilienhaus,Energy,BeethovenWeg 148,Potsdam,East,14851,403
+844,Ing. Miroslav Butte B.Sc.,Privatkunde,Einfamilienhaus,Energy,BahnhofWeg 119,Köln,West,50508,402
+845,Hansjörg Kramer,Privatkunde,Gewerbeimmobilie,Energy,EichenPlatz 100,Leipzig,East,04585,403
+846,Korinna Mülichen-Blümel,Privatkunde,Mehrfamilienhaus,Energy,HauptAllee 115,Düsseldorf,West,40491,402
+847,Nikola Geißler,Privatkunde,Einfamilienhaus,Energy,SchillerRing 91,Duisburg,West,47964,402
+848,Ortmann GmbH & Co. KG,Gewerbekunde,Wohnung,Energy,TannenAllee 69,Magdeburg,East,39921,403
+849,Käthe Dehmel,Privatkunde,Mehrfamilienhaus,Energy,SchulGasse 62,Kiel,North,24851,400
+850,Erdogan Hahn,Privatkunde,Reihenhaus,Energy,TannenRing 3,Freiburg,South,79788,401
+851,Ing. Angelika Bruder B.Eng.,Privatkunde,Einfamilienhaus,Energy,WaldStraße 115,Hamburg,North,20459,400
+852,Dietrich Jopich,Privatkunde,Reihenhaus,Energy,BahnhofStraße 24,Ulm,South,89158,401
+853,Wolf-Rüdiger Hänel,Privatkunde,Einfamilienhaus,Energy,GoetheRing 34,Freiburg,South,79484,401
+854,Phillip Trub-Kruschwitz,Privatkunde,Wohnung,Energy,RosenPlatz 20,München,South,80754,401
+855,Georgios Fröhlich,Kleingewerbe,Wohnung,Energy,BirkenWeg 19,Leipzig,East,04383,403
+856,Prof. Sergei Krebs B.Eng.,Privatkunde,Einfamilienhaus,Energy,BirkenAllee 46,Lübeck,North,23551,400
+857,Wende Warmer AG & Co. KG,Gewerbekunde,Reihenhaus,Energy,SeePlatz 46,Lübeck,North,23760,400
+858,James Weinhage,Privatkunde,Mehrfamilienhaus,Energy,LindenRing 28,Berlin,East,10552,403
+859,Anka Dippel,Privatkunde,Einfamilienhaus,Energy,TalGasse 65,Köln,West,50895,402
+860,Dr. Serpil Bruder,Kleingewerbe,Reihenhaus,Energy,HauptStraße 100,Berlin,East,10372,403
+861,Lisette Wilmsen,Privatkunde,Mehrfamilienhaus,Energy,TalStraße 132,Ulm,South,89824,401
+862,Xenia Wohlgemut-Junken,Privatkunde,Einfamilienhaus,Energy,BergWeg 1,Potsdam,East,14493,403
+863,Manfred Heydrich,Privatkunde,Wohnung,Energy,TannenGasse 78,Berlin,East,10510,403
+864,Noack Heidrich GmbH,Gewerbekunde,Einfamilienhaus,Energy,KirchRing 88,Rostock,North,18182,400
+865,Ida Gotthard-Stiffel,Privatkunde,Reihenhaus,Energy,BergStraße 99,Leipzig,East,04776,403
+866,Anni Wirth-Schönland,Privatkunde,Einfamilienhaus,Energy,KirchPlatz 22,Nürnberg,South,90747,401
+867,Reni Hentschel,Privatkunde,Einfamilienhaus,Energy,LindenStraße 62,Chemnitz,East,09600,403
+868,Athanasios Heuser,Kleingewerbe,Wohnung,Energy,ParkRing 116,Berlin,East,10116,403
+869,Hans-Hermann Trub-Ziegert,Privatkunde,Einfamilienhaus,Energy,MarktStraße 55,Kiel,North,24926,400
+870,Paulo Krebs-Junck,Kleingewerbe,Gewerbeimmobilie,Energy,MozartGasse 149,Chemnitz,East,09338,403
+871,Ayten Conradi,Kleingewerbe,Mehrfamilienhaus,Energy,HauptPlatz 12,Hamburg,North,20348,400
+872,Wieland Jäntsch,Privatkunde,Einfamilienhaus,Energy,RosenStraße 117,München,South,80725,401
+873,Gordana Wesack B.Eng.,Privatkunde,Einfamilienhaus,Energy,SchillerPlatz 57,Freiburg,South,79164,401
+874,Celal Christoph,Privatkunde,Mehrfamilienhaus,Energy,TannenStraße 148,Augsburg,South,86658,401
+875,Dipl.-Ing. Helmut Roht,Kleingewerbe,Reihenhaus,Energy,BahnhofRing 45,Nürnberg,South,90443,401
+876,Frau Alina Cichorius,Privatkunde,Mehrfamilienhaus,Energy,BeethovenGasse 95,Hamburg,North,20666,400
+877,Kreszentia Davids,Privatkunde,Gewerbeimmobilie,Energy,BahnhofWeg 26,Augsburg,South,86910,401
+878,Solveig Krause,Privatkunde,Mehrfamilienhaus,Energy,GoetheStraße 2,Dresden,East,01283,403
+879,Fritz Lehmann,Privatkunde,Wohnung,Energy,RathausGasse 122,Rostock,North,18808,400
+880,Pia Caspar-van der Dussen,Privatkunde,Wohnung,Energy,WaldPlatz 106,Stuttgart,South,70344,401
+881,Prof. Johann Geisler MBA.,Privatkunde,Gewerbeimmobilie,Energy,BeethovenGasse 128,Freiburg,South,79726,401
+882,Dr. Franz Jacobi Jäckel,Kleingewerbe,Wohnung,Energy,KirchPlatz 2,Rostock,North,18671,400
+883,Jeanette Fiebig,Privatkunde,Gewerbeimmobilie,Energy,SchillerRing 93,Stuttgart,South,70983,401
+884,Denis Lübs,Kleingewerbe,Reihenhaus,Energy,BirkenStraße 50,Augsburg,South,86215,401
+885,Hilde Jacob,Kleingewerbe,Mehrfamilienhaus,Energy,ParkWeg 41,Ulm,South,89786,401
+886,Frau Grazyna Hermann B.A.,Privatkunde,Wohnung,Energy,LindenPlatz 65,Hamburg,North,20442,400
+887,Prof. Lucia Gunpf MBA.,Privatkunde,Einfamilienhaus,Energy,BergWeg 41,Berlin,East,10904,403
+888,Cengiz Jähn,Privatkunde,Einfamilienhaus,Energy,EichenGasse 114,Lübeck,North,23706,400
+889,Willi Kroker,Privatkunde,Wohnung,Energy,EichenStraße 84,Essen,West,45333,402
+890,Sibilla Scholl,Kleingewerbe,Reihenhaus,Energy,MarktWeg 19,Bremen,North,28582,400
+891,Romy Jüttner-Mans,Kleingewerbe,Reihenhaus,Energy,LindenRing 117,Berlin,East,10282,403
+892,Hulda Siering,Privatkunde,Reihenhaus,Energy,KirchAllee 52,Leipzig,East,04443,403
+893,Gerald Jungfer-Schleich,Privatkunde,Einfamilienhaus,Energy,BirkenWeg 29,München,South,80972,401
+894,Igor Johann B.A.,Privatkunde,Wohnung,Energy,EichenAllee 41,Potsdam,East,14908,403
+895,Juncken Hornich Stiftung & Co. KGaA,Gewerbekunde,Reihenhaus,Energy,GoethePlatz 134,Freiburg,South,79600,401
+896,Prof. Rabea Henk B.Eng.,Privatkunde,Mehrfamilienhaus,Energy,BirkenStraße 110,Freiburg,South,79853,401
+897,Ester Zimmer-Kreusel,Privatkunde,Gewerbeimmobilie,Energy,EichenRing 39,Stuttgart,South,70687,401
+898,Drewes Rose AG & Co. OHG,Gewerbekunde,Einfamilienhaus,Energy,ParkGasse 130,Lübeck,North,23134,400
+899,Univ.Prof. Randolf Rogner,Privatkunde,Einfamilienhaus,Energy,SchulPlatz 62,Magdeburg,East,39185,403
+900,Willy Vogt,Kleingewerbe,Reihenhaus,Energy,MozartAllee 76,Rostock,North,18344,400
+901,Veronique Trommler B.A.,Privatkunde,Wohnung,Energy,BeethovenGasse 118,Hamburg,North,20978,400
+902,Renate Hornich B.Sc.,Privatkunde,Reihenhaus,Energy,MarktWeg 95,Lübeck,North,23741,400
+903,Univ.Prof. Jessika Etzold,Privatkunde,Einfamilienhaus,Energy,MarktGasse 86,Chemnitz,East,09643,403
+904,Eileen Herrmann,Privatkunde,Wohnung,Energy,SeeRing 148,Kiel,North,24913,400
+905,Oliver Löchel-Zobel,Privatkunde,Wohnung,Energy,BahnhofRing 94,Ulm,South,89152,401
+906,Annelene Meister-Scheuermann,Privatkunde,Gewerbeimmobilie,Energy,BahnhofAllee 94,Lübeck,North,23279,400
+907,Prof. Heidrun Reinhardt MBA.,Kleingewerbe,Reihenhaus,Energy,MozartAllee 62,Hannover,North,30652,400
+908,Rigo Klingelhöfer,Privatkunde,Gewerbeimmobilie,Energy,LindenGasse 58,Rostock,North,18428,400
+909,Bert Wilmsen,Privatkunde,Mehrfamilienhaus,Energy,BirkenStraße 17,Dortmund,West,44481,402
+910,Univ.Prof. Mehmet Klapp B.A.,Privatkunde,Gewerbeimmobilie,Energy,SchillerPlatz 137,Essen,West,45794,402
+911,Karl-Otto Seidel,Privatkunde,Einfamilienhaus,Energy,LindenPlatz 23,Essen,West,45182,402
+912,Wilma Weller-Kabus,Privatkunde,Einfamilienhaus,Energy,SchillerWeg 71,Dresden,East,01214,403
+913,Frau Änne Dippel,Privatkunde,Reihenhaus,Energy,WaldGasse 6,Augsburg,South,86400,401
+914,Doris Pergande,Privatkunde,Reihenhaus,Energy,ParkAllee 108,Chemnitz,East,09554,403
+915,Dipl.-Ing. Hans-Günther Krein MBA.,Privatkunde,Einfamilienhaus,Energy,EichenRing 86,Kiel,North,24521,400
+916,Hagen Barth-Nette,Privatkunde,Wohnung,Energy,ParkRing 136,Bonn,West,53962,402
+917,Gebhard Liebelt,Privatkunde,Reihenhaus,Energy,RosenWeg 67,Potsdam,East,14332,403
+918,Drub Stiftung & Co. KGaA,Gewerbekunde,Einfamilienhaus,Energy,MozartAllee 73,Leipzig,East,04566,403
+919,Keudel GmbH,Gewerbekunde,Gewerbeimmobilie,Energy,RosenWeg 45,Freiburg,South,79959,401
+920,Irena Ziegert,Privatkunde,Einfamilienhaus,Energy,TannenRing 33,Stuttgart,South,70551,401
+921,Johann Nette B.Eng.,Privatkunde,Gewerbeimmobilie,Energy,BahnhofGasse 82,Dortmund,West,44452,402
+922,Frau Imelda Ullmann MBA.,Privatkunde,Reihenhaus,Energy,BergAllee 32,Nürnberg,South,90125,401
+923,Anne-Marie Jacob,Kleingewerbe,Mehrfamilienhaus,Energy,TannenWeg 2,Potsdam,East,14856,403
+924,Roy Tröst,Kleingewerbe,Mehrfamilienhaus,Energy,RosenRing 38,Bonn,West,53918,402
+925,Aleksandar Karz,Privatkunde,Mehrfamilienhaus,Energy,BahnhofWeg 142,Leipzig,East,04219,403
+926,Mike Gehringer,Privatkunde,Reihenhaus,Energy,SchulAllee 24,Köln,West,50434,402
+927,Prof. Dieter Rohleder B.A.,Privatkunde,Gewerbeimmobilie,Energy,WaldWeg 72,Hannover,North,30300,400
+928,Kristina Loos,Privatkunde,Mehrfamilienhaus,Energy,GoetheRing 101,Hamburg,North,20299,400
+929,Dörthe Lachmann B.A.,Privatkunde,Gewerbeimmobilie,Energy,BahnhofGasse 93,Leipzig,East,04507,403
+930,Univ.Prof. Mattias Löwer,Kleingewerbe,Wohnung,Energy,MarktAllee 4,Ulm,South,89391,401
+931,Alma Walter-Schmiedecke,Privatkunde,Mehrfamilienhaus,Energy,BergStraße 56,Dortmund,West,44845,402
+932,Mende KG,Gewerbekunde,Mehrfamilienhaus,Energy,RosenWeg 109,Chemnitz,East,09846,403
+933,Dipl.-Ing. Adeline Tlustek,Kleingewerbe,Gewerbeimmobilie,Energy,GoetheWeg 54,Dresden,East,01410,403
+934,Haering GbR,Gewerbekunde,Einfamilienhaus,Energy,TalPlatz 23,Magdeburg,East,39106,403
+935,Bolnbach,Gewerbekunde,Mehrfamilienhaus,Energy,BeethovenRing 119,Chemnitz,East,09827,403
+936,Roger Reising,Privatkunde,Mehrfamilienhaus,Energy,RosenRing 126,Stuttgart,South,70143,401
+937,Ing. Gotthold Gunpf,Privatkunde,Gewerbeimmobilie,Energy,SchulWeg 7,Duisburg,West,47910,402
+938,Beatrix Hesse MBA.,Privatkunde,Mehrfamilienhaus,Energy,SchillerGasse 74,Bremen,North,28527,400
+939,Schwital,Gewerbekunde,Reihenhaus,Energy,HauptStraße 71,Augsburg,South,86604,401
+940,Lilly Kraushaar,Kleingewerbe,Gewerbeimmobilie,Energy,ParkRing 112,Hannover,North,30989,400
+941,Liesbeth Drewes-Keudel,Privatkunde,Einfamilienhaus,Energy,KirchRing 148,Bonn,West,53117,402
+942,Sieglinde Mielcarek,Privatkunde,Reihenhaus,Energy,TannenPlatz 35,Düsseldorf,West,40465,402
+943,Univ.Prof. Nikolaos Huhn,Privatkunde,Mehrfamilienhaus,Energy,KirchStraße 75,München,South,80398,401
+944,Michael Eimer,Privatkunde,Reihenhaus,Energy,SchillerRing 43,Hannover,North,30656,400
+945,Bernadette Henck,Kleingewerbe,Wohnung,Energy,BirkenGasse 93,Dortmund,West,44198,402
+946,Berit Gnatz,Privatkunde,Gewerbeimmobilie,Energy,RosenAllee 125,Düsseldorf,West,40521,402
+947,Martina Faust,Privatkunde,Reihenhaus,Energy,WaldWeg 49,Düsseldorf,West,40914,402
+948,Hertha Schenk-Etzler,Privatkunde,Einfamilienhaus,Energy,SchillerWeg 5,Lübeck,North,23591,400
+949,Hildegart Gotthard-Neuschäfer,Privatkunde,Reihenhaus,Energy,SchulRing 134,Dortmund,West,44881,402
+950,Prof. David Niemeier,Kleingewerbe,Einfamilienhaus,Energy,SchillerWeg 33,Düsseldorf,West,40977,402
+951,Britt Gotthard,Privatkunde,Reihenhaus,Energy,LindenWeg 21,Ulm,South,89535,401
+952,Sibille Mende,Privatkunde,Mehrfamilienhaus,Energy,RathausStraße 51,Hamburg,North,20210,400
+953,Stjepan Klemt,Privatkunde,Einfamilienhaus,Energy,ParkStraße 65,Rostock,North,18144,400
+954,Imre Ernst,Privatkunde,Einfamilienhaus,Energy,SchillerRing 53,Kiel,North,24701,400
+955,Rupert Kraus MBA.,Privatkunde,Einfamilienhaus,Energy,GoetheWeg 72,Stuttgart,South,70693,401
+956,Univ.Prof. Jasmina Liebelt,Privatkunde,Gewerbeimmobilie,Energy,SeeWeg 130,Dortmund,West,44683,402
+957,Janna Geisel B.Sc.,Kleingewerbe,Einfamilienhaus,Energy,WaldWeg 50,Hamburg,North,20388,400
+958,Robin Wesack,Privatkunde,Einfamilienhaus,Energy,LindenRing 122,Freiburg,South,79475,401
+959,Ing. Alexej Höfig B.A.,Privatkunde,Einfamilienhaus,Energy,BeethovenAllee 98,Augsburg,South,86534,401
+960,Christa Zahn,Privatkunde,Einfamilienhaus,Energy,TannenStraße 120,Freiburg,South,79212,401
+961,Käthe Weimer MBA.,Kleingewerbe,Wohnung,Energy,BergGasse 11,Augsburg,South,86184,401
+962,Kazim Drewes,Privatkunde,Wohnung,Energy,SchulRing 80,Essen,West,45803,402
+963,Pauline Ring,Privatkunde,Wohnung,Energy,RathausWeg 18,Dresden,East,01961,403
+964,Kerstin Wernecke,Privatkunde,Einfamilienhaus,Energy,ParkGasse 27,Chemnitz,East,09505,403
+965,Raimund Tschentscher,Privatkunde,Einfamilienhaus,Energy,SchillerWeg 102,Magdeburg,East,39510,403
+966,Ritter Harloff GmbH & Co. KG,Gewerbekunde,Reihenhaus,Energy,GoetheAllee 51,Rostock,North,18446,400
+967,Patrik Söding,Kleingewerbe,Mehrfamilienhaus,Energy,SchillerWeg 109,Freiburg,South,79842,401
+968,Ing. Tadeusz Beckmann MBA.,Kleingewerbe,Gewerbeimmobilie,Energy,TalAllee 103,Leipzig,East,04464,403
+969,Geza Christoph,Privatkunde,Mehrfamilienhaus,Energy,ParkRing 72,Chemnitz,East,09250,403
+970,Sonia Drubin B.A.,Privatkunde,Mehrfamilienhaus,Energy,ParkWeg 35,Berlin,East,10130,403
+971,Ruben Walter B.Eng.,Privatkunde,Einfamilienhaus,Energy,ParkGasse 7,Rostock,North,18283,400
+972,Dr. Louise Etzold,Privatkunde,Reihenhaus,Energy,RosenRing 25,Magdeburg,East,39878,403
+973,Rudolph Haering B.Sc.,Kleingewerbe,Mehrfamilienhaus,Energy,SchulWeg 76,Rostock,North,18777,400
+974,Katharine Holt,Privatkunde,Gewerbeimmobilie,Energy,TannenRing 140,Potsdam,East,14118,403
+975,Ing. Nikolai Hornich,Kleingewerbe,Einfamilienhaus,Energy,MarktPlatz 81,Lübeck,North,23973,400
+976,Leila Hethur,Privatkunde,Einfamilienhaus,Energy,BeethovenRing 78,Potsdam,East,14823,403
+977,Cengiz Weitzel,Privatkunde,Wohnung,Energy,MarktPlatz 29,Augsburg,South,86682,401
+978,Frau Erica Sölzer,Privatkunde,Gewerbeimmobilie,Energy,TalPlatz 122,Chemnitz,East,09675,403
+979,Niko Eigenwillig-Hering,Privatkunde,Wohnung,Energy,ParkRing 97,Freiburg,South,79731,401
+980,Nurettin Jungfer-Hentschel,Privatkunde,Einfamilienhaus,Energy,TalStraße 33,Dortmund,West,44957,402
+981,Jaqueline Faust-Rust,Kleingewerbe,Gewerbeimmobilie,Energy,HauptGasse 88,Dortmund,West,44489,402
+982,Lydia Liebelt,Privatkunde,Wohnung,Energy,RathausAllee 15,Lübeck,North,23777,400
+983,Inken Bruder-Schulz,Privatkunde,Wohnung,Energy,TalStraße 17,Stuttgart,South,70989,401
+984,Hans-Wolfgang Pieper,Privatkunde,Einfamilienhaus,Energy,BergAllee 10,Köln,West,50571,402
+985,Martine Koch,Privatkunde,Mehrfamilienhaus,Energy,BirkenStraße 121,Magdeburg,East,39702,403
+986,Walburga Neuschäfer B.Eng.,Privatkunde,Mehrfamilienhaus,Energy,TannenRing 26,Kiel,North,24927,400
+987,Sylvester Wohlgemut,Privatkunde,Reihenhaus,Energy,TannenPlatz 129,Berlin,East,10930,403
+988,Paolo Mielcarek,Privatkunde,Wohnung,Energy,RathausWeg 128,Düsseldorf,West,40750,402
+989,Sigrid Bolnbach,Privatkunde,Wohnung,Energy,BahnhofAllee 147,Hannover,North,30511,400
+990,Donata Lorch-Hahn,Kleingewerbe,Einfamilienhaus,Energy,TalStraße 87,Freiburg,South,79379,401
+991,Ing. Friedlinde Hölzenbecher B.Eng.,Kleingewerbe,Mehrfamilienhaus,Energy,RathausWeg 89,Hannover,North,30914,400
+992,Karl-Wilhelm Neureuther-Zirme,Kleingewerbe,Gewerbeimmobilie,Energy,RosenPlatz 139,Rostock,North,18420,400
+993,Sylvie Stoll,Privatkunde,Gewerbeimmobilie,Energy,WaldPlatz 141,Augsburg,South,86284,401
+994,Anatolij Dippel,Kleingewerbe,Reihenhaus,Energy,TalPlatz 55,Rostock,North,18776,400
+995,Ziegert,Gewerbekunde,Gewerbeimmobilie,Energy,SeePlatz 145,Leipzig,East,04844,403
+996,Albertine Ebert B.A.,Privatkunde,Mehrfamilienhaus,Energy,MozartWeg 39,Hannover,North,30864,400
+997,Irene Ackermann MBA.,Privatkunde,Einfamilienhaus,Energy,LindenPlatz 69,Essen,West,45943,402
+998,Moritz Eigenwillig B.Eng.,Privatkunde,Gewerbeimmobilie,Energy,EichenPlatz 62,Bonn,West,53216,402
+999,Ing. Bayram Sölzer,Privatkunde,Wohnung,Energy,SchulPlatz 144,Stuttgart,South,70546,401
+1000,Hermann Carsten GmbH,Gewerbekunde,Reihenhaus,Energy,BeethovenAllee 35,Chemnitz,East,09129,403
