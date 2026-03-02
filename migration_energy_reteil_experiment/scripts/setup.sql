@@ -8,7 +8,7 @@
 USE ROLE accountadmin;
 
 -- Enable Cross Region Inferencing
-ALTER ACCOUNT SET CORTEX_ENABLED_CROSS_REGION = 'AWS_EU';
+//ALTER ACCOUNT SET CORTEX_ENABLED_CROSS_REGION = 'AWS_EU';
 
 -- ========================================================================
 -- SNOWFLAKE INTELLIGENCE SETUP
@@ -399,25 +399,25 @@ UNION ALL SELECT '', 'hr_employee_fact', COUNT(*) FROM hr_employee_fact;
 -- ENERGY SALES SEMANTIC VIEW (Contracts and Products)
 CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.ENERGY_SALES_SEMANTIC_VIEW
     tables (
-        CUSTOMERS as CUSTOMER_DIM primary key (CUSTOMER_KEY) 
+        CUSTOMERS as ENERGY_AI_DEMO.ENERGY_SCHEMA.CUSTOMER_DIM primary key (CUSTOMER_KEY) 
             with synonyms=('Kunden','customers','Privatkunden','Gewerbekunden') 
             comment='German energy customers with housing type for consumption analysis',
-        PRODUCTS as PRODUCT_DIM primary key (PRODUCT_KEY) 
+        PRODUCTS as ENERGY_AI_DEMO.ENERGY_SCHEMA.PRODUCT_DIM primary key (PRODUCT_KEY) 
             with synonyms=('Produkte','Tarife','products','tariffs') 
             comment='Energy products: Strom, Gas, Solar, Wärmepumpe, Smart Home, E-Mobility',
-        PRODUCT_CATEGORIES as PRODUCT_CATEGORY_DIM primary key (CATEGORY_KEY)
+        PRODUCT_CATEGORIES as ENERGY_AI_DEMO.ENERGY_SCHEMA.PRODUCT_CATEGORY_DIM primary key (CATEGORY_KEY)
             with synonyms=('Kategorien','categories')
             comment='Product categories: Electricity, Gas, Solar, Heat Pumps, Smart Home, E-Mobility',
-        REGIONS as REGION_DIM primary key (REGION_KEY) 
+        REGIONS as ENERGY_AI_DEMO.ENERGY_SCHEMA.REGION_DIM primary key (REGION_KEY) 
             with synonyms=('Regionen','regions','Gebiete') 
             comment='German regions: North, South, West, East',
-        CONTRACTS as SALES_FACT primary key (SALE_ID) 
+        CONTRACTS as ENERGY_AI_DEMO.ENERGY_SCHEMA.SALES_FACT primary key (SALE_ID) 
             with synonyms=('Verträge','contracts','sales','Aufträge') 
             comment='Energy contracts and product sales',
-        SALES_REPS as SALES_REP_DIM primary key (SALES_REP_KEY) 
+        SALES_REPS as ENERGY_AI_DEMO.ENERGY_SCHEMA.SALES_REP_DIM primary key (SALES_REP_KEY) 
             with synonyms=('Berater','Energieberater','consultants') 
             comment='Energy consultants',
-        VENDORS as VENDOR_DIM primary key (VENDOR_KEY) 
+        VENDORS as ENERGY_AI_DEMO.ENERGY_SCHEMA.VENDOR_DIM primary key (VENDOR_KEY) 
             with synonyms=('Partner','Installateure','vendors','suppliers') 
             comment='Installation and service partners'
     )
@@ -431,8 +431,8 @@ CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.ENERGY_SALES_SEMANT
         CUSTOMERS_TO_REGIONS as CUSTOMERS(REGION_KEY) references REGIONS(REGION_KEY)
     )
     facts (
-        CONTRACTS.CONTRACT_AMOUNT as amount comment='Contract value in EUR',
-        CONTRACTS.CONTRACT_UNITS as units comment='kWh for tariffs or unit count for hardware',
+        CONTRACTS.CONTRACT_AMOUNT as AMOUNT comment='Contract value in EUR',
+        CONTRACTS.CONTRACT_UNITS as UNITS comment='kWh for tariffs or unit count for hardware',
         CONTRACTS.CONTRACT_RECORD as 1 comment='Count of contracts'
     )
     dimensions (
@@ -447,31 +447,31 @@ CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.ENERGY_SALES_SEMANT
         PRODUCTS.CATEGORY_NAME as category_name with synonyms=('Kategorie') comment='Product category',
         PRODUCTS.VERTICAL as vertical with synonyms=('Bereich','Segment') comment='Energy, Future Energy, Smart Home, E-Mobility',
         PRODUCT_CATEGORIES.CATEGORY_KEY as CATEGORY_KEY,
-        PRODUCT_CATEGORIES.CATEGORY_NAME as product_category with synonyms=('Produktkategorie') comment='Electricity, Gas, Solar, Heat Pumps, Smart Home, E-Mobility',
+        PRODUCT_CATEGORIES.MAINCATEGORY as CATEGORY_NAME with synonyms=('Produktkategorie','product_category','main_category') comment='Electricity, Gas, Solar, Heat Pumps, Smart Home, E-Mobility',
         REGIONS.REGION_KEY as REGION_KEY,
         REGIONS.REGION_NAME as region_name with synonyms=('Region','Gebiet') comment='German region',
-        CONTRACTS.SALE_ID as CONTRACT_ID,
-        CONTRACTS.DATE as contract_date with synonyms=('Vertragsdatum','Datum') comment='Contract date',
+        CONTRACTS.CONTRACT_ID as SALE_ID,
+        CONTRACTS.CONTRACT_DATE as "DATE" with synonyms=('Vertragsdatum','Datum') comment='Contract date',
         CONTRACTS.SALES_REP_KEY as SALES_REP_KEY,
-        SALES_REPS.REP_NAME as consultant_name with synonyms=('Berater','Vertriebsmitarbeiter') comment='Energy consultant name',
+        SALES_REPS.CONSULTANT_NAME as REP_NAME with synonyms=('Berater','Vertriebsmitarbeiter') comment='Energy consultant name',
         VENDORS.VENDOR_KEY as VENDOR_KEY,
         VENDORS.VENDOR_NAME as vendor_name with synonyms=('Partner','Installateur') comment='Installation partner'
     )
     metrics (
-        CONTRACTS.TOTAL_REVENUE as SUM(contracts.amount) comment='Total contract revenue in EUR',
+        CONTRACTS.TOTAL_REVENUE as SUM(contracts.contract_amount) comment='Total contract revenue in EUR',
         CONTRACTS.TOTAL_CONTRACTS as COUNT(contracts.contract_record) comment='Total number of contracts',
-        CONTRACTS.AVERAGE_CONTRACT_VALUE as AVG(contracts.amount) comment='Average contract value',
-        CONTRACTS.TOTAL_UNITS as SUM(contracts.units) comment='Total units sold'
+        CONTRACTS.AVERAGE_CONTRACT_VALUE as AVG(contracts.contract_amount) comment='Average contract value',
+        CONTRACTS.TOTAL_UNITS as SUM(contracts.contract_units) comment='Total units sold'
     )
     comment='Semantic view for energy sales analysis - contracts, products, customers';
 
 -- BILLING AND CONSUMPTION SEMANTIC VIEW
 CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.BILLING_SEMANTIC_VIEW
     tables (
-        CUSTOMERS as CUSTOMER_DIM primary key (CUSTOMER_KEY)
+        CUSTOMERS as ENERGY_AI_DEMO.ENERGY_SCHEMA.CUSTOMER_DIM primary key (CUSTOMER_KEY)
             with synonyms=('Kunden','customers')
             comment='Energy customers',
-        BILLING as BILLING_HISTORY primary key (BILLING_ID)
+        BILLING as ENERGY_AI_DEMO.ENERGY_SCHEMA.BILLING_HISTORY primary key (BILLING_ID)
             with synonyms=('Rechnungen','Abrechnungen','billing','invoices')
             comment='Monthly energy billing and consumption'
     )
@@ -479,8 +479,8 @@ CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.BILLING_SEMANTIC_VI
         BILLING_TO_CUSTOMERS as BILLING(CUSTOMER_KEY) references CUSTOMERS(CUSTOMER_KEY)
     )
     facts (
-        BILLING.CONSUMPTION as consumption_kwh comment='Energy consumption in kWh',
-        BILLING.BILLING_AMOUNT as amount comment='Invoice amount in EUR',
+        BILLING.CONSUMPTION as CONSUMPTION_KWH comment='Energy consumption in kWh',
+        BILLING.BILLING_AMOUNT as AMOUNT comment='Invoice amount in EUR',
         BILLING.BILLING_RECORD as 1 comment='Count of billing records'
     )
     dimensions (
@@ -496,7 +496,7 @@ CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.BILLING_SEMANTIC_VI
     metrics (
         BILLING.TOTAL_CONSUMPTION as SUM(billing.consumption) comment='Total consumption in kWh',
         BILLING.AVERAGE_CONSUMPTION as AVG(billing.consumption) comment='Average consumption in kWh',
-        BILLING.TOTAL_BILLING_AMOUNT as SUM(billing.amount) comment='Total billing amount',
+        BILLING.TOTAL_BILLING_AMOUNT as SUM(billing.billing_amount) comment='Total billing amount',
         BILLING.TOTAL_INVOICES as COUNT(billing.billing_record) comment='Number of invoices'
     )
     comment='Semantic view for energy consumption and billing analysis';
@@ -504,10 +504,10 @@ CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.BILLING_SEMANTIC_VI
 -- SERVICE LOGS SEMANTIC VIEW
 CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.SERVICE_SEMANTIC_VIEW
     tables (
-        CUSTOMERS as CUSTOMER_DIM primary key (CUSTOMER_KEY)
+        CUSTOMERS as ENERGY_AI_DEMO.ENERGY_SCHEMA.CUSTOMER_DIM primary key (CUSTOMER_KEY)
             with synonyms=('Kunden','customers')
             comment='Energy customers',
-        SERVICE_TICKETS as SERVICE_LOGS primary key (LOG_ID)
+        SERVICE_TICKETS as ENERGY_AI_DEMO.ENERGY_SCHEMA.SERVICE_LOGS primary key (LOG_ID)
             with synonyms=('Tickets','Anfragen','service requests','Kundenservice')
             comment='Customer service tickets and support requests'
     )
@@ -521,8 +521,8 @@ CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.SERVICE_SEMANTIC_VI
         CUSTOMERS.CUSTOMER_KEY as CUSTOMER_KEY,
         CUSTOMERS.CUSTOMER_NAME as customer_name comment='Customer name',
         CUSTOMERS.CITY as city comment='City',
-        SERVICE_TICKETS.LOG_ID as TICKET_ID,
-        SERVICE_TICKETS.LOG_DATE as ticket_date with synonyms=('Datum','Erstelldatum') comment='Ticket creation date',
+        SERVICE_TICKETS.TICKET_ID as LOG_ID,
+        SERVICE_TICKETS.TICKET_DATE as LOG_DATE with synonyms=('Datum','Erstelldatum') comment='Ticket creation date',
         SERVICE_TICKETS.TOPIC as topic with synonyms=('Thema','Betreff') comment='Topic: Smart Meter, Rechnung, Wärmepumpe, Solar, Tarif, Wallbox, Allgemein',
         SERVICE_TICKETS.CATEGORY as category with synonyms=('Kategorie') comment='Category: Installation, Abrechnung, Technisch, Vertrag, E-Mobility, Service',
         SERVICE_TICKETS.DESCRIPTION as description with synonyms=('Beschreibung','Details') comment='Ticket description',
@@ -540,19 +540,19 @@ CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.SERVICE_SEMANTIC_VI
 -- HR SEMANTIC VIEW
 CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.HR_SEMANTIC_VIEW
     tables (
-        DEPARTMENTS as DEPARTMENT_DIM primary key (DEPARTMENT_KEY)
+        DEPARTMENTS as ENERGY_AI_DEMO.ENERGY_SCHEMA.DEPARTMENT_DIM primary key (DEPARTMENT_KEY)
             with synonyms=('Abteilungen','departments')
             comment='Company departments',
-        EMPLOYEES as EMPLOYEE_DIM primary key (EMPLOYEE_KEY)
+        EMPLOYEES as ENERGY_AI_DEMO.ENERGY_SCHEMA.EMPLOYEE_DIM primary key (EMPLOYEE_KEY)
             with synonyms=('Mitarbeiter','employees','Personal')
             comment='Employees',
-        HR_RECORDS as HR_EMPLOYEE_FACT primary key (HR_FACT_ID)
+        HR_RECORDS as ENERGY_AI_DEMO.ENERGY_SCHEMA.HR_EMPLOYEE_FACT primary key (HR_FACT_ID)
             with synonyms=('HR-Daten','hr records')
             comment='HR fact records',
-        JOBS as JOB_DIM primary key (JOB_KEY)
+        JOBS as ENERGY_AI_DEMO.ENERGY_SCHEMA.JOB_DIM primary key (JOB_KEY)
             with synonyms=('Stellen','jobs','Positionen')
             comment='Job positions',
-        LOCATIONS as LOCATION_DIM primary key (LOCATION_KEY)
+        LOCATIONS as ENERGY_AI_DEMO.ENERGY_SCHEMA.LOCATION_DIM primary key (LOCATION_KEY)
             with synonyms=('Standorte','locations')
             comment='Office locations'
     )
@@ -563,8 +563,8 @@ CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.HR_SEMANTIC_VIEW
         HR_TO_LOCATIONS as HR_RECORDS(LOCATION_KEY) references LOCATIONS(LOCATION_KEY)
     )
     facts (
-        HR_RECORDS.ATTRITION_FLAG as attrition_flag comment='1 = employee left, 0 = active',
-        HR_RECORDS.EMPLOYEE_SALARY as salary comment='Salary in EUR',
+        HR_RECORDS.ATTRITION_FLAG as ATTRITION_FLAG comment='1 = employee left, 0 = active',
+        HR_RECORDS.EMPLOYEE_SALARY as SALARY comment='Salary in EUR',
         HR_RECORDS.HR_RECORD as 1 comment='HR record count',
         EMPLOYEES.EMPLOYEE_COUNT as 1 comment='Employee count'
     )
@@ -575,7 +575,7 @@ CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.HR_SEMANTIC_VIEW
         EMPLOYEES.EMPLOYEE_NAME as employee_name with synonyms=('Mitarbeiter','Name') comment='Employee name',
         EMPLOYEES.GENDER as gender with synonyms=('Geschlecht') comment='M or F',
         EMPLOYEES.HIRE_DATE as hire_date with synonyms=('Eintrittsdatum') comment='Hire date',
-        HR_RECORDS.DATE as record_date comment='HR record date',
+        HR_RECORDS.RECORD_DATE as "DATE" comment='HR record date',
         JOBS.JOB_KEY as JOB_KEY,
         JOBS.JOB_TITLE as job_title with synonyms=('Position','Stelle') comment='Job title',
         JOBS.JOB_LEVEL as job_level with synonyms=('Ebene','Level') comment='Job level',
@@ -583,8 +583,8 @@ CREATE OR REPLACE SEMANTIC VIEW ENERGY_AI_DEMO.ENERGY_SCHEMA.HR_SEMANTIC_VIEW
         LOCATIONS.LOCATION_NAME as location_name with synonyms=('Standort') comment='Office location'
     )
     metrics (
-        HR_RECORDS.TOTAL_SALARY as SUM(hr_records.salary) comment='Total salary cost',
-        HR_RECORDS.AVG_SALARY as AVG(hr_records.salary) comment='Average salary',
+        HR_RECORDS.TOTAL_SALARY as SUM(hr_records.employee_salary) comment='Total salary cost',
+        HR_RECORDS.AVG_SALARY as AVG(hr_records.employee_salary) comment='Average salary',
         HR_RECORDS.ATTRITION_COUNT as SUM(hr_records.attrition_flag) comment='Attrition count',
         EMPLOYEES.TOTAL_EMPLOYEES as COUNT(employees.employee_count) comment='Total employees'
     )
