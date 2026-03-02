@@ -317,6 +317,219 @@ The Energy Chatbot Agent can:
 2. **Market Research**  
    "Analyze the content from [energy news URL] and summarize key trends."
 
+## Data Model
+
+The demo uses **Semantic Views** to expose the underlying star schema to Cortex Analyst. Each semantic view maps physical tables with business vocabulary (German/English synonyms), relationships, facts (measures), dimensions (attributes), and pre-defined metrics.
+
+### 1. ENERGY_SALES_SEMANTIC_VIEW
+
+Analyzes energy contracts, products, customers, and regional sales performance.
+
+```
+                                    ┌───────────────────────┐
+                                    │  PRODUCT_CATEGORY_DIM │
+                                    │  (Kategorien)         │
+                                    │  ─────────────────────│
+                                    │  category_key (PK)    │
+                                    │  category_name        │
+                                    │  vertical             │
+                                    └───────────┬───────────┘
+                                                │
+┌───────────────────┐                           │
+│    REGION_DIM     │                           │
+│    (Regionen)     │      ┌───────────────────┴───────────────────┐
+│  ─────────────────│      │              PRODUCT_DIM              │
+│  region_key (PK)  │      │              (Produkte/Tarife)        │
+│  region_name      │      │  ─────────────────────────────────────│
+│  (North/South/    │      │  product_key (PK)                     │
+│   West/East)      │      │  product_name, category_key (FK)      │
+└────────┬──────────┘      │  category_name, vertical              │
+         │                 └───────────────────┬───────────────────┘
+         │                                     │
+         │          ┌──────────────────────────┼──────────────────────────┐
+         │          │                          │                          │
+         │          │      ┌───────────────────┴───────────────────┐      │
+         └──────────┼──────┤            SALES_FACT                 ├──────┼──────────┐
+                    │      │            (Verträge/Contracts)       │      │          │
+                    │      │  ─────────────────────────────────────│      │          │
+                    │      │  sale_id (PK)                         │      │          │
+                    │      │  customer_key (FK)  ──────────────────┼──────┘          │
+                    │      │  product_key (FK)   ──────────────────┘                 │
+                    │      │  region_key (FK)    ──────────────────┐                 │
+                    │      │  sales_rep_key (FK) ──────────────────┼─────┐           │
+                    │      │  vendor_key (FK)    ──────────────────┼─────┼─────┐     │
+                    │      │  ─────────────────────────────────────│     │     │     │
+                    │      │  date (dimension)                     │     │     │     │
+                    │      │  amount (fact) - EUR                  │     │     │     │
+                    │      │  units (fact) - kWh or count          │     │     │     │
+                    │      └───────────────────────────────────────┘     │     │     │
+                    │                                                    │     │     │
+┌───────────────────┴───────────────────┐   ┌────────────────────┐      │     │     │
+│           CUSTOMER_DIM                │   │    SALES_REP_DIM   │◄─────┘     │     │
+│           (Kunden)                    │   │    (Berater)       │            │     │
+│  ─────────────────────────────────────│   │  ──────────────────│            │     │
+│  customer_key (PK)                    │   │  sales_rep_key (PK)│            │     │
+│  customer_name, customer_type         │   │  rep_name          │            │     │
+│  housing_type (Wohnform)              │   │  hire_date         │            │     │
+│  city, state, zip, region_key (FK)    │   └────────────────────┘            │     │
+└───────────────────────────────────────┘                                     │     │
+                                            ┌─────────────────────────────────┘     │
+                                            │                                       │
+                                       ┌────┴───────────┐              ┌────────────┴────────────┐
+                                       │   VENDOR_DIM   │              │       REGION_DIM        │
+                                       │   (Partner)    │              │   (also linked to       │
+                                       │  ─────────────-│              │    CUSTOMER_DIM)        │
+                                       │  vendor_key(PK)│              └─────────────────────────┘
+                                       │  vendor_name   │
+                                       │  vendor_type   │
+                                       └────────────────┘
+```
+
+**Facts (Measures):** `amount` (EUR), `units` (kWh/count), `contract_record` (count)  
+**Key Metrics:** `TOTAL_REVENUE`, `TOTAL_CONTRACTS`, `AVERAGE_CONTRACT_VALUE`, `TOTAL_UNITS`  
+**German Synonyms:** Verträge, Kunden, Produkte, Tarife, Berater, Regionen
+
+---
+
+### 2. BILLING_SEMANTIC_VIEW
+
+Analyzes energy consumption (kWh) and billing/payment data.
+
+```
+┌───────────────────────────────────────┐
+│           CUSTOMER_DIM                │
+│           (Kunden)                    │
+│  ─────────────────────────────────────│
+│  customer_key (PK)                    │
+│  customer_name                        │
+│  housing_type (Wohnform)              │
+│  city                                 │
+└───────────────────┬───────────────────┘
+                    │
+                    │ 1:N
+                    │
+┌───────────────────┴───────────────────┐
+│          BILLING_HISTORY              │
+│          (Rechnungen/Abrechnungen)    │
+│  ─────────────────────────────────────│
+│  billing_id (PK)                      │
+│  customer_key (FK)                    │
+│  ─────────────────────────────────────│
+│  billing_date (dimension)             │
+│  billing_type (dimension)             │
+│    → Electricity / Gas                │
+│  payment_status (dimension)           │
+│    → Bezahlt / Offen / Überfällig     │
+│  ─────────────────────────────────────│
+│  consumption_kwh (fact) - kWh         │
+│  amount (fact) - EUR                  │
+└───────────────────────────────────────┘
+```
+
+**Facts (Measures):** `consumption_kwh`, `amount` (EUR), `billing_record` (count)  
+**Key Metrics:** `TOTAL_CONSUMPTION`, `AVERAGE_CONSUMPTION`, `TOTAL_BILLING_AMOUNT`, `TOTAL_INVOICES`  
+**German Synonyms:** Rechnungen, Abrechnungen, Verbrauch, Zahlungsstatus
+
+---
+
+### 3. SERVICE_SEMANTIC_VIEW
+
+Analyzes customer service tickets with sentiment analysis.
+
+```
+┌───────────────────────────────────────┐
+│           CUSTOMER_DIM                │
+│           (Kunden)                    │
+│  ─────────────────────────────────────│
+│  customer_key (PK)                    │
+│  customer_name                        │
+│  city                                 │
+└───────────────────┬───────────────────┘
+                    │
+                    │ 1:N
+                    │
+┌───────────────────┴───────────────────┐
+│           SERVICE_LOGS                │
+│           (Tickets/Anfragen)          │
+│  ─────────────────────────────────────│
+│  log_id (PK)                          │
+│  customer_key (FK)                    │
+│  ─────────────────────────────────────│
+│  log_date (dimension)                 │
+│  topic (dimension)                    │
+│    → Smart Meter, Rechnung,           │
+│      Wärmepumpe, Solar, Tarif,        │
+│      Wallbox, Allgemein               │
+│  category (dimension)                 │
+│    → Installation, Abrechnung,        │
+│      Technisch, Vertrag, E-Mobility   │
+│  sentiment (dimension)                │
+│    → Positiv / Neutral / Negativ      │
+│  channel (dimension)                  │
+│    → Telefon, Email, Chat, App        │
+│  priority (dimension)                 │
+│    → Niedrig, Mittel, Hoch, Kritisch  │
+│  description (dimension)              │
+│  resolution_date (dimension)          │
+│  ─────────────────────────────────────│
+│  ticket_record (fact) = 1             │
+└───────────────────────────────────────┘
+```
+
+**Facts (Measures):** `ticket_record` (count)  
+**Key Metrics:** `TOTAL_TICKETS`, `NEGATIVE_TICKETS` (sentiment='Negativ')  
+**German Synonyms:** Tickets, Anfragen, Kundenservice, Thema, Stimmung, Priorität
+
+---
+
+### 4. HR_SEMANTIC_VIEW
+
+Analyzes employee data, salaries, and attrition.
+
+```
+                    ┌─────────────────┐
+                    │  DEPARTMENT_DIM │
+                    │  (Abteilungen)  │
+                    │  ───────────────│
+                    │  department_key │
+                    │  department_name│
+                    └────────┬────────┘
+                             │
+┌─────────────────┐          │          ┌─────────────────┐
+│   EMPLOYEE_DIM  │          │          │     JOB_DIM     │
+│   (Mitarbeiter) │          │          │    (Stellen)    │
+│  ───────────────│          │          │  ───────────────│
+│  employee_key   │          │          │  job_key        │
+│  employee_name  │          │          │  job_title      │
+│  gender         │          │          │  job_level      │
+│  hire_date      │          │          └────────┬────────┘
+└────────┬────────┘          │                   │
+         │                   │                   │
+         │         ┌─────────┴─────────┐         │
+         └─────────┤  HR_EMPLOYEE_FACT ├─────────┘
+                   │    (HR-Daten)     │
+                   │  ─────────────────│
+                   │  hr_fact_id (PK)  │
+                   │  employee_key (FK)│
+                   │  department_key   │
+                   │  job_key (FK)     │
+                   │  location_key (FK)├─────────────────┐
+                   │  ─────────────────│                 │
+                   │  date (dimension) │       ┌─────────┴─────────┐
+                   │  salary (fact)EUR │       │   LOCATION_DIM    │
+                   │  attrition_flag   │       │   (Standorte)     │
+                   │    → 0=active     │       │  ─────────────────│
+                   │    → 1=left       │       │  location_key     │
+                   └───────────────────┘       │  location_name    │
+                                               └───────────────────┘
+```
+
+**Facts (Measures):** `salary` (EUR), `attrition_flag` (0/1), `hr_record` (count), `employee_count`  
+**Key Metrics:** `TOTAL_SALARY`, `AVG_SALARY`, `ATTRITION_COUNT`, `TOTAL_EMPLOYEES`  
+**German Synonyms:** Mitarbeiter, Abteilungen, Stellen, Standorte, Gehalt, Fluktuation
+
+---
+
 ## Data Volumes
 
 | Table | Records |
