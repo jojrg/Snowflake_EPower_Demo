@@ -1,32 +1,32 @@
 department_key,department_name
-10,Finance
-11,Accounting
-12,Treasury
-13,Tax
-14,Audit
-15,Financial Planning
-16,Procurement
-17,Legal
+10,Finanzen
+11,Buchhaltung
+12,Controlling
+13,Steuern
+14,Revision
+15,Treasury
+16,Einkauf
+17,Recht
 18,Compliance
-19,Risk Management
-20,Sales
-21,Business Development
-22,Customer Success
-23,Sales Operations
-24,Channel Partners
-25,Sales Engineering
-26,Account Management
-27,Inside Sales
-28,Field Sales
-29,Sales Support
+19,Risikomanagement
+20,Vertrieb Privatkunden
+21,Vertrieb Gewerbekunden
+22,Kundenservice
+23,Vertriebssteuerung
+24,Partnermanagement
+25,Technischer Vertrieb
+26,Key Account Management
+27,Innendienst
+28,Außendienst
+29,Vertriebssupport
 30,Marketing
 31,Digital Marketing
 32,Content Marketing
-33,Product Marketing
-34,Brand Marketing
+33,Produktmarketing
+34,Markenführung
 35,Event Marketing
-36,Market Research
-37,Public Relations
+36,Marktforschung
+37,Unternehmenskommunikation
 38,Social Media
 39,Marketing Operations
-40,HR
+40,Personal

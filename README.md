@@ -1,81 +1,70 @@
-# Snowflake Intelligence Demo
+# EPOWER Energy Intelligence Demo
 
 **Copy, Paste, Run & Done in less than 10 mins!**
 
 **Just run the SQL script as an ACCOUNTADMIN as-is & your are done!**
 
-
-
-
-This project demonstrates the comprehensive Snowflake Intelligence capabilities including:
-- **Cortex Analyst** (Text-to-SQL via semantic views)
-- **Cortex Search** (Vector search for unstructured documents)  
-- **Snowflake Intelligence Agent** (Multi-tool AI agent with orchestration)
-- **Git Integration** (Automated data loading from GitHub repository)
-
-## Demo video showing some of what you can do!
-
-![Snowflake Intelligence Demo Video](https://github.com/NickAkincilar/Snowflake_AI_DEMO/blob/main/images/SFI_Demo.webp?raw=true)(https://youtu.be/7T8LI5wIfDk)
-
-## Demo video generating streamlit apps from conversations!
-![Snowflake Intelligence Demo Video](https://github.com/NickAkincilar/Snowflake_AI_DEMO/blob/main/images/SFI_streamlit.webp?raw=true)(https://youtu.be/zNVx3hwKbyc)
-
-
-
+This project demonstrates the comprehensive Snowflake Intelligence capabilities adapted for a **German Energy Retail (B2C)** use case, simulating EPOWER - a German energy provider offering:
+- **Strom & Gas** - Traditional electricity and gas tariffs
+- **Future Energy Home** - Solar panels, heat pumps, battery storage
+- **Smart Home** - Smart meters, energy management systems
+- **E-Mobility** - Wallbox charging stations, EV tariffs
 
 ## Key Components
 
 ### 1. Data Infrastructure
-- **Star Schema Design**: 13 dimension tables and 4 fact tables covering Finance, Sales, Marketing, HR
-- **Salesforce CRM Integration**: 3 Salesforce tables (Accounts, Opportunities, Contacts) with 62,000+ CRM records
-- **Automated Data Loading**: Git integration pulls data from GitHub repository
-- **Realistic Sample Data**: 210,000+ records across all business domains with complete customer journey
-- **Database**: `SF_AI_DEMO` with schema `DEMO_SCHEMA`
-- **Warehouse**: `Snow_Intelligence_demo_wh` (XSMALL with auto-suspend/resume)
+- **Star Schema Design**: 13 dimension tables and 6 fact tables covering Energy Sales, Billing, Service, Finance, Marketing, HR
+- **Salesforce CRM Integration**: 3 Salesforce tables (Accounts, Opportunities, Contacts) for complete customer journey tracking
+- **Automated Data Loading**: Git integration pulls data from GitHub repository (branch: `domain_migratiion_experiment`)
+- **German Energy Domain Data**: 80,000+ records with realistic German names, cities, and energy-specific data
+- **Database**: `ENERGY_AI_DEMO` with schema `ENERGY_SCHEMA`
+- **Warehouse**: `ENERGY_INTELLIGENCE_DEMO_WH` (XSMALL with auto-suspend/resume)
 
 ### 2. Semantic Views (4 Business Domains)
-- **Finance Semantic View**: Financial transactions, accounts, departments, vendors
-- **Sales Semantic View**: Sales data, customers, products, regions, sales reps
-- **Marketing Semantic View**: Campaign performance, channels, leads, impressions + **Revenue Attribution** (Salesforce CRM integration)
+- **Energy Sales Semantic View**: Contracts, products (Strom, Gas, Solar, Heat Pumps), customers, regions, consultants
+- **Billing Semantic View**: Energy consumption (kWh), monthly invoices, payment status for Electricity and Gas
+- **Service Semantic View**: Customer service tickets with sentiment analysis, topics (Smart Meter, Wärmepumpe, Solar)
 - **HR Semantic View**: Employee data, departments, jobs, locations, attrition
 
 ### 3. Cortex Search Services (4 Domain-Specific)
-- **Finance Documents**: Expense policies, financial reports, vendor contracts
-- **HR Documents**: Employee handbook, performance guidelines, department overviews
-- **Marketing Documents**: Campaign strategies, performance reports, marketing plans
-- **Sales Documents**: Sales playbooks, customer success stories, performance data
+- **Energy Documents**: Terms & conditions, subsidy information (Wärmepumpen-Förderung), vendor policies
+- **Product Documents**: Heat pump efficiency guide, smart meter installation, solar battery quickstart, E-Mobility tariffs
+- **Service Documents**: Invoice explanation FAQ, energy efficiency tips, customer service handbook
+- **Service Logs Search**: Semantic search over customer service ticket descriptions
 
 ### 4. Snowflake Intelligence Agent
 - **Multi-Tool Agent**: Combines Cortex Search, Cortex Analyst, Web Scraping, and File Access capabilities
 - **Cross-Domain Analysis**: Can query all business domains and documents
-- **Web Content Analysis**: Can scrape and analyze content from any web URL
+- **Bilingual Support**: Responds in German or English based on query language
+- **Web Content Analysis**: Can scrape and analyze content from any web URL (e.g., BAFA subsidy information)
 - **File Sharing**: Can generate presigned URLs for temporary access to internal stage files
-- **Natural Language Interface**: Responds to business questions across all departments
 - **Visualization Support**: Generates charts and visualizations for data insights
 
 ### 5. GitHub Integration
-- **Repository**: `https://github.com/NickAkincilar/Snowflake_AI_DEMO.git`
+- **Repository**: `https://github.com/jojrg/Snowflake_AI_DEMO.git`
+- **Branch**: `domain_migratiion_experiment`
+- **Data Path**: `migration_energy_reteil_experiment/`
 - **Automated Sync**: Pulls demo data and unstructured documents
 - **File Processing**: Parses PDF documents using Cortex Parse for search indexing
 
 ## Architecture Diagram
 
-The following diagram shows how all components work together in the Snowflake Intelligence Demo:
+The following diagram shows how all components work together in the EPOWER Energy Intelligence Demo:
 
 ```mermaid
 graph TD
-    subgraph "GitHub Repository: NickAkincilar/Snowflake_AI_DEMO"
-        B[CSV Files<br/>20 demo_data files]
-        C[Unstructured Docs<br/>PDF files]
+    subgraph "GitHub Repository: jojrg/Snowflake_AI_DEMO"
+        B[CSV Files<br/>22 demo_data files]
+        C[Unstructured Docs<br/>10 PDF/MD files]
     end
 
     subgraph "Git Integration Layer"
-        A[Git API Integration<br/>SF_AI_DEMO_REPO<br/>Automated file sync]
+        A[Git API Integration<br/>ENERGY_AI_DEMO_REPO<br/>Branch: domain_migratiion_experiment]
     end
 
-    subgraph "Snowflake Database: SF_AI_DEMO.DEMO_SCHEMA"
+    subgraph "Snowflake Database: ENERGY_AI_DEMO.ENERGY_SCHEMA"
         subgraph "Raw Data Layer"
-            D[Internal Data Stage<br/>INTERNAL_DATA_STAGE]
+            D[Internal Data Stage<br/>ENERGY_STAGE]
             E[Parsed Content Table<br/>parsed_content]
         end
         
@@ -83,50 +72,50 @@ graph TD
             F[product_category_dim<br/>product_dim<br/>vendor_dim<br/>customer_dim<br/>account_dim<br/>department_dim<br/>region_dim<br/>sales_rep_dim<br/>campaign_dim<br/>channel_dim<br/>employee_dim<br/>job_dim<br/>location_dim]
         end
         
-        subgraph "Fact Tables (4)"
-            G[sales_fact<br/>finance_transactions<br/>marketing_campaign_fact<br/>hr_employee_fact]
+        subgraph "Fact Tables (6)"
+            G[sales_fact - Contracts<br/>billing_history - Consumption<br/>service_logs - Tickets<br/>finance_transactions<br/>marketing_campaign_fact<br/>hr_employee_fact]
         end
         
         subgraph "Salesforce CRM Tables (3)"
-            SF[sf_accounts<br/>sf_opportunities<br/>sf_contacts<br/>Complete customer journey]
+            SF[sf_accounts<br/>sf_opportunities<br/>sf_contacts]
         end
     end
 
     subgraph "Semantic Layer"
-        H[FINANCE_SEMANTIC_VIEW<br/>Financial transactions, accounts, vendors]
-        I[SALES_SEMANTIC_VIEW<br/>Sales data, customers, products, reps]
-        J[MARKETING_SEMANTIC_VIEW<br/>Campaigns, channels, leads, spend<br/>+ Revenue Attribution via CRM]
-        K[HR_SEMANTIC_VIEW<br/>Employees, departments, jobs, locations]
+        H[ENERGY_SALES_SEMANTIC_VIEW<br/>Contracts, Products, Customers]
+        I[BILLING_SEMANTIC_VIEW<br/>Consumption kWh, Invoices]
+        J[SERVICE_SEMANTIC_VIEW<br/>Tickets, Sentiment, Topics]
+        K[HR_SEMANTIC_VIEW<br/>Employees, Departments, Attrition]
     end
 
     subgraph "Cortex Analyst Text2SQL"
-        S[Query Finance Datamart<br/>Text-to-SQL Service]
-        T[Query Sales Datamart<br/>Text-to-SQL Service]
-        U[Query Marketing Datamart<br/>Text-to-SQL Service]
-        V[Query HR Datamart<br/>Text-to-SQL Service]
+        S[Query Energy Sales<br/>Strom, Gas, Solar, Wärmepumpen]
+        T[Query Billing Data<br/>Consumption, Payment Status]
+        U[Query Service Tickets<br/>Sentiment, Smart Meter, etc.]
+        V[Query HR Data<br/>Salary, Attrition]
     end
 
     subgraph "Cortex Search Services"
-        L[Search_finance_docs<br/>Finance documents & policies]
-        M[Search_sales_docs<br/>Sales playbooks & stories]
-        N[Search_marketing_docs<br/>Campaign strategies & reports]
-        O[Search_hr_docs<br/>Employee handbook & guidelines]
+        L[Search_energy_docs<br/>AGBs, Förderungen]
+        M[Search_product_docs<br/>Heat Pump Guide, Solar, E-Mobility]
+        N[Search_service_docs<br/>FAQ, Handbook]
+        O[Search_service_logs<br/>Ticket Descriptions]
     end
 
     subgraph "Web Scraping Layer"
-        WS[Web Scraping Function<br/>Python-based content extraction<br/>External access integration]
+        WS[Web Scraping Function<br/>BAFA, External Content]
     end
 
     subgraph "File Access Layer"
-        FA[Presigned URL Function<br/>Secure temporary file access<br/>Stage file sharing]
+        FA[Presigned URL Function<br/>Secure File Sharing]
     end
 
     subgraph "AI Layer"
-        P[Snowflake Intelligence Agent<br/>COMPANY_CHATBOT_AGENT<br/>Multi-tool orchestration]
+        P[Snowflake Intelligence Agent<br/>Energy_Chatbot_Agent<br/>Bilingual DE/EN]
     end
 
     subgraph "User Interface"
-        Q[Natural Language Queries<br/>Business Questions]
+        Q[Natural Language Queries<br/>German or English]
     end
 
     %% Data Flow
@@ -145,7 +134,6 @@ graph TD
     G --> I
     F --> J
     G --> J
-    SF --> J
     F --> K
     G --> K
     
@@ -159,7 +147,7 @@ graph TD
     E --> L
     E --> M
     E --> N
-    E --> O
+    G --> O
     
     %% Agent Connections
     S --> P
@@ -173,8 +161,8 @@ graph TD
     WS --> P
     FA --> P
     
-    %% User Access via API
-    P -->|API| Q
+    %% User Access
+    P --> Q
 
     %% Styling
     classDef dataSource fill:#e1f5fe
@@ -203,147 +191,153 @@ graph TD
 ```
 
 ### Data Flow Explanation:
-1. **Source Repository**: GitHub repository contains both CSV files (20 demo data files) and unstructured documents (PDF)
-2. **Git Integration**: Git API Integration (SF_AI_DEMO_REPO) automatically syncs all files from GitHub to Snowflake's internal stage
-3. **Structured Data**: CSV files populate 13 dimension tables and 4 fact tables in a star schema
-4. **Salesforce CRM Data**: 3 additional Salesforce tables (sf_accounts, sf_opportunities, sf_contacts) provide complete customer journey tracking
-5. **Unstructured Data**: PDF documents are parsed and stored in the `parsed_content` table
-6. **Semantic Layer**: Business-specific semantic views provide natural language query capabilities over structured data
-7. **Marketing Revenue Attribution**: Enhanced Marketing Semantic View connects campaign data to Salesforce CRM for end-to-end ROI analysis
-8. **Cortex Analyst Layer**: Each semantic view connects to a dedicated Text2SQL service for natural language to SQL conversion
-9. **Search Services**: Domain-specific Cortex Search services enable vector search over unstructured documents
-10. **Web Scraping Service**: Custom Python function enables real-time analysis of external web content
-11. **File Access Service**: Presigned URL function provides secure, temporary access to internal stage files
-12. **AI Orchestration**: The Snowflake Intelligence Agent orchestrates between Text2SQL services, Search services, Web Scraping, and File Access
-13. **User Access**: Users interact through API connections to the agent using natural language queries
+1. **Source Repository**: GitHub repository contains CSV files (22 demo data files) and unstructured documents (10 PDF/MD files)
+2. **Git Integration**: Git API Integration syncs files from branch `domain_migratiion_experiment` to Snowflake's internal stage
+3. **Structured Data**: CSV files populate 13 dimension tables and 6 fact tables (including energy-specific billing_history and service_logs)
+4. **Salesforce CRM Data**: 3 Salesforce tables provide customer journey tracking
+5. **Unstructured Data**: PDF/MD documents are parsed and stored in the `parsed_content` table
+6. **Semantic Layer**: 4 business-specific semantic views with German synonyms enable natural language queries
+7. **Cortex Analyst Layer**: Each semantic view connects to a Text2SQL service for natural language to SQL conversion
+8. **Search Services**: 4 Cortex Search services enable vector search over documents and service logs
+9. **AI Orchestration**: The Energy Chatbot Agent orchestrates between all services
+10. **User Access**: Users interact through natural language queries in German or English
 
 ## Database Schema
 
 ### Dimension Tables (13)
-- `product_category_dim`, `product_dim`, `vendor_dim`, `customer_dim`
-- `account_dim`, `department_dim`, `region_dim`, `sales_rep_dim`
+- `product_category_dim` - Energy categories: Electricity, Gas, Solar, Heat Pumps, Smart Home, E-Mobility
+- `product_dim` - 27 EPOWER products/tariffs
+- `customer_dim` - 1,000 German residential and business customers with housing type
+- `vendor_dim` - Installation partners and service providers
+- `account_dim`, `department_dim`, `region_dim` (North, South, West, East)
+- `sales_rep_dim` - Energy consultants
 - `campaign_dim`, `channel_dim`, `employee_dim`, `job_dim`, `location_dim`
 
-### Fact Tables (4)
-- `sales_fact` - Sales transactions with amounts and units (12,000 records)
+### Fact Tables (6)
+- `sales_fact` - Energy contracts (12,000 records) - Amount in EUR, Units in kWh or count
+- `billing_history` - Monthly consumption and billing (25,540 records) - kWh, payment status
+- `service_logs` - Customer service tickets (5,000 records) - Topic, sentiment, priority
 - `finance_transactions` - Financial transactions across departments
-- `marketing_campaign_fact` - Campaign performance metrics with product targeting
-- `hr_employee_fact` - Employee data with salary and attrition (5,640 records)
+- `marketing_campaign_fact` - Campaign performance metrics
+- `hr_employee_fact` - Employee data with salary and attrition
 
 ### Salesforce CRM Tables (3)
 - `sf_accounts` - Customer accounts linked to customer_dim (1,000 records)
 - `sf_opportunities` - Sales pipeline and revenue data (25,000 records)
-- `sf_contacts` - Contact records with campaign attribution (37,563 records)
+- `sf_contacts` - Contact records with campaign attribution (37,000 records)
 
 ## Setup Instructions
 
 **Single Script Setup**: The entire demo environment is created with one script:
+
 1. **Run the complete setup script**:
    ```sql
-   -- Execute in Snowflake worksheet
-   @SF_IntelligenceDemo_Full/sql_scripts/demo_setup.sql
+   -- Execute in Snowflake worksheet as ACCOUNTADMIN
+   -- Copy contents from: migration_energy_reteil_experiment/scripts/setup.sql
    ```
 
 2. **What the script creates**:
-   - `SF_Intelligence_Demo` role and permissions
-   - `Snow_Intelligence_demo_wh` warehouse
-   - `SF_AI_DEMO.DEMO_SCHEMA` database and schema
-   - Git repository integration
+   - `Energy_Intelligence_Demo` role and permissions
+   - `ENERGY_INTELLIGENCE_DEMO_WH` warehouse
+   - `ENERGY_AI_DEMO.ENERGY_SCHEMA` database and schema
+   - Git repository integration (branch: domain_migratiion_experiment)
    - All dimension and fact tables with data
    - 4 semantic views for Cortex Analyst
    - 4 Cortex Search services for documents
    - Web scraping function with external access integration
    - Presigned URL function for secure file access
-   - 1 Snowflake Intelligence Agent with multi-tool capabilities
+   - 1 Snowflake Intelligence Agent (Energy_Chatbot_Agent)
 
 3. **Post-Setup Verification**:
-   - Run `SHOW TABLES;` to verify 20 tables created (17 original + 3 Salesforce CRM)
-   - Run `SHOW SEMANTIC VIEWS;` to verify 4 semantic views
-   - Run `SHOW CORTEX SEARCH SERVICES;` to verify 4 search services
-   - Run `SHOW FUNCTIONS LIKE 'WEB_SCRAPE';` to verify web scraping function
-   - Run `SHOW FUNCTIONS LIKE 'GET_FILE_PRESIGNED_URL';` to verify presigned URL function
-
-
+   ```sql
+   SHOW TABLES;                    -- Verify 19 tables created
+   SHOW SEMANTIC VIEWS;            -- Verify 4 semantic views
+   SHOW CORTEX SEARCH SERVICES;    -- Verify 4 search services
+   SHOW AGENTS;                    -- Verify Energy_Chatbot_Agent
+   ```
 
 ## Agent Capabilities
 
-The Company Chatbot Agent can:
-- **Analyze structured data** across Finance, Sales, Marketing, and HR domains
-- **Perform revenue attribution** from marketing campaigns to closed deals via Salesforce CRM integration
-- **Search unstructured documents** to provide context and policy information
-- **Scrape and analyze web content** from any URL to incorporate external data and insights
-- **Generate presigned URLs** for secure, temporary access to files stored in internal stages
-- **Generate visualizations** including trend lines, bar charts, and analytics
-- **Combine insights** from multiple data sources for comprehensive answers
-- **Calculate marketing ROI** and customer acquisition costs across the complete customer journey
-- **Understand business context** and provide domain-specific insights
+The Energy Chatbot Agent can:
+- **Analyze energy contracts** across product categories (Strom, Gas, Solar, Heat Pumps, Smart Home, E-Mobility)
+- **Query consumption data** with kWh analysis and housing type correlations
+- **Analyze service tickets** with sentiment filtering and topic-based search
+- **Search unstructured documents** for policies, guides, and FAQs
+- **Scrape and analyze web content** (e.g., BAFA subsidy information, energy prices)
+- **Generate presigned URLs** for secure file sharing
+- **Respond bilingually** in German or English
+- **Generate visualizations** for trends, comparisons, and analytics
 
-## Demo Script: Cross-Functional Business Analysis
+## Demo Script: Energy Domain Analysis
 
-The following questions demonstrate the agent's ability to perform cross-domain analysis, connecting insights across Sales, HR, Marketing, and Finance:
+### Energy Contracts & Products
+1. **Product Overview**  
+   "Gib mir einen Überblick über unser Produktportfolio. Welche Kategorien und Produkte bieten wir an?"
 
-### 🎯 Sales Performance Analysis
-1. **Sales Trends & Performance**  
-   "Show me monthly sales trends for 2025 with visualizations. Which months had the highest revenue?"
+2. **Sales Trends**  
+   "Zeige mir die monatlichen Vertragszahlen für 2024. Wie hat sich der Umsatz entwickelt?"
 
-2. **Top Products & Revenue Drivers**  
-   "What are our top 5 products by revenue in 2025? Show me their performance by region."
+3. **Regional Analysis**  
+   "Which region has the highest sales for Heat Pump products?"
 
-3. **Sales Rep Performance**  
-   "Who are our top performing sales representatives? Show their individual revenue contributions and deal counts."
+### Consumption & Billing Analysis
+1. **Cross-Domain Query**  
+   "Was ist der durchschnittliche Stromverbrauch für Kunden mit Wärmepumpen in Hamburg?"
 
-### 👥 HR & Workforce Analysis
-1. **Sales Rep Tenure & Performance Correlation**  
-   "What is the average tenure of our top sales reps? Is there a correlation between tenure and sales performance?"
+2. **Payment Analysis**  
+   "Wie ist der Zahlungsstatus unserer Rechnungen aufgeteilt?"
 
-2. **Department Staffing & Costs**  
-   "Show me employee headcount and average salary by department. Which departments have the highest attrition rates?"
+3. **Housing Type Correlation**  
+   "Compare average electricity consumption by housing type (Einfamilienhaus vs. Wohnung)"
 
-3. **Workforce Distribution & Performance**  
-   "How are our employees distributed across locations? What are the performance differences by location?"
+### Customer Service Analysis
+1. **Sentiment Analysis**  
+   "Zeige mir alle negativen Service-Tickets zum Thema Smart Meter."
 
-### 📈 Marketing Campaign Effectiveness & Revenue Attribution
-1. **Campaign ROI & Revenue Generation**  
-   "Which marketing campaigns generated the most revenue in 2025? Show me marketing ROI and cost per lead by channel."
+2. **Topic Breakdown**  
+   "What are the most common service ticket topics? Show priority distribution."
 
-2. **Complete Funnel Analysis**  
-   "Show me the complete marketing funnel from impressions to closed revenue. Which campaigns have the best conversion rates?"
+3. **Resolution Time**  
+   "Welche Tickets sind noch offen und haben hohe Priorität?"
 
-3. **Channel Revenue Performance**  
-   "Compare marketing spend to actual closed revenue by channel. Which channels drive the highest value customers?"
+### Document Search (RAG)
+1. **Subsidy Information**  
+   "Was sind die Voraussetzungen für die Wärmepumpen-Förderung 2024?"
 
-### 💰 Finance & Cross-Domain Integration
-1. **Marketing Attribution & Revenue Analysis**  
-   "Show me revenue generated by each marketing channel. What is our true marketing ROI from campaigns to closed deals?"
+2. **Product Guidance**  
+   "Was ist der Unterschied zwischen einer Luft-Wasser und einer Sole-Wasser Wärmepumpe?"
 
-2. **Customer Acquisition Cost Analysis**  
-   "Calculate our customer acquisition cost by marketing channel. Which channels deliver the most profitable customers?"
+3. **Invoice Help**  
+   "Erkläre mir, wie ich meine Stromrechnung lesen kann."
 
-3. **Vendor Spend & Policy Compliance**  
-   "What are our top 5 vendors in the last 5 years? Are we following procurement guidelines with our purchases from these vendors based on our expense policy ?"
-
-### 🔍 Cross-Functional Insights & External Data
-**Web Content Analysis Questions**  
-1. **Competitive Intelligence**  
-   "Analyze the content from [competitor website URL] and compare their product offerings to our product catalog."
+### Web Scraping & External Data
+1. **Current Subsidies**  
+   "Hole mir aktuelle Informationen von der BAFA-Webseite zu Wärmepumpen-Förderung."
 
 2. **Market Research**  
-   "Scrape content from [industry report URL] and analyze how it relates to our sales performance and market positioning."
+   "Analyze the content from [energy news URL] and summarize key trends."
 
-3. **External Data Integration**  
-   "Get the latest information from [company news URL] and analyze its potential impact on our sales forecast."
+## Data Volumes
 
+| Table | Records |
+|-------|---------|
+| customer_dim | 1,000 |
+| product_dim | 27 |
+| sales_fact (Contracts) | 12,000 |
+| billing_history | 25,540 |
+| service_logs | 5,000 |
+| sf_opportunities | 25,000 |
+| sf_contacts | 37,000 |
+| hr_employee_fact | 5,640 |
 
+## Unstructured Documents (10)
 
-### 📋 Demo Flow Recommendation
-1. **Start with Sales**: Establish baseline performance metrics and customer data
-2. **Connect to HR**: Link performance to workforce characteristics  
-3. **Add Marketing Context**: Show how campaigns generate leads and drive sales results
-4. **Revenue Attribution**: Demonstrate complete customer journey from campaign to closed revenue
-5. **Financial Integration**: Calculate true marketing ROI and customer acquisition costs
-6. **External Data Analysis**: Use web scraping to incorporate competitor or market data
-7. **File Sharing & Export**: Generate secure URLs for data sharing with stakeholders
-8. **Cross-Domain Synthesis**: Combine all insights including external data for strategic decision-making
-This progression showcases how the Snowflake Intelligence Agent seamlessly connects structured data analysis with Salesforce CRM integration, unstructured document insights, real-time web content analysis, and secure file sharing across all business domains for complete revenue attribution, competitive intelligence, and data distribution. 
+| Category | Documents |
+|----------|-----------|
+| **Energy** | EPOWER_Green_Power_TCs_2024.pdf, Vendor_Management_Policy.pdf, Waermepumpe_Foerderung_2024.md |
+| **Products** | Heat_Pump_Efficiency_Guide.pdf, Smart_Meter_Installation_Guide.pdf, Solar_Battery_Quickstart.md, E_Mobility_Tarife.md |
+| **Service** | Invoice_Explanation_FAQ.pdf, Energy_Efficiency_Tips.pdf, Customer_Service_Handbook.pdf |
 
-9. Try different questions and find your own flow
+---
+
+*EPOWER Energy Intelligence Demo - Powered by Snowflake*
