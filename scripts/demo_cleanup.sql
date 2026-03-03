@@ -44,9 +44,9 @@ DROP WAREHOUSE IF EXISTS ENERGY_INTELLIGENCE_DEMO_WH;
 -- ========================================================================
 -- DROP ROLE (must revoke grants first)
 -- ========================================================================
--- Revoke role from current user before dropping
+-- set new defaul role 
 SET current_user_name = CURRENT_USER();
-REVOKE ROLE Energy_Intelligence_Demo FROM USER IDENTIFIER($current_user_name);
+ALTER USER IDENTIFIER($current_user_name) SET DEFAULT_ROLE = 'SYSADMIN';
 
 -- Drop the demo role
 DROP ROLE IF EXISTS Energy_Intelligence_Demo;
