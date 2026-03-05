@@ -11,10 +11,10 @@ USE ROLE accountadmin;
 -- REMOVE AGENT FROM SNOWFLAKE INTELLIGENCE AND DROP
 -- ========================================================================
 -- Remove agent from Snowflake Intelligence object first (if it exists)
-ALTER SNOWFLAKE INTELLIGENCE snowflake_intelligence_object_default DROP AGENT ENERGY_AI_DEMO.ENERGY_SCHEMA.Energy_Chatbot_Agent;
+ALTER SNOWFLAKE INTELLIGENCE snowflake_intelligence_object_default DROP AGENT EPOWER_RETAIL.DEMO_ASSETS.Energy_Chatbot_Agent;
 
 -- Drop the agent
-DROP AGENT IF EXISTS ENERGY_AI_DEMO.ENERGY_SCHEMA.Energy_Chatbot_Agent;
+DROP AGENT IF EXISTS EPOWER_RETAIL.DEMO_ASSETS.Energy_Chatbot_Agent;
 
 -- ========================================================================
 -- DROP INTEGRATIONS (must be done with accountadmin)
@@ -27,7 +27,7 @@ DROP API INTEGRATION IF EXISTS git_api_integration_energy;
 -- (This will drop all tables, views, stages, functions, procedures, 
 --  semantic views, cortex search services, etc.)
 -- ========================================================================
-DROP DATABASE IF EXISTS ENERGY_AI_DEMO;
+DROP DATABASE IF EXISTS EPOWER_RETAIL;
 
 -- ========================================================================
 -- SNOWFLAKE INTELLIGENCE OBJECT
@@ -39,7 +39,7 @@ DROP DATABASE IF EXISTS ENERGY_AI_DEMO;
 -- ========================================================================
 -- DROP WAREHOUSE
 -- ========================================================================
-DROP WAREHOUSE IF EXISTS ENERGY_INTELLIGENCE_DEMO_WH;
+DROP WAREHOUSE IF EXISTS EPOWER_WH;
 
 -- ========================================================================
 -- DROP ROLE (must revoke grants first)
@@ -49,7 +49,7 @@ SET current_user_name = CURRENT_USER();
 ALTER USER IDENTIFIER($current_user_name) SET DEFAULT_ROLE = 'SYSADMIN';
 
 -- Drop the demo role
-DROP ROLE IF EXISTS Energy_Intelligence_Demo;
+DROP ROLE IF EXISTS AI_ENGINEER;
 
 -- ========================================================================
 -- RESET ACCOUNT SETTINGS (optional - uncomment if needed)
@@ -60,9 +60,9 @@ DROP ROLE IF EXISTS Energy_Intelligence_Demo;
 -- VERIFICATION
 -- ========================================================================
 -- Verify cleanup was successful
-SHOW DATABASES LIKE 'ENERGY_AI_DEMO';
-SHOW WAREHOUSES LIKE 'ENERGY_INTELLIGENCE_DEMO_WH';
-SHOW ROLES LIKE 'Energy_Intelligence_Demo';
+SHOW DATABASES LIKE 'EPOWER_RETAIL';
+SHOW WAREHOUSES LIKE 'EPOWER_WH';
+SHOW ROLES LIKE 'AI_ENGINEER';
 SHOW INTEGRATIONS LIKE '%energy%';
 SHOW INTEGRATIONS LIKE 'git_api_integration_energy';
 

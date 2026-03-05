@@ -7,6 +7,41 @@
 
 **Just run the notebook cells in Snowflake Workspace as-is & you're done!**
 
+## Prerequisites
+
+### Create GitHub API Integration
+
+Before creating a Workspace, you need to set up an API integration that allows Snowflake to access public GitHub repositories. Run the following SQL in a Snowflake worksheet with the ACCOUNTADMIN role:
+
+```sql
+USE ROLE ACCOUNTADMIN;
+
+CREATE OR REPLACE API INTEGRATION git_api_integration
+  API_PROVIDER = git_https_api
+  API_ALLOWED_PREFIXES = ('https://github.com/')
+  ENABLED = TRUE;
+```
+
+This creates an API integration for accessing public GitHub repositories without authentication.
+
+### Create Workspace
+
+Once the API integration is created, create a Workspace connected to this GitHub repository:
+
+1. Navigate to **Projects » Workspaces** in Snowsight
+2. Click **+ Workspace** (top right)
+3. Select **Create Workspace from Git Repository**
+4. Fill in the following details:
+   - **Workspace Name**: `Snowflake_EPower_Demo` (or your preferred name)
+   - **API Integration**: Select `git_api_integration` from the dropdown
+   - **Repository URL**: `https://github.com/<owner>/Snowflake_EPower_Demo.git`
+   - **Branch**: `main`
+   - **Database**: Select or create a database for the workspace
+   - **Schema**: Select or create a schema for the workspace
+5. Click **Create**
+
+The workspace will clone the repository and you can then open `notebooks/demo_setup.ipynb` to run the setup.
+
 This project demonstrates the comprehensive Snowflake Intelligence capabilities adapted for a **German Energy Retail (B2C)** use case, simulating EPOWER - a German energy provider offering:
 - **Strom & Gas** - Traditional electricity and gas tariffs
 - **Future Energy Home** - Solar panels, heat pumps, battery storage
