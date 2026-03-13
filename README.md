@@ -1,17 +1,353 @@
 # EPOWER Energy Intelligence Demo
 
-
 ![EPOWER](images/epower_wimmel.jpg)
 
 **Copy, Paste, Run & Done in less than 15 mins!**
 
-**Just run the notebook cells in Snowflake Workspace as-is & you're done!**
+---
+
+## About EPOWER
+
+**EPOWER Energie Deutschland GmbH** is a simulated German energy provider serving residential and business customers across all four regions of Germany (North, South, West, East). Founded with a vision to accelerate the German *Energiewende* (energy transition), EPOWER has evolved from a traditional electricity and gas supplier into a full-service energy partner offering future-ready solutions.
+
+### Business Vision
+
+EPOWER's mission is to make clean energy accessible to every German household and business. The company pursues a **360° Energy Strategy**:
+
+1. **Supply** - Provide affordable electricity and gas tariffs
+2. **Generate** - Enable customers to produce their own energy with solar installations
+3. **Store** - Offer battery storage solutions for energy independence
+4. **Heat** - Replace fossil fuel heating with efficient heat pumps
+5. **Drive** - Support e-mobility with wallboxes and charging tariffs
+6. **Optimize** - Help customers reduce consumption with smart home technology
+
+### Company Profile
+
+| Attribute | Value |
+|-----------|-------|
+| **Headquarters** | Hamburg, Germany |
+| **Founded** | 2015 (simulated) |
+| **Customers** | 20,000 (Residential & Business) |
+| **Employees** | 1,000 |
+| **Sales Representatives** | 500 |
+| **Installation Partners** | 200 vendors across Germany |
+| **Annual Contracts** | ~60,000 |
+| **Service Tickets/Year** | ~35,000 |
+
+---
+
+## Product Portfolio
+
+EPOWER offers products across **6 categories** organized into 3 business verticals:
+
+### 🔌 Traditional Energy (Vertical: Energy)
+
+| Category | Products | Description |
+|----------|----------|-------------|
+| **Electricity (Strom)** | Strom Basis, Strom Plus, Ökostrom 100%, Strom Fix 24, Wärmestrom | From budget-friendly basic tariffs to 100% renewable green electricity and special heat pump tariffs |
+| **Gas** | Gas Basis, Gas Plus, Biogas 10%, Gas Fix 24 | Natural gas options including eco-friendly biogas blend |
+
+### ☀️ Future Energy (Vertical: Future Energy)
+
+| Category | Products | Description |
+|----------|----------|-------------|
+| **Solar** | Solar S (5kWp), Solar M (8kWp), Solar L (12kWp), SolarCloud, Speicher 5kWh, Speicher 10kWh | Rooftop solar systems of various sizes, virtual storage (cloud), and physical battery storage |
+| **Heat Pumps (Wärmepumpen)** | Luft-Wasser, Sole-Wasser, Split, Kompakt | Air-to-water, ground-source, and compact heat pump systems for replacing gas/oil heating |
+
+### 🏠 Smart Solutions
+
+| Category | Products | Description |
+|----------|----------|-------------|
+| **Smart Home** | Smart Meter, Home Energy Manager, Smart Thermostat, Energy Monitor | Digital meters, home automation, and consumption monitoring devices |
+| **E-Mobility** | Wallbox 11kW, Wallbox 22kW, Drive Tarif, Solar Carport | Home charging stations for electric vehicles and special EV charging tariffs |
+
+---
+
+## Customer Segments
+
+EPOWER serves three distinct customer segments with different needs:
+
+| Segment | Share | Typical Housing | Key Products |
+|---------|-------|-----------------|--------------|
+| **Privatkunde** (Residential) | 75% | Einfamilienhaus (35%), Wohnung (35%), Reihenhaus (20%), Mehrfamilienhaus (10%) | Electricity, Gas, Solar, Heat Pumps |
+| **Kleingewerbe** (Small Business) | 18% | Mixed residential/commercial | Electricity, Smart Meters, Wallboxes |
+| **Gewerbekunde** (Commercial) | 7% | Gewerbeimmobilie (Commercial property) | High-volume Electricity, Gas, Solar Systems |
+
+### Regional Distribution
+
+Customers are distributed across Germany's four regions based on population density:
+
+| Region | Share | Major Cities |
+|--------|-------|--------------|
+| **West** | 30% | Köln, Düsseldorf, Dortmund, Essen, Duisburg, Bonn |
+| **South** | 28% | München, Stuttgart, Nürnberg, Augsburg, Freiburg |
+| **North** | 22% | Hamburg, Bremen, Kiel, Hannover, Rostock |
+| **East** | 20% | Berlin, Dresden, Leipzig, Magdeburg, Erfurt |
+
+---
+
+## Data Domains
+
+The demo covers **5 distinct business domains**, each with its own data model and analytics requirements:
+
+### 1. 📊 Sales Domain
+
+**Purpose**: Track energy contracts, product sales, and revenue
+
+| Table | Records | Description |
+|-------|---------|-------------|
+| `sales_fact` | 240,000 | Energy contracts with amount (EUR) and units |
+| `customer_dim` | 20,000 | Customer master data with housing type |
+| `product_dim` | 27 | EPOWER products across 6 categories |
+| `product_category_dim` | 6 | Product categories and verticals |
+| `sales_rep_dim` | 500 | Energy consultants |
+| `vendor_dim` | 200 | Installation and service partners |
+| `region_dim` | 4 | North, South, West, East |
+
+**Key Questions**:
+- Which products are selling best in each region?
+- How do sales compare between residential and business customers?
+- Which sales representatives have the highest conversion rates?
+
+---
+
+### 2. ⚡ Billing & Consumption Domain
+
+**Purpose**: Track energy usage, invoicing, and payments
+
+| Table | Records | Description |
+|-------|---------|-------------|
+| `billing_history` | ~500,000 | Monthly electricity and gas bills |
+| `customer_products` | ~40,000 | Product ownership (bridge table) |
+
+**Key Metrics**:
+- `consumption_kwh` - Energy consumed in kilowatt-hours
+- `amount` - Invoice amount in EUR
+- `payment_status` - Bezahlt (Paid), Offen (Open), Überfällig (Overdue)
+
+**Realistic Consumption Patterns**:
+- Heat pump customers: +3,500-5,500 kWh electricity, -80% gas
+- Solar customers: -30-50% net electricity consumption
+- E-Mobility customers: +2,000-3,500 kWh electricity
+- Seasonal variation: Higher electricity in winter, gas peaks in December-February
+
+**Key Questions**:
+- What is the average consumption for customers with heat pumps?
+- How does consumption differ between single-family homes and apartments?
+- Which customers have overdue payments?
+
+---
+
+### 3. 🎫 Service Domain
+
+**Purpose**: Manage customer support, complaints, and sentiment
+
+| Table | Records | Description |
+|-------|---------|-------------|
+| `service_logs` | 100,000 | Customer service tickets with NLP analysis |
+
+**Ticket Categories**:
+| Topic | Category | Example Issues |
+|-------|----------|----------------|
+| Smart Meter | Installation | Installation requested, defective, app not working |
+| Rechnung (Billing) | Abrechnung | Invoice questions, payment plans, adjust installments |
+| Wärmepumpe | Technisch | Heat pump error codes, maintenance, efficiency issues |
+| Solar | Technisch | Low yield, inverter errors, monitoring unavailable |
+| Tarif | Vertrag | Rate change, cancellation, moving notice |
+| Wallbox | E-Mobility | Installation, charging issues, app connectivity |
+
+**Sentiment Analysis**:
+- Positiv (15%), Neutral (65%), Negativ (20%)
+- Priority: Niedrig, Mittel, Hoch, Kritisch
+
+**Key Questions**:
+- What are the most common complaint topics?
+- Which product category generates the most negative sentiment?
+- What is the average resolution time by priority?
+
+---
+
+### 4. 💰 Finance Domain
+
+**Purpose**: Track financial transactions, budgets, and approvals
+
+| Table | Records | Description |
+|-------|---------|-------------|
+| `finance_transactions` | 30,000 | Financial transactions with approval workflow |
+| `account_dim` | 3 | Account types (Umsatz, Aufwand, Wareneinsatz) |
+| `department_dim` | 31 | Departments (Finanzen, Vertrieb, Marketing, etc.) |
+
+**Key Questions**:
+- What is the spending by department?
+- Which vendors have the highest transaction volumes?
+- How many transactions are pending approval?
+
+---
+
+### 5. 👥 HR Domain
+
+**Purpose**: Analyze workforce, salaries, and attrition
+
+| Table | Records | Description |
+|-------|---------|-------------|
+| `hr_employee_fact` | ~11,000 | Employee records over time with salary progression |
+| `employee_dim` | 1,000 | Employee master data |
+| `job_dim` | 16 | Job titles and levels |
+| `location_dim` | 12 | Office locations across Germany |
+
+**Key Metrics**:
+- `salary` - Annual salary in EUR
+- `attrition_flag` - Employee departure indicator
+- `job_level` - 1 (Entry) to 4 (Executive)
+
+**Key Questions**:
+- What is the attrition rate by department?
+- How does salary vary by job level and location?
+- Which departments have the highest turnover?
+
+---
+
+### 6. 📈 Marketing & CRM Domain
+
+**Purpose**: Track campaigns, leads, and customer acquisition
+
+| Table | Records | Description |
+|-------|---------|-------------|
+| `marketing_campaign_fact` | 16,000 | Campaign performance (spend, leads, impressions) |
+| `campaign_dim` | 100 | Marketing campaigns |
+| `channel_dim` | 6 | Channels (Email, Website, Facebook, Instagram, Google Ads, TV) |
+| `sf_accounts` | 20,000 | Salesforce account records |
+| `sf_opportunities` | 50,000 | Sales pipeline with stages |
+| `sf_contacts` | 75,000 | Customer contacts |
+
+**Key Questions**:
+- Which marketing channels generate the most leads?
+- What is the conversion rate by campaign objective?
+- How much pipeline value is in each sales stage?
+
+---
+
+## Cross-Domain Analysis: The Power of customer_products
+
+The **`customer_products`** table is a bridge table that enables powerful cross-domain analytics by linking customers to the products they own:
+
+```
+┌───────────────────────────────────────┐
+│           CUSTOMER_DIM                │
+│           (20,000 Kunden)             │
+└───────────────────┬───────────────────┘
+                    │
+         ┌──────────┴──────────┐
+         │                     │
+         ▼                     ▼
+┌─────────────────────┐  ┌─────────────────────┐
+│  BILLING_HISTORY    │  │  CUSTOMER_PRODUCTS  │
+│  (Consumption)      │  │  (Product Ownership)│
+│  ───────────────────│  │  ───────────────────│
+│  consumption_kwh    │  │  product_key ───────┼──► PRODUCT_DIM
+│  billing_type       │  │  category_name      │    (Heat Pumps, Solar,
+│  payment_status     │  │  acquisition_date   │     E-Mobility, etc.)
+└─────────────────────┘  └─────────────────────┘
+```
+
+**This enables questions like**:
+- *"Was ist der durchschnittliche Stromverbrauch für Kunden mit Wärmepumpen in Hamburg?"*
+- *"Vergleiche den Verbrauch zwischen Kunden mit und ohne Solaranlage"*
+- *"Welche E-Mobility-Kunden haben überfällige Stromrechnungen?"*
+
+---
+
+## Unstructured Documents (10)
+
+The demo includes German-language documents for RAG (Retrieval-Augmented Generation):
+
+| Category | Document | Content |
+|----------|----------|---------|
+| **Energy** | EPOWER_Green_Power_TCs_2024.pdf | Terms & conditions for green electricity tariffs |
+| **Energy** | Vendor_Management_Policy.pdf | Guidelines for installation partners |
+| **Energy** | Waermepumpe_Foerderung_2024.md | Government subsidy information for heat pumps |
+| **Products** | Heat_Pump_Efficiency_Guide.pdf | Technical guide with COP values and error codes |
+| **Products** | Smart_Meter_Installation_Guide.pdf | Step-by-step smart meter setup |
+| **Products** | Solar_Battery_Quickstart.md | Battery storage installation guide |
+| **Products** | E_Mobility_Tarife.md | EV charging tariff details |
+| **Service** | Invoice_Explanation_FAQ.pdf | How to read your energy bill |
+| **Service** | Energy_Efficiency_Tips.pdf | Energy saving recommendations |
+| **Service** | Customer_Service_Handbook.pdf | Internal support procedures |
+
+---
+
+## Technical Architecture
+
+### Data Flow
+
+```mermaid
+graph TD
+    subgraph "Data Sources"
+        B[CSV Files<br/>24 demo_data files]
+        C[Unstructured Docs<br/>10 PDF/MD files]
+    end
+
+    subgraph "Snowflake Database: ENERGY_AI_DEMO.ENERGY_SCHEMA"
+        D[Internal Stage<br/>ENERGY_STAGE]
+        E[Parsed Content Table]
+        F[Dimension Tables - 14]
+        G[Fact Tables - 7]
+        SF[Salesforce CRM - 3]
+    end
+
+    subgraph "Semantic Layer"
+        H[ENERGY_SALES_SEMANTIC_VIEW]
+        I[BILLING_SEMANTIC_VIEW]
+        CE[CUSTOMER_ENERGY_SEMANTIC_VIEW]
+        J[SERVICE_SEMANTIC_VIEW]
+        K[HR_SEMANTIC_VIEW]
+    end
+
+    subgraph "Cortex Search Services"
+        L[Search_energy_docs]
+        M[Search_product_docs]
+        N[Search_service_docs]
+        O[Search_service_logs]
+    end
+
+    subgraph "AI Layer"
+        P[Snowflake Intelligence Agent<br/>Energy_Chatbot_Agent]
+    end
+
+    B --> D --> F & G & SF
+    C --> D --> E
+    F & G --> H & I & CE & J & K
+    E --> L & M & N
+    G --> O
+    H & I & CE & J & K & L & M & N & O --> P
+```
+
+### Semantic Views (5 Business Domains)
+
+| View | Purpose | Key Tables |
+|------|---------|------------|
+| `ENERGY_SALES_SEMANTIC_VIEW` | Contracts, products, customers, regions | sales_fact, customer_dim, product_dim |
+| `BILLING_SEMANTIC_VIEW` | Consumption, invoices, payments | billing_history, customer_dim |
+| `CUSTOMER_ENERGY_SEMANTIC_VIEW` | Cross-domain: consumption + product ownership | billing_history, customer_products, customer_dim |
+| `SERVICE_SEMANTIC_VIEW` | Service tickets, sentiment, topics | service_logs, customer_dim |
+| `HR_SEMANTIC_VIEW` | Employees, departments, attrition | hr_employee_fact, employee_dim, job_dim |
+
+### Cortex Search Services (4)
+
+| Service | Content | Use Case |
+|---------|---------|----------|
+| `SEARCH_ENERGY_DOCS` | AGBs, subsidies, vendor policies | Policy questions, legal terms |
+| `SEARCH_PRODUCT_DOCS` | Heat pump guide, smart meter, solar, e-mobility | Technical product questions |
+| `SEARCH_SERVICE_DOCS` | FAQ, tips, handbook | Customer support queries |
+| `SEARCH_SERVICE_LOGS` | Historical ticket descriptions | Find similar past issues |
+
+---
 
 ## Prerequisites
 
-### Create GitHub API Integration
+### 1. Create GitHub API Integration
 
-Before creating a Workspace, you need to set up an API integration that allows Snowflake to access public GitHub repositories. Run the following SQL in a Snowflake worksheet with the ACCOUNTADMIN role:
+Before creating a Workspace, set up an API integration (run with ACCOUNTADMIN role):
 
 ```sql
 USE ROLE ACCOUNTADMIN;
@@ -22,298 +358,79 @@ CREATE OR REPLACE API INTEGRATION git_api_integration
   ENABLED = TRUE;
 ```
 
-This creates an API integration for accessing public GitHub repositories without authentication.
-
-### Create Workspace
-
-Once the API integration is created, create a Workspace connected to this GitHub repository:
+### 2. Create Workspace
 
 1. Navigate to **Projects » Workspaces** in Snowsight
-2. Click **+ Workspace** (top right)
-3. Select **Create Workspace from Git Repository**
-4. Fill in the following details:
-   - **Workspace Name**: `Snowflake_EPower_Demo` (or your preferred name)
-   - **API Integration**: Select `git_api_integration` from the dropdown
+2. Click **+ Workspace** → **Create Workspace from Git Repository**
+3. Configure:
+   - **Workspace Name**: `Snowflake_EPower_Demo`
+   - **API Integration**: `git_api_integration`
    - **Repository URL**: `https://github.com/<owner>/Snowflake_EPower_Demo.git`
    - **Branch**: `main`
-   - **Database**: Select or create a database for the workspace
-   - **Schema**: Select or create a schema for the workspace
-5. Click **Create**
+4. Click **Create**
 
-The workspace will clone the repository and you can then open `notebooks/demo_setup.ipynb` to run the setup.
+### 3. Run Setup Notebook
 
-This project demonstrates the comprehensive Snowflake Intelligence capabilities adapted for a **German Energy Retail (B2C)** use case, simulating EPOWER - a German energy provider offering:
-- **Strom & Gas** - Traditional electricity and gas tariffs
-- **Future Energy Home** - Solar panels, heat pumps, battery storage
-- **Smart Home** - Smart meters, energy management systems
-- **E-Mobility** - Wallbox charging stations, EV tariffs
+Open `notebooks/demo_setup.ipynb` and run all cells sequentially.
 
-## Key Components
-
-### 1. Data Infrastructure
-- **Star Schema Design**: 14 dimension tables, 7 fact tables, and 1 bridge table covering Energy Sales, Billing, Service, Finance, Marketing, HR
-- **Product Ownership Tracking**: `customer_products` table links customers to their owned products (Heat Pumps, Solar, E-Mobility)
-- **Cross-Domain Analysis**: Enables queries like "average consumption for customers with heat pumps in Hamburg"
-- **German Energy Domain Data**: 600,000+ records with realistic German names, cities, and energy-specific data
-- **Database**: `ENERGY_AI_DEMO` with schema `ENERGY_SCHEMA`
-- **Warehouse**: `ENERGY_INTELLIGENCE_DEMO_WH` (XSMALL with auto-suspend/resume)
-
-### 2. Semantic Views (5 Business Domains)
-- **Energy Sales Semantic View**: Contracts, products (Strom, Gas, Solar, Heat Pumps), customers, regions, consultants
-- **Billing Semantic View**: Energy consumption (kWh), monthly invoices, payment status for Electricity and Gas
-- **Customer Energy Semantic View**: **NEW** - Combines billing, products, and customer data for cross-domain analysis
-- **Service Semantic View**: Customer service tickets with sentiment analysis, topics (Smart Meter, Wärmepumpe, Solar)
-- **HR Semantic View**: Employee data, departments, jobs, locations, attrition
-
-### 3. Cortex Search Services (4 Domain-Specific)
-- **Energy Documents**: Terms & conditions, subsidy information (Wärmepumpen-Förderung), vendor policies
-- **Product Documents**: Heat pump efficiency guide, smart meter installation, solar battery quickstart, E-Mobility tariffs
-- **Service Documents**: Invoice explanation FAQ, energy efficiency tips, customer service handbook
-- **Service Logs Search**: Semantic search over customer service ticket descriptions
-
-### 4. Snowflake Intelligence Agent
-- **Multi-Tool Agent**: Combines Cortex Search, Cortex Analyst capabilities
-- **Cross-Domain Analysis**: Can query consumption data for customers with specific products
-- **Bilingual Support**: Responds in German or English based on query language
-- **Visualization Support**: Generates charts and visualizations for data insights
-
-## Architecture Diagram
-
-```mermaid
-graph TD
-    subgraph "Data Sources"
-        B[CSV Files<br/>24 demo_data files]
-        C[Unstructured Docs<br/>10 PDF/MD files]
-    end
-
-    subgraph "Snowflake Database: ENERGY_AI_DEMO.ENERGY_SCHEMA"
-        subgraph "Raw Data Layer"
-            D[Internal Data Stage<br/>ENERGY_STAGE]
-            E[Parsed Content Table<br/>parsed_content]
-        end
-        
-        subgraph "Dimension Tables (14)"
-            F[product_category_dim<br/>product_dim<br/>vendor_dim<br/>customer_dim<br/>account_dim<br/>department_dim<br/>region_dim<br/>sales_rep_dim<br/>campaign_dim<br/>channel_dim<br/>employee_dim<br/>job_dim<br/>location_dim]
-        end
-        
-        subgraph "Fact Tables (7)"
-            G[sales_fact - Contracts<br/>billing_history - Consumption<br/>customer_products - Ownership<br/>service_logs - Tickets<br/>finance_transactions<br/>marketing_campaign_fact<br/>hr_employee_fact]
-        end
-        
-        subgraph "Salesforce CRM Tables (3)"
-            SF[sf_accounts<br/>sf_opportunities<br/>sf_contacts]
-        end
-    end
-
-    subgraph "Semantic Layer"
-        H[ENERGY_SALES_SEMANTIC_VIEW<br/>Contracts, Products, Customers]
-        I[BILLING_SEMANTIC_VIEW<br/>Consumption kWh, Invoices]
-        CE[CUSTOMER_ENERGY_SEMANTIC_VIEW<br/>Consumption + Product Ownership]
-        J[SERVICE_SEMANTIC_VIEW<br/>Tickets, Sentiment, Topics]
-        K[HR_SEMANTIC_VIEW<br/>Employees, Departments, Attrition]
-    end
-
-    subgraph "Cortex Search Services"
-        L[Search_energy_docs<br/>AGBs, Förderungen]
-        M[Search_product_docs<br/>Heat Pump Guide, Solar, E-Mobility]
-        N[Search_service_docs<br/>FAQ, Handbook]
-        O[Search_service_logs<br/>Ticket Descriptions]
-    end
-
-    subgraph "AI Layer"
-        P[Snowflake Intelligence Agent<br/>Energy_Chatbot_Agent<br/>Bilingual DE/EN]
-    end
-
-    subgraph "User Interface"
-        Q[Natural Language Queries<br/>German or English]
-    end
-
-    B --> D
-    C --> D
-    D --> F
-    D --> G
-    D --> SF
-    D --> E
-    
-    F --> H
-    G --> H
-    F --> I
-    G --> I
-    F --> CE
-    G --> CE
-    F --> J
-    G --> J
-    F --> K
-    G --> K
-    
-    H --> P
-    I --> P
-    CE --> P
-    J --> P
-    K --> P
-    L --> P
-    M --> P
-    N --> P
-    O --> P
-    
-    E --> L
-    E --> M
-    E --> N
-    G --> O
-    
-    P --> Q
-```
-
-## Database Schema
-
-### Dimension Tables (14)
-- `product_category_dim` - Energy categories: Electricity, Gas, Solar, Heat Pumps, Smart Home, E-Mobility
-- `product_dim` - 27 EPOWER products/tariffs
-- `customer_dim` - **20,000** German residential and business customers with housing type
-- `vendor_dim` - Installation partners and service providers (200 vendors)
-- `account_dim`, `department_dim`, `region_dim` (North, South, West, East)
-- `sales_rep_dim` - Energy consultants (500 reps)
-- `campaign_dim`, `channel_dim`, `employee_dim`, `job_dim`, `location_dim`
-
-### Fact Tables (7)
-- `sales_fact` - Energy contracts (**240,000 records**) - Amount in EUR, Units in kWh or count
-- `billing_history` - Monthly consumption and billing (**~500,000 records**) - kWh, payment status
-- `customer_products` - **NEW: Product ownership** (~40,000 records) - Links customers to products they own
-- `service_logs` - Customer service tickets (**100,000 records**) - Topic, sentiment, priority
-- `finance_transactions` - Financial transactions across departments
-- `marketing_campaign_fact` - Campaign performance metrics
-- `hr_employee_fact` - Employee data with salary and attrition
-
-### Salesforce CRM Tables (3)
-- `sf_accounts` - Customer accounts linked to customer_dim (20,000 records)
-- `sf_opportunities` - Sales pipeline and revenue data (50,000 records)
-- `sf_contacts` - Contact records with campaign attribution (75,000 records)
-
-## Data Model - Customer Products (Cross-Domain Enabler)
-
-The **customer_products** table is the key to enabling cross-domain analysis between billing (consumption) and sales (products):
-
-```
-┌───────────────────────────────────────┐
-│           CUSTOMER_DIM                │
-│           (20,000 Kunden)             │
-│  ─────────────────────────────────────│
-│  customer_key (PK)                    │
-│  customer_name, customer_type         │
-│  housing_type, city, state            │
-└───────────────────┬───────────────────┘
-                    │
-         ┌──────────┴──────────┐
-         │                     │
-         ▼                     ▼
-┌─────────────────────┐  ┌─────────────────────┐
-│  BILLING_HISTORY    │  │  CUSTOMER_PRODUCTS  │
-│  (Consumption)      │  │  (Product Ownership)│
-│  ───────────────────│  │  ───────────────────│
-│  billing_id (PK)    │  │  customer_product_id│
-│  customer_key (FK)──┼──│──customer_key (FK)  │
-│  billing_date       │  │  product_key (FK)───┼───┐
-│  billing_type       │  │  category_key (FK)  │   │
-│  consumption_kwh    │  │  category_name      │   │
-│  amount             │  │  acquisition_date   │   │
-│  payment_status     │  │  status             │   │
-└─────────────────────┘  └─────────────────────┘   │
-                                                   │
-                                   ┌───────────────┘
-                                   │
-                                   ▼
-                         ┌─────────────────────┐
-                         │    PRODUCT_DIM      │
-                         │  ───────────────────│
-                         │  product_key (PK)   │
-                         │  product_name       │
-                         │  category_name      │
-                         │  (Heat Pumps, Solar,│
-                         │   E-Mobility, etc.) │
-                         └─────────────────────┘
-```
-
-**This enables queries like:**
-- "Average consumption for customers with heat pumps" → Join billing_history + customer_products + filter by category
-- "Customers in Hamburg with solar installations" → Join customer_dim + customer_products + filter by city and category
-- "Compare consumption between heat pump and non-heat pump customers" → Aggregate with product ownership flags
-
-## Setup Instructions
-
-**Notebook-Based Setup**: The entire demo environment is created by running the notebook:
-
-1. **Open Snowflake Workspace** and create a new workspace from this Git repository
-
-2. **Run the setup notebook**:
-   - Open `notebooks/demo_setup.ipynb`
-   - Run all cells sequentially
-
-3. **What the notebook creates**:
-   - `Energy_Intelligence_Demo` role and permissions
-   - `ENERGY_INTELLIGENCE_DEMO_WH` warehouse
-   - `ENERGY_AI_DEMO.ENERGY_SCHEMA` database and schema
-   - All dimension and fact tables with data
-   - 5 semantic views for Cortex Analyst (including Customer Energy view)
-   - 4 Cortex Search services for documents
-   - 1 Snowflake Intelligence Agent (Energy_Chatbot_Agent)
-
-4. **Post-Setup Verification**:
-   ```sql
-   SHOW TABLES;                    -- Verify 23 tables created
-   SHOW SEMANTIC VIEWS;            -- Verify 5 semantic views
-   SHOW CORTEX SEARCH SERVICES;    -- Verify 4 search services
-   SHOW AGENTS;                    -- Verify Energy_Chatbot_Agent
-   ```
-
-## Agent Capabilities
-
-The Energy Chatbot Agent can:
-- **Analyze energy contracts** across product categories (Strom, Gas, Solar, Heat Pumps, Smart Home, E-Mobility)
-- **Query consumption data** with product ownership correlation (e.g., "heat pump customers in Hamburg")
-- **Cross-domain analysis** combining billing, products, and customer data
-- **Analyze service tickets** with sentiment filtering and topic-based search
-- **Search unstructured documents** for policies, guides, and FAQs
-- **Respond bilingually** in German or English
-- **Generate visualizations** for trends, comparisons, and analytics
-
-## Demo Script: Key Questions
-
-### Cross-Domain Analysis (Structured Data - Multiple Tables)
-- *"Was ist der durchschnittliche Stromverbrauch für Kunden mit Wärmepumpen in Hamburg?"*
-- *"Vergleiche den Verbrauch zwischen Kunden mit und ohne Wärmepumpe"*
-- *"Welche Kunden mit Solaranlagen haben überfällige Rechnungen?"*
-
-### Combined Structured + Unstructured Data
-- *"Wie viele Kunden haben Wärmepumpen und welche Wartungsintervalle gelten laut Dokumentation?"*
-- *"Zeige mir Beschwerden zu Wärmepumpen und die zugehörigen Fehlercodes aus der Anleitung"*
-- *"Kunden mit hohem Verbrauch - welche Energiespartipps sind relevant?"*
-
-### Document Search (RAG)
-- *"Was sind die Voraussetzungen für die Wärmepumpen-Förderung 2024?"*
-- *"Erkläre mir, wie ich meine Stromrechnung lesen kann."*
-
-## Data Volumes
-
-| Table | Records |
-|-------|---------|
-| customer_dim | 20,000 |
-| product_dim | 27 |
-| customer_products | ~40,000 |
-| sales_fact (Contracts) | 240,000 |
-| billing_history | ~500,000 |
-| service_logs | 100,000 |
-| sf_opportunities | 50,000 |
-| sf_contacts | 75,000 |
-| hr_employee_fact | ~11,000 |
-
-## Unstructured Documents (10)
-
-| Category | Documents |
-|----------|-----------|
-| **Energy** | EPOWER_Green_Power_TCs_2024.pdf, Vendor_Management_Policy.pdf, Waermepumpe_Foerderung_2024.md |
-| **Products** | Heat_Pump_Efficiency_Guide.pdf, Smart_Meter_Installation_Guide.pdf, Solar_Battery_Quickstart.md, E_Mobility_Tarife.md |
-| **Service** | Invoice_Explanation_FAQ.pdf, Energy_Efficiency_Tips.pdf, Customer_Service_Handbook.pdf |
+**What gets created**:
+- `Energy_Intelligence_Demo` role
+- `ENERGY_INTELLIGENCE_DEMO_WH` warehouse (XSMALL)
+- `ENERGY_AI_DEMO.ENERGY_SCHEMA` database/schema
+- 23 tables with data
+- 5 semantic views
+- 4 Cortex Search services
+- 1 Snowflake Intelligence Agent
 
 ---
 
-*EPOWER Energy Intelligence Demo - Powered by Snowflake*
+## Demo Questions
+
+### Sales Analysis (German)
+- *"Welche Produkte wurden letzten Monat am meisten verkauft?"*
+- *"Wie ist der Umsatz nach Region aufgeteilt?"*
+- *"Welche Vertriebsmitarbeiter haben die höchsten Abschlüsse?"*
+
+### Consumption Analysis (German)
+- *"Was ist der durchschnittliche Stromverbrauch für Kunden mit Wärmepumpen?"*
+- *"Vergleiche den Verbrauch zwischen Kunden mit und ohne Solaranlage"*
+- *"Zeige mir Kunden mit überfälligen Rechnungen in Hamburg"*
+
+### Service Tickets (German)
+- *"Zeige mir alle negativen Service-Tickets zum Thema Smart Meter"*
+- *"Was sind die häufigsten Beschwerden bei Wärmepumpen?"*
+- *"Wie ist die durchschnittliche Bearbeitungszeit nach Priorität?"*
+
+### Document Search (German)
+- *"Was sind die Voraussetzungen für die Wärmepumpen-Förderung 2024?"*
+- *"Erkläre mir, wie ich meine Stromrechnung lesen kann"*
+- *"Welche Fehlercodes gibt es bei Wärmepumpen und was bedeuten sie?"*
+
+### Cross-Domain (Combined structured + unstructured)
+- *"Wie viele Kunden haben Wärmepumpen und welche Wartungsintervalle gelten laut Dokumentation?"*
+- *"Zeige mir Beschwerden zu Solaranlagen und die relevanten Fehlerbehebungsschritte"*
+
+---
+
+## Data Volumes Summary
+
+| Category | Table | Records |
+|----------|-------|---------|
+| **Customers** | customer_dim | 20,000 |
+| **Products** | product_dim | 27 |
+| **Product Ownership** | customer_products | ~40,000 |
+| **Contracts** | sales_fact | 240,000 |
+| **Billing** | billing_history | ~500,000 |
+| **Service Tickets** | service_logs | 100,000 |
+| **CRM Opportunities** | sf_opportunities | 50,000 |
+| **CRM Contacts** | sf_contacts | 75,000 |
+| **Finance** | finance_transactions | 30,000 |
+| **HR Records** | hr_employee_fact | ~11,000 |
+| **Marketing** | marketing_campaign_fact | 16,000 |
+| **Documents** | unstructured_docs | 10 |
+
+**Total**: ~1,000,000+ records across all tables
+
+---
+
+*EPOWER Energy Intelligence Demo - Powered by Snowflake Cortex*
